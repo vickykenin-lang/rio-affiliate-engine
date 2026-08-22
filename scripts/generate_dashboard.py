@@ -25,6 +25,7 @@ QUEUE_CSV = ROOT / "data" / "content_queue.csv"
 SNAPSHOT_JSON = ROOT / "data" / "dashboard_snapshot.json"
 ACTION_QUEUE_CSV = ROOT / "data" / "ceo_action_queue.csv"
 DASHBOARD_HTML = ROOT / "site" / "dashboard" / "index.html"
+PRODUCTION_JSON = ROOT / "data" / "production_status.json"
 
 
 def load_csv(path):
@@ -38,6 +39,10 @@ def esc(s):
 
 def main():
     candidates = load_csv(CAND_CSV)
+    try:
+        production = json.loads(PRODUCTION_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        production = {"verified": False}
     offers = load_csv(REG_CSV)
     queue = load_csv(QUEUE_CSV)
 
@@ -59,7 +64,7 @@ def main():
         "cost_inr": 0,
         "net_profit_inr": 0,
         "x_to_x_failures": 0,
-        "production_verified": False,
+        "production_verified": bool(production.get("verified")),
         "discovered_products": len(discovered_products),
         "verified_products": len(verified_products),
         "ready_products": len(ready_products),
