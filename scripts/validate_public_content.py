@@ -45,7 +45,7 @@ for path in SITE.rglob("*.html"):
 
     hotlinks = len(re.findall(r'm\.media-amazon\.com', text))
     if hotlinks:
-        warnings.append(f"{rel}: {hotlinks} Amazon image hotlink(s); confirm SiteStripe/PA-API license provenance")
+        errors.append(f"{rel}: Amazon media hotlink lacks recorded SiteStripe/PA-API provenance; use a local RIO card")
 
 articles = review.get("articles", review)
 for article_path, result in articles.items():
