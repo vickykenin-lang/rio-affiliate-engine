@@ -31,6 +31,9 @@ jobs:
       - name: Validate complete site structure and links
         run: python scripts/validate.py
 
+      - name: Validate public content compliance and truthful claims
+        run: python scripts/validate_public_content.py
+
       - name: Validate X to X offer integrity
         run: python scripts/validate_offer_integrity.py
 
