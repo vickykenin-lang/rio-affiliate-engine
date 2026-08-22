@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/heartbeat.py
-      - name: Commit any changes (NOT [skip ci] — this intentionally re-triggers deploy-pages.yml so the live site reflects the refreshed dashboard)
+      - name: Commit state changes (GITHUB_TOKEN pushes do not trigger a second workflow; deployment runs explicitly)
         run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add -A && (git diff --cached --quiet || git commit -m "heartbeat: refresh dashboard + validators") && git pull --rebase --autostash && git push
@@ -98,7 +98,6 @@ jobs:
           IG_USER_ID_RIO: ${{ secrets.IG_USER_ID_RIO }}
           IG_ACCESS_TOKEN_RIO: ${{ secrets.IG_ACCESS_TOKEN_RIO }}
         run: python scripts/publish_instagram.py
-        continue-on-error: true
       - name: Commit publish state + report line (NOT [skip ci] — harmless, data/ isn't part of the site build)
         run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
