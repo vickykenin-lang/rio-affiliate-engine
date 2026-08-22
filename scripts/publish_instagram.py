@@ -69,7 +69,7 @@ STATUS_JSON = os.path.join(ROOT, "data", "status.json")
 REPORT_MD = os.path.join(ROOT, "data", "rio_report_to_victor.md")
 CARD_DIR = os.path.join(ROOT, "site", "social")
 
-GRAPH_VERSION = "v21.0"
+GRAPH_VERSION = "v26.0"
 GRAPH_BASE = f"https://graph.facebook.com/{GRAPH_VERSION}"
 
 # An offer whose data/offer_identity_registry.csv "destination_checked_at"
@@ -84,6 +84,10 @@ STALENESS_DAYS = 21
 
 IG_USER_ID = os.environ.get("IG_USER_ID_RIO", "")
 IG_ACCESS_TOKEN = os.environ.get("IG_ACCESS_TOKEN_RIO", "")
+PUBLIC_SITE_BASE = os.environ.get(
+    "RIO_PUBLIC_SITE_BASE",
+    f"https://{OWNER}.github.io/{REPO_NAME}",
+).rstrip("/")
 
 # Cosmetic-only cluster labels for captions/cards. Not present as a column
 # in offer_identity_registry.csv today — assigned by Victor from the same
@@ -157,7 +161,10 @@ def days_since(date_str):
 def build_caption(offer):
     name = offer["creative_product_name"]
     cluster = CLUSTER_LABELS.get(offer["offer_id"], "Home Storage")
-    url = offer["canonical_url"]
+    landing_url = (
+        f"{PUBLIC_SITE_BASE}/?utm_source=instagram&utm_medium=organic"
+        f"&utm_campaign=rio_offer_{offer['offer_id'].casefold()}"
+    )
     checked_at = offer.get("destination_checked_at", "").strip() or "an earlier date"
     return (
         f"{name}\n\n"
@@ -165,7 +172,8 @@ def build_caption(offer):
         f"Identity and stock last verified {checked_at} "
         f"(availability_status on file: {offer['availability_status']}). "
         f"Prices and stock on Amazon change often — always confirm the current "
-        f"price and availability on the product page before buying. Full details:\n{url}\n\n"
+        f"price and availability on the product page before buying. "
+        f"Full guide and tagged affiliate link: {landing_url}\n\n"
         f"Affiliate link — RIO may earn a small commission on Amazon.in purchases "
         f"made through this link, at no extra cost to you. #ad #affiliate\n\n"
         f"#HomeOrganization #IndianHomes #SpaceSaving #StorageHacks"
@@ -229,9 +237,24 @@ def main():
         return 0
 
     oid = candidate["offer_id"]
-    image_url = (
-        f"https://raw.githubusercontent.com/{OWNER}/{REPO_NAME}/main/site/social/{oid}.png"
-    )
+    image_url = f"{PUBLIC_SITE_BASE}/social/{oid}.png"
+    try:
+        req = urllib.request.Request(
+            image_url,
+            headers={"User-Agent": "RIO-Instagram-Preflight/1.0", "Range": "bytes=0-1023"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as response:
+            content_type = response.headers.get("Content-Type", "").casefold()
+            if response.status not in (200, 206) or not content_type.startswith("image/"):
+                raise RuntimeError(
+                    f"public social card preflight failed: HTTP {response.status}, "
+                    f"content-type {content_type or '(missing)'}"
+                )
+    except Exception as exc:
+        raise RuntimeError(
+            f"public social card is not reachable at {image_url}; "
+            f"Instagram cannot publish it: {exc}"
+        ) from exc
     caption = build_caption(candidate)
 
     print(f"[publish_instagram] publishing {oid} ({candidate['creative_product_name']}) ...")
