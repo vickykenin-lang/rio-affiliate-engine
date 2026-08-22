@@ -88,11 +88,19 @@ def main():
                       f"{len(blocked_offers)} offer(s) still BLOCKED: "
                       + ", ".join(o["offer_id"] for o in blocked_offers) + "."))
     if ready_offers:
-        rows.append(("LIVE", "RIO", f"{len(ready_offers)} offer(s) already live and earning-eligible",
-                      ", ".join(o["offer_id"] for o in ready_offers)
-                      + " -- Amazon Associates account active (rioaffiliate-21), links published and deploy-verified."))
-    rows.append(("BLOCKED", "VICKY", "Configure additional merchant/affiliate accounts for other categories",
-                  "Only Amazon Associates India is connected today; expansion needs new account setup, which RIO cannot do."))
+        offer_state = "LIVE" if snapshot["production_verified"] else "DATA_READY"
+        action = (
+            f"{len(ready_offers)} offer(s) public and earning-eligible"
+            if snapshot["production_verified"]
+            else f"{len(ready_offers)} offer(s) validated but public production is offline"
+        )
+        reason = (
+            ", ".join(o["offer_id"] for o in ready_offers)
+            + " -- Amazon Associates tag is configured; earning eligibility requires the production health gate to pass."
+        )
+        rows.append((offer_state, "RIO", action, reason))
+    rows.append(("NEXT", "RIO", "Design the EarnKaro link-import workflow",
+                  "The Founder already created the EarnKaro account, but it exposes no self-serve API; use an evidence-backed manual import gate until API access exists."))
 
     with ACTION_QUEUE_CSV.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
@@ -117,8 +125,17 @@ def main():
         for r in rows
     )
     badges = "<span class=\"badge\">BUILT</span><span class=\"badge\">LOCAL QA</span>"
-    badges += " <span class=\"badge\">LIVE OFFERS</span>" if ready_offers else ""
-    badges += "<span class=\"badge\">PRODUCTION NOT VERIFIED</span>"
+    if ready_offers:
+        badges += (
+            " <span class=\"badge\">LIVE OFFERS</span>"
+            if snapshot["production_verified"]
+            else " <span class=\"badge\">DATA-READY OFFERS</span>"
+        )
+    badges += (
+        "<span class=\"badge\">PRODUCTION VERIFIED</span>"
+        if snapshot["production_verified"]
+        else "<span class=\"badge\">PRODUCTION OFFLINE</span>"
+    )
 
     html = f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RIO CEO Dashboard</title><style>
@@ -128,7 +145,7 @@ h1{{margin-bottom:4px}}.sub{{color:#555}}.grid{{display:grid;grid-template-colum
 .panel{{background:white;padding:18px;border:1px solid #ddd;border-radius:12px;margin:16px 0;overflow:auto}}
 table{{width:100%;border-collapse:collapse;font-size:14px}}th,td{{padding:10px;border-bottom:1px solid #eee;text-align:left}}.blocked{{font-weight:700}}
 .badge{{display:inline-block;padding:5px 9px;border:1px solid #bbb;border-radius:999px;margin-right:6px}}
-</style></head><body><main><h1>RIO CEO Dashboard v2</h1><p class="sub">Single source of truth &middot; Build state, commercial gates, P&amp;L and human actions</p>
+</style><link rel="canonical" href="https://vickykenin-lang.github.io/rio-affiliate-engine/dashboard/"></head><body><main><h1>RIO CEO Dashboard v2</h1><p class="sub">Single source of truth &middot; Build state, commercial gates, P&amp;L and human actions</p>
 <div>{badges}</div>
 <div class="grid"><section class="card"><span>Product candidates</span><strong>{snapshot['product_candidates']}</strong></section><section class="card"><span>Offers READY</span><strong>{snapshot['ready_offers']}</strong></section><section class="card"><span>Offers BLOCKED</span><strong>{snapshot['blocked_offers']}</strong></section><section class="card"><span>Content queue</span><strong>{snapshot['content_items']}</strong></section><section class="card"><span>Revenue</span><strong>&#8377;{snapshot['revenue_inr']}</strong></section><section class="card"><span>Net P&amp;L</span><strong>&#8377;{snapshot['net_profit_inr']}</strong></section></div>
 <section class="panel"><h2>CEO Action Queue</h2><table><tr><th>Status</th><th>Owner</th><th>Action</th><th>Why</th></tr>{action_rows}</table></section>
@@ -138,8 +155,8 @@ table{{width:100%;border-collapse:collapse;font-size:14px}}th,td{{padding:10px;b
 <p>These are sourced candidates, not approved promotions unless status is READY. Live Amazon listing verification is required before scoring or X&rarr;X activation.</p>
 <table><tr><th>Candidate</th><th>Cluster</th><th>Brand</th><th>ASIN</th><th>Observed price</th><th>Evidence date</th><th>State</th><th>Identity</th></tr>
 {disc_rows}</table></section>
-<section class="panel"><h2>P&amp;L</h2><p>Revenue &#8377;0 &middot; Cost &#8377;0 &middot; Net &#8377;0. No revenue is inferred before real tracked conversions exist.</p></section>
-<section class="panel"><h2>Release doctrine</h2><p>Creative X &rarr; CTA X &rarr; Campaign X &rarr; Offer X &rarr; exact Product/Variant X. No silent substitution. Production status remains unverified until live deployment QA passes.</p></section>
+<section class="panel"><h2>P&amp;L</h2><p>Revenue &#8377;{snapshot['revenue_inr']} &middot; Cost &#8377;{snapshot['cost_inr']} &middot; Net &#8377;{snapshot['net_profit_inr']}. No revenue is inferred before an approved affiliate report exists.</p></section>
+<section class="panel"><h2>Release doctrine</h2><p>Creative X &rarr; CTA X &rarr; Campaign X &rarr; Offer X &rarr; exact Product/Variant X. No silent substitution. Production status: {'VERIFIED' if snapshot['production_verified'] else 'OFFLINE / NOT VERIFIED'}.</p></section>
 </main></body></html>"""
     DASHBOARD_HTML.write_text(html, encoding="utf-8")
     print(f"Dashboard regenerated: {snapshot['ready_offers']} ready offers, "
