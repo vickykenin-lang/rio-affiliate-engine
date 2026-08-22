@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Validate complete site structure and links
+        run: python scripts/validate.py
+
       - name: Validate X to X offer integrity
         run: python scripts/validate_offer_integrity.py
 
@@ -63,3 +66,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Setup Python for production smoke test
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Verify real public production
+        env:
+          RIO_PUBLIC_SITE_BASE: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/check_production.py
