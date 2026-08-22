@@ -114,11 +114,15 @@ def run_script(name):
         return False, f"failed to run {name}: {e}"
 
 
+production_ok, production_out = run_script("check_production.py")
+print(f"[heartbeat] check_production.py {'OK' if production_ok else 'FAILED'}:\n{production_out}")
+
 dash_ok, dash_out = run_script("generate_dashboard.py")
 print(f"[heartbeat] generate_dashboard.py {'OK' if dash_ok else 'FAILED'}:\n{dash_out}")
 
 # --- 3. Run the publish-safety validators (never publish on a failure) -----
 validator_scripts = {
+    "production_live": None,
     "offer_integrity": "validate_offer_integrity.py",
     "product_candidates": "validate_product_candidates.py",
     "dashboard": "validate_dashboard.py",
@@ -126,7 +130,10 @@ validator_scripts = {
 }
 validators = {}
 for key, script in validator_scripts.items():
-    ok, out = run_script(script)
+    if key == "production_live":
+        ok, out = production_ok, production_out
+    else:
+        ok, out = run_script(script)
     # Keep only the last few lines (the PASS/FAIL summary + any error list) —
     # full stdout still goes to the Actions log via the print() below.
     tail = "\n".join(out.splitlines()[-15:])
@@ -149,7 +156,7 @@ counts = {
     "revenue_inr": snap.get("revenue_inr", 0),
     "cost_inr": snap.get("cost_inr", 0),
     "net_profit_inr": snap.get("net_profit_inr", 0),
-    "production_verified": snap.get("production_verified", False),
+    "production_verified": bool(production_ok),
 }
 
 status = jload("data/status.json", {})
@@ -160,10 +167,10 @@ status["validators"] = validators
 status["all_validators_pass"] = all_pass
 status["counts"] = counts
 status["note_en"] = (
-    f"Heartbeat OK — dashboard regenerated, {sum(1 for v in validators.values() if v['pass'])}/4 validators passing. "
+    f"Heartbeat OK — dashboard regenerated, {sum(1 for v in validators.values() if v['pass'])}/{len(validators)} validators passing. "
     f"{counts['ready_offers']} ready offers, {counts['content_items']} content items, revenue ₹{counts['revenue_inr']}."
     if all_pass else
-    f"⚠ {sum(1 for v in validators.values() if not v['pass'])}/4 validators FAILING — see data/status.json.validators for detail. "
+    f"⚠ {sum(1 for v in validators.values() if not v['pass'])}/{len(validators)} validators FAILING — see data/status.json.validators for detail. "
     "Nothing should be published/deployed until these pass again."
 )
 jsave("data/status.json", status)
