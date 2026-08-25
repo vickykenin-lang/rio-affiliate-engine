@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""SOUL runtime integrity layer — compatibility/observe mode.
-
-This stage never stops RIO. It verifies that the portable SOUL can bind safely to
-RIO's existing objective, memory, lead-AI configuration, heartbeat and validators.
-Hard fail-closed enforcement is intentionally deferred to a later explicit stage.
-"""
+"""SOUL runtime integrity layer — mandatory fail-closed gate."""
 import hashlib
 import json
 from pathlib import Path
@@ -35,7 +30,8 @@ def read(path):
 
 def load_json(path):
     try:
-        return json.loads(read(path))
+        value = json.loads(read(path))
+        return value if isinstance(value, dict) else {}
     except Exception:
         return {}
 
@@ -49,15 +45,16 @@ def inspect_runtime():
         "soul_present": bool(soul.strip()),
         "soul_contract_markers": bool(soul.strip()) and all(m in soul for m in REQUIRED_MARKERS),
         "objective_present": bool(objective.strip()),
-        "memory_present": MEMORY.exists() and isinstance(memory, dict),
-        "heartbeat_status_present": STATUS.exists() and isinstance(status, dict),
+        "memory_present": MEMORY.exists() and bool(memory),
+        "heartbeat_status_present": STATUS.exists() and bool(status),
         "lead_ai_declared": bool(status.get("runtime_primary_ai")),
         "validators_declared": "all_validators_pass" in status,
+        "validators_healthy": status.get("all_validators_pass") is True,
     }
     valid = all(checks.values())
     result = {
-        "mode": "compatibility_observe",
-        "hard_fail_closed": False,
+        "mode": "hard_fail_closed",
+        "hard_fail_closed": True,
         "project_binding": "RIO",
         "valid": valid,
         "checks": checks,
@@ -67,7 +64,7 @@ def inspect_runtime():
         "lead_ai": status.get("runtime_primary_ai"),
         "fallbacks": status.get("runtime_fallbacks") or [],
         "validators_currently_healthy": status.get("all_validators_pass"),
-        "execution_effect": "NONE — observe-only; existing RIO gates remain authoritative",
+        "execution_effect": "ALLOWED" if valid else "AUTONOMOUS_EXECUTION_BLOCKED",
     }
     OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))
