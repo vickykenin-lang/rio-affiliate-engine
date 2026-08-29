@@ -17,7 +17,7 @@
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
         "collector_error": "HTTP Error 400: Bad Request",
-        "collected_at_utc": "2026-08-29T18:45:55.065358+00:00"
+        "collected_at_utc": "2026-08-29T18:48:09.662028+00:00"
       },
       "TROLLEY_001": {
         "offer_id": "TROLLEY_001",
@@ -29,7 +29,7 @@
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
         "collector_error": "HTTP Error 400: Bad Request",
-        "collected_at_utc": "2026-08-29T18:45:55.065358+00:00"
+        "collected_at_utc": "2026-08-29T18:48:09.662028+00:00"
       },
       "SPICE_RACK_001": {
         "offer_id": "SPICE_RACK_001",
@@ -41,7 +41,7 @@
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
         "collector_error": "HTTP Error 400: Bad Request",
-        "collected_at_utc": "2026-08-29T18:45:55.065358+00:00"
+        "collected_at_utc": "2026-08-29T18:48:09.662028+00:00"
       },
       "CONTAINER_001": {
         "offer_id": "CONTAINER_001",
@@ -53,7 +53,7 @@
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
         "collector_error": "HTTP Error 400: Bad Request",
-        "collected_at_utc": "2026-08-29T18:45:55.065358+00:00"
+        "collected_at_utc": "2026-08-29T18:48:09.662028+00:00"
       },
       "DRAWER_001": {
         "offer_id": "DRAWER_001",
@@ -65,10 +65,10 @@
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
         "collector_error": "HTTP Error 400: Bad Request",
-        "collected_at_utc": "2026-08-29T18:45:55.065358+00:00"
+        "collected_at_utc": "2026-08-29T18:48:09.662028+00:00"
       }
     },
-    "last_attempt_at_utc": "2026-08-29T18:45:55.065358+00:00"
+    "last_attempt_at_utc": "2026-08-29T18:48:09.662028+00:00"
   },
   "website": {
     "click_collector": "NOT_CONFIGURED",
