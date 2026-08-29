@@ -10,10 +10,15 @@
     "likes": null,
     "comments": null,
     "saves": null,
-    "clicks": 0,
-    "last_checked_at": "2026-08-30T00:00:00+05:30",
-    "status": "NO_CLICKS_YET",
-    "next_action": "rotate_to_pillar_1_for_internal_linking_cta_optimization"
+    "clicks": null,
+    "last_checked_at": null,
+    "status": "AWAITING_TELEMETRY",
+    "next_action": "collect_measured_telemetry_before_any_no_click_decision"
+  },
+  "telemetry_guard": {
+    "unknown_is_not_zero": true,
+    "no_click_decision_allowed": false,
+    "required_source": "named_live_collector"
   },
   "compliance": {
     "disclosure_present": true,
