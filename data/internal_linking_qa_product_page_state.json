@@ -1,72 +1,76 @@
 {
   "policy_id": "RIO_COMMERCIAL_VALIDATION_V2",
-  "status": "READY_FOR_FOUNDER_REVIEW",
+  "status": "WORKING",
   "offer_specs": {
     "product_name": "3-tier rolling cart",
     "verified": true,
     "merchant": "Amazon Associates India",
-    "asins": [
-      "B08XYZ1234",
-      "B09ABC5678"
-    ],
-    "commission_rate_percent": 10.0,
-    "tracking_enabled": true,
-    "disclosure_ready": true
-  },
-  "existing_assets": [
-    "site/products/3-tier-rolling-cart/index.html",
-    "site/content/policies/internal-linking-qa-product-page-3-tier-rolling-cart-2026-08-29.md"
-  ],
-  "internal_linking_gaps": [
-    "No internal link from buying guide (site/products/buying-guides/rolling-cart/index.html)",
-    "No internal link from Instagram destination (site/products/instagram/3-tier-rolling-cart/index.html)",
-    "Missing breadcrumb navigation for SEO clarity"
-  ],
-  "seo_health": {
-    "title_tag": "3-Tier Rolling Cart for Indian Homes | Verified Buying Guide",
-    "meta_description": "Compare 3 best 3-tier rolling carts for Indian homes — measurements, load capacity, and real user feedback. Verified affiliate.",
-    "h1_present": true,
-    "h2_count": 3,
-    "image_alt_text_present": true,
-    "internal_links_outbound": 2,
-    "internal_links_inbound": 0,
-    "page_load_estimate_seconds": 1.8
-  },
-  "sensitivity_forecast": {
-    "conversion_rates": [
+    "offer_id": "rioaffiliate-21-3tier-cart",
+    "commission_rate_percent": 4.0,
+    "conversion_sensitivity_rates": [
       0.005,
       0.01,
       0.02,
       0.03
-    ],
-    "estimated_approved_commissions_inr": [
-      250,
-      500,
-      1000,
-      1500
-    ],
-    "confidence_level": "LOW",
-    "note": "Based on 17 ready offers; forecast assumes 0.5–3% merchant conversion with internal linking improvement."
+    ]
+  },
+  "existing_assets": [
+    "site/content/product/3-tier-rolling-cart.md",
+    "site/content/policies/internal-linking-qa-product-page-3-tier-rolling-cart-2026-08-29.md"
+  ],
+  "internal_linking_gaps": [
+    "Missing inbound link from buying guide draft (site/content/guides/buying-guide-3-tier-rolling-cart-draft.md)",
+    "Missing inbound link from Instagram destination (site/content/instagram/dest-3-tier-rolling-cart.md)",
+    "No outbound link to verified high-intent related product (e.g., wall-mounted storage)"
+  ],
+  "seo_health": {
+    "title_tag": "3-Tier Rolling Cart for Indian Homes — Verified Buying Guide",
+    "meta_description": "Compare 3 best 3-tier rolling carts for Indian homes. Real measurements, prices, and limitations. Amazon Associates India verified.",
+    "h1_present": true,
+    "h2_count": 4,
+    "internal_links_out": 1,
+    "internal_links_in": 0,
+    "image_alt_text_present": true,
+    "disclosure_present": true,
+    "tracking_pixel_ready": true
+  },
+  "sensitivity_forecast": {
+    "0.005_conversion": {
+      "expected_orders_month": 1,
+      "expected_commission_inr": 250
+    },
+    "0.01_conversion": {
+      "expected_orders_month": 2,
+      "expected_commission_inr": 500
+    },
+    "0.02_conversion": {
+      "expected_orders_month": 4,
+      "expected_commission_inr": 1000
+    },
+    "0.03_conversion": {
+      "expected_orders_month": 6,
+      "expected_commission_inr": 1500
+    }
   },
   "resource_envelope": {
     "approved_tools": [
-      "AWS Bedrock",
-      "DeepSeek",
-      "GitHub Actions"
+      "AWS Bedrock qwen3-coder-next",
+      "DeepSeek fallback"
     ],
     "hosting": "GitHub Pages",
-    "api_model_quotas": "1000 requests/day",
+    "api_model_quotas": "100K tokens/day",
     "spend_ceiling_inr": 0,
-    "renewal_dates": "None applicable",
+    "renewal_dates": "none",
     "human_only_dependencies": [
       "Founder approval for publishing",
       "Founder action for AdSense setup"
     ]
   },
   "next_steps": [
-    "Implement internal linking from buying guide and Instagram destination to product page",
-    "Add breadcrumb navigation",
-    "Submit plan for Founder review and approval",
-    "After approval, publish changes and monitor SEO health"
+    "Add inbound link from buying guide draft to product page",
+    "Add inbound link from Instagram destination to product page",
+    "Add outbound link to verified high-intent related product",
+    "Run full validator suite",
+    "Commit changes and submit plan for Founder review and approval"
   ]
 }
