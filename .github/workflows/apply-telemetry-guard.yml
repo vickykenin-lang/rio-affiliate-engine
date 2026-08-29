@@ -1,0 +1,36 @@
+name: Apply RIO Telemetry Guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/apply_telemetry_guard_patch.py'
+      - '.github/workflows/apply-telemetry-guard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/apply_telemetry_guard_patch.py
+      - run: python -m py_compile scripts/autonomous_business_cycle.py scripts/collect_instagram_metrics.py scripts/generate_control_room.py
+      - run: |
+          git config user.name "RIO Runtime Repair"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts/autonomous_business_cycle.py
+          if git diff --cached --quiet; then
+            echo "Patch already present"
+            exit 0
+          fi
+          git commit -m "runtime: enforce fail-closed telemetry decisions"
+          git pull --rebase --autostash
+          git push
