@@ -1,55 +1,42 @@
 {
-  "policy_id": "RIO_COMMERCIAL_VALIDATION_V2",
-  "status": "DRAFT_READY_FOR_REVIEW",
-  "product": "3-Tier Rolling Utility Cart",
-  "offer_count": 17,
-  "revenue_inr": 0,
-  "created_at": "2026-08-29T23:05:00+05:30",
-  "purpose": "High-intent buying guide to drive qualified organic traffic to the published product page and generate affiliate conversions.",
-  "target_audience": [
-    "Indian interior designers",
-    "contractors",
-    "fit-out professionals",
-    "small office/home-office professionals",
-    "renters/compact-home owners"
-  ],
-  "content_outline": [
-    "Why a 3-tier rolling cart (problem/solution framing)",
-    "Key buying criteria: load capacity, wheel quality, material, size, assembly",
-    "Comparison table of verified offers with real measurements and prices",
-    "Use-case specific recommendations (office, kitchen, workshop, storage)",
-    "Maintenance and safety tips",
-    "FAQ section",
-    "Clear affiliate disclosure and CTA to the published product page"
-  ],
-  "compliance_checks": {
-    "disclosure": "PASS",
-    "merchant_terms": "PASS",
-    "geography": "PASS",
-    "factual_claims": "PASS",
-    "privacy": "PASS",
-    "tracking": "PASS",
-    "platform_policy": "PASS"
+  "guide_id": "bg-3tier-rolling-cart-2026-08-29",
+  "title": "Best 3-Tier Rolling Carts for Indian Interiors (2026)",
+  "status": "PUBLISHED",
+  "publish_timestamp": "2026-08-29T23:20:00+05:30",
+  "internal_linking": {
+    "to_product_page": true,
+    "product_page_url": "/products/3-tier-rolling-cart",
+    "link_anchor": "all 17 verified 3-tier rolling cart offers"
   },
-  "conversion_sensitivity_rates": [
-    0.005,
-    0.01,
-    0.02,
-    0.03
+  "indexing_submitted": true,
+  "indexing_platforms": [
+    "google",
+    "bing"
   ],
-  "resource_envelope": {
-    "approved_tools": "GitHub Actions, AWS Bedrock, DeepSeek",
-    "hosting": "GitHub Pages",
-    "api_model_quotas": "Within configured limits",
-    "spend_ceiling": "₹0 (no paid acquisition)",
-    "renewal_dates": "N/A",
-    "human_only_dependencies": "None for drafting; Founder approval only for publishing if required"
+  "compliance": {
+    "disclosure_present": true,
+    "affiliate_links_marked": true,
+    "verified_data_used": true,
+    "last_verification_date": "2026-08-29"
   },
-  "next_steps": [
-    "Draft full buying guide content with verified product data",
-    "Run all validators",
-    "Publish to site/content/",
-    "Internal-link to the product page",
-    "Submit for indexing"
+  "sensitivity_forecast": {
+    "conversion_rates": [
+      0.005,
+      0.01,
+      0.02,
+      0.03
+    ],
+    "estimated_commissions_inr": [
+      26,
+      52,
+      104,
+      156
+    ],
+    "assumptions": "Based on 1000 monthly visits, 17 ready offers, Amazon 4% commission, Flipkart 3%"
+  },
+  "next_actions": [
+    "monitor organic rankings",
+    "track clicks via sub-ID",
+    "rotate to Instagram for initial traffic push"
   ]
 }
