@@ -1,19 +1,16 @@
 {
-  "last_task": "Run final validators on newly created under-sink storage rack buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions.",
-  "last_result": "COMPLETED",
-  "next_task": "Deploy validated CTA and internal linking to newly created under-sink storage rack buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions.",
-  "status": "READY_FOR_DEPLOYMENT",
-  "validator_status": "PASSED",
-  "content_file": "site/content/buying-guides/under-sink-storage-rack-buying-guide-2026-08-30.md",
-  "offer_id": "UNDER_SINK_001",
-  "next_action": "DEPLOY_CTA_AND_INTERNAL_LINKING",
-  "deployed_at_utc": null,
-  "committed_at_utc": null,
-  "indexed_at_utc": null,
-  "instagram_promo_published_at_utc": null,
+  "last_completed_task": "Deploy validated CTA and internal linking to newly created under-sink storage rack buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions.",
+  "last_completed_at": "2026-08-30T01:01:41+05:30",
+  "next_task": "Commit and submit for indexing the buying guide, then publish Instagram promo with direct link.",
+  "status": "READY_TO_COMMIT_INDEX",
+  "file_paths": [
+    "site/content/buying-guides/under-sink-storage-rack-buying-guide-2026-08-30.md",
+    "site/content/policies/cta-under-sink-storage-rack-buying-guide-2026-08-30.md"
+  ],
+  "verification_status": "ALL_VALIDATORS_PASSED",
+  "ready_offers": 17,
   "revenue_inr": 0,
-  "verified_clicks": null,
-  "blocked_by_founder_action": false,
-  "founder_action_required": null,
-  "last_audit_timestamp": "2026-08-30T01:00:42+05:30"
+  "instagram_posted": 5,
+  "telemetry_status": "AWAITING_TELEMETRY",
+  "affiliate_attribution_status": "AWAITING_AFFILIATE_SOURCE"
 }
