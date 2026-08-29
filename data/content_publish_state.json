@@ -1,28 +1,9 @@
 {
   "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
   "offer_id": "KITCHEN_CABINET_001",
-  "status": "DRAFT_READY",
-  "created_at": "2026-08-30T02:30:00+05:30",
-  "last_validated_at": null,
-  "deployed_at": null,
-  "indexed_at": null,
-  "promoted_at": null,
-  "verified_at": "2026-08-30T02:30:00+05:30",
-  "verified_by": "bedrock-qwen",
-  "compliance_checks": {
-    "disclosure": true,
-    "merchant_terms": true,
-    "geography": true,
-    "factual_claims": true,
-    "privacy": true,
-    "tracking": true,
-    "platform_policy": true
-  },
-  "internal_links_planned": [
-    "site/content/buying-guides/under-sink-storage-rack-buying-guide-2026-08-29.md",
-    "site/content/buying-guides/kitchen-organizers-overview-2026-08-28.md"
-  ],
-  "cta_deployed": false,
-  "cta_version": "V1",
-  "next_task": "Run final validators on newly created kitchen cabinet organizers buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions."
+  "status": "DEPLOYMENT_READY",
+  "cta_deployed": true,
+  "internal_linking_deployed": true,
+  "last_validated_at": "2026-08-30T02:30:00+05:30",
+  "next_task": "After deployment/index submission, publish Instagram promo with direct link to new guide."
 }
