@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "system_state": "RUNNING",
-  "global_pause_active": false,
+  "system_state": "PAUSED",
+  "global_pause_active": true,
   "department_pause_active": false,
   "authority": "FOUNDER_VIA_VICTOR",
-  "last_command": null,
-  "last_command_at_utc": null,
+  "last_command": "SYSTEM PAUSE",
+  "last_command_at_utc": "2026-08-29T19:03:50.952Z",
   "note": "Mirror controlled by Victor. RIO autonomous execution must fail closed when global or department pause is active."
 }
