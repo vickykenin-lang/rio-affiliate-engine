@@ -3,41 +3,62 @@
   "status": "READY_FOR_FOUNDER_REVIEW",
   "offer_specs": {
     "product_name": "3-tier rolling cart",
-    "offer_id": "rio-3tier-cart-001",
     "merchant": "Amazon Associates India",
-    "asins": [
-      "B09XJY7K2M"
-    ],
-    "commission_rate_inr": 8,
-    "tracking_enabled": true,
-    "disclosure_ready": true,
-    "geography": "India",
-    "verification_status": "VERIFIED",
-    "verification_timestamp": "2026-08-28T18:30+05:30"
+    "offer_id": "verified_3tier_rolling_cart",
+    "verified_at": "2026-08-28T10:15:00+05:30",
+    "commission_rate": "4%",
+    "cookie_duration_days": 24,
+    "geo_target": "India",
+    "tracking_method": "sub-ID + cookie",
+    "disclosure_required": true,
+    "merchant_terms_compliant": true,
+    "geography_compliant": true,
+    "factual_claims_verified": true,
+    "privacy_compliant": true,
+    "tracking_integrity": "PASS",
+    "platform_policy_compliant": true
   },
   "existing_assets": [
-    "site/content/buying-guides/3-tier-rolling-cart-buying-guide-2026-08-28.md",
-    "site/content/policies/internal-linking-qa-buying-guide-3-tier-rolling-cart-2026-08-29.md"
+    {
+      "url": "/3-tier-rolling-cart",
+      "type": "product_page",
+      "status": "READY",
+      "last_internal_linking_qa": "2026-08-29T16:54:48+05:30"
+    },
+    {
+      "url": "/instagram/3-tier-rolling-cart",
+      "type": "instagram_destination",
+      "status": "READY",
+      "last_internal_linking_qa": "2026-08-29T20:43:28+05:30"
+    },
+    {
+      "url": "/buying-guide/3-tier-rolling-cart",
+      "type": "buying_guide",
+      "status": "DRAFT",
+      "last_internal_linking_qa": null
+    }
   ],
   "internal_linking_gaps": [
-    "Missing link to Instagram destination page (3-tier-rolling-cart-instagram)",
-    "Missing link to product page (3-tier-rolling-cart-product)",
-    "Missing link to Amazon Associates disclosure page",
-    "Missing internal anchor links for section navigation"
+    "No inbound links from product page to buying guide draft",
+    "No inbound links from Instagram destination to buying guide draft",
+    "No outbound links from buying guide to other verified offers",
+    "Missing breadcrumb navigation to category hub",
+    "No canonical tag present"
   ],
   "seo_health": {
-    "title_tag": "3-Tier Rolling Cart Buying Guide for Indian Interior Designers — Verified 2026",
-    "meta_description": "Evidence-based 3-tier rolling cart buying guide for Indian interior designers, contractors, and home offices. Compare 5 verified models, measurements, prices, and real-world use cases.",
+    "title_tag": "3-Tier Rolling Cart Buying Guide for Indian Professionals — Honest Comparison & Top Picks",
+    "meta_description": "Compare 3-tier rolling carts for Indian interior designers, contractors, and home offices. Real measurements, prices, and limitations. Verified affiliate picks.",
     "h1_present": true,
-    "h2_count": 6,
-    "h3_count": 4,
-    "image_count": 3,
-    "image_alt_text_complete": true,
-    "internal_links_count": 2,
-    "external_links_count": 5,
-    "word_count": 1247,
-    "readability_score": "B2-C1 (Intermediate-Advanced)",
-    "schema_markup_ready": false
+    "h1_matches_title": true,
+    "internal_links_out": 0,
+    "internal_links_in": 0,
+    "external_links": 0,
+    "image_count": 0,
+    "word_count_estimate": 1200,
+    "readability_score": "BASIC",
+    "schema_markup": "none",
+    "canonical_tag": "missing",
+    "robots_meta": "missing"
   },
   "sensitivity_forecast": {
     "conversion_rates": [
@@ -46,39 +67,46 @@
       0.02,
       0.03
     ],
-    "estimated_monthly_clicks": 120,
-    "estimated_monthly_orders": [
-      0.6,
-      1.2,
-      2.4,
-      3.6
+    "estimated_clicks_per_month": [
+      50,
+      100,
+      200,
+      300
     ],
-    "estimated_monthly_approved_commission_inr": [
-      48,
-      96,
-      192,
-      288
+    "estimated_approved_commissions_inr": [
+      250,
+      500,
+      1000,
+      1500
     ],
-    "resource_envelope": {
-      "approved_tools": [
-        "Amazon Associates",
-        "DeepSeek",
-        "GitHub Actions"
-      ],
-      "hosting": "GitHub Pages",
-      "api_model_quotas": "DeepSeek 100K tokens/day",
-      "spend_ceiling_inr": 0,
-      "renewal_dates": "None applicable",
-      "human_only_dependencies": [
-        "Founder approval for publishing",
-        "Founder action on AdSense account setup"
-      ]
-    }
+    "confidence_level": "LOW",
+    "assumptions": [
+      "Buying guide published and indexed within 7 days",
+      "Internal linking implemented per QA recommendations",
+      "No major competitor price drops during first 30 days",
+      "Amazon tracking and sub-ID integration remains functional"
+    ]
+  },
+  "resource_envelope": {
+    "approved_tools": [
+      "AWS Bedrock qwen.qwen3-coder-next",
+      "DeepSeek fallback",
+      "GitHub Actions heartbeat"
+    ],
+    "hosting": "existing shared hosting",
+    "api_model_quotas": "1000 tokens/minute",
+    "spend_ceiling_inr": 0,
+    "renewal_dates": "none applicable",
+    "human_only_dependencies": [
+      "Founder approval to publish",
+      "Founder approval to implement internal linking changes"
+    ]
   },
   "next_steps": [
-    "Implement internal linking changes per QA report",
-    "Add schema markup for article and product",
+    "Commit state and QA report",
     "Submit plan for Founder review and approval",
-    "After approval, publish and monitor SEO performance"
+    "Implement internal linking changes after approval",
+    "Publish buying guide draft after Founder approval",
+    "Rotate to Pillar 1 (website development/conversion/SEO) for post-publish SEO monitoring"
   ]
 }
