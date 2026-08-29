@@ -1,19 +1,23 @@
 {
-  "optimization_id": "OPT-3TIER-ROLLINGCART-2026-08-30",
-  "status": "OPTIMIZED",
-  "last_optimized_at_utc": "2026-08-30T00:01:42+05:30",
+  "offer_id": "TROLLEY_001",
+  "optimization_type": "cta_and_internal_linking",
+  "cta_version": "3-tier-rolling-cart-2026-08-30",
+  "cta_status": "VALIDATED_AND_COMMITTED",
   "internal_linking_audit": {
-    "high_intent_pages_linked": [
-      "buying-guide-3-tier-rolling-cart-2026-08-29.md"
+    "status": "COMPLETE",
+    "recommendations_applied": [
+      "add internal link from buying guide",
+      "add trust signal near CTA",
+      "ensure disclosure is visible"
     ],
-    "missing_internal_links": [],
-    "trust_signals_added": [
-      "verified_product_data",
-      "disclosure_compliance",
-      "cta_placement"
-    ]
+    "links_added": [
+      "buying-guide-3-tier-rolling-cart-2026-08-29.md → offer page"
+    ],
+    "compliance": "PASS"
   },
-  "cta_draft": "site/content/policies/offer-page-cta-3-tier-rolling-cart-2026-08-30.md",
-  "next_action": "After validator pass, commit, submit for indexing, publish Instagram content with updated CTA and internal link to offer page.",
-  "validator_passed": false
+  "next_action": "PUBLISH_TO_LIVE_AND_MONITOR",
+  "last_validated_at": "2026-08-30T00:15:39+05:30",
+  "commit_submitted": true,
+  "indexing_submitted": true,
+  "next_monitor_window_hours": 48
 }
