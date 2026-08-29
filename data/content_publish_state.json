@@ -1,0 +1,24 @@
+{
+  "last_task": "Create new high-intent buying guide for under-sink storage rack (under-sink rectangle organizer)",
+  "status": "WORKING",
+  "next_task": "After validator pass, commit, submit for indexing, and publish Instagram promo with direct link to new guide.",
+  "offer_id": "UNDER_SINK_001",
+  "content_type": "buying_guide",
+  "target_audience": "Indian interior designers, contractors, fit-out professionals, small offices/home-office professionals",
+  "focus_keywords": [
+    "under sink storage rack",
+    "under sink organizer for kitchen",
+    "rectangle under sink storage",
+    "2 tier under sink rack",
+    "plastic under sink organizer India"
+  ],
+  "compliance_status": "PENDING_VALIDATION",
+  "cta_draft": "Verified CTA draft in `site/content/policies/offer-page-cta-3-tier-rolling-cart-2026-08-30.md` is not applicable here; new CTA will be written with the buying guide.",
+  "internal_linking_plan": "Link from 3-tier rolling cart guide (existing) to new under-sink buying guide; cross-link from relevant storage tutorials.",
+  "indexing_submitted": false,
+  "instagram_promo_planned": true,
+  "instagram_cta_plan": "Direct link to new buying guide + offer page; track via UTM.",
+  "blocked_by_founder": false,
+  "blocker_details": null,
+  "last_updated_utc": "2026-08-30T18:00:00+00:00"
+}
