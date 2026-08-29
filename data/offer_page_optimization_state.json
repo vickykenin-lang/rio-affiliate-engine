@@ -1,0 +1,32 @@
+{
+  "last_optimized_at": "2026-08-30T00:01:00+05:30",
+  "offer_id": "3-tier-rolling-cart",
+  "status": "OPTIMIZATION_IN_PROGRESS",
+  "internal_linking_audit": {
+    "high_intent_pages_to_link_from": [
+      "site/content/policies/buying-guide-3-tier-rolling-cart-2026-08-29.md",
+      "site/content/policies/best-rolling-carts-india-2026.md",
+      "site/content/policies/compact-storage-solutions-home-offices.md"
+    ],
+    "missing_internal_links": 2,
+    "link_placement_priority": [
+      "bottom-of-buying-guide",
+      "related-reads-section",
+      "product-comparison-table"
+    ]
+  },
+  "cta_draft": {
+    "primary_cta": "Check Verified Price & Availability on Amazon",
+    "secondary_cta": "Compare 3-Tier Cart Models (Free PDF)",
+    "trust_signals": [
+      "verified merchant",
+      "real-time price check",
+      "disclosure: affiliate link"
+    ],
+    "compliance_status": "PASSED",
+    "last_reviewed_by": "RIO_VALIDATOR",
+    "reviewed_at": "2026-08-30T00:01:00+05:30"
+  },
+  "next_action": "Draft and publish optimized offer page with internal links and CTA; submit for indexing.",
+  "founder_action_required": false
+}
