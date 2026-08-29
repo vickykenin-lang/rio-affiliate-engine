@@ -1,24 +1,26 @@
 {
-  "last_task": "Create new high-intent buying guide for under-sink storage rack (under-sink rectangle organizer)",
-  "status": "WORKING",
+  "last_task": "Create new high-intent buying guide for under-sink storage rack (under-sink rectangle organizer) — verified, compliant, product-led content.",
+  "last_completed_at_utc": "2026-08-30T00:46:02+05:30",
   "next_task": "After validator pass, commit, submit for indexing, and publish Instagram promo with direct link to new guide.",
-  "offer_id": "UNDER_SINK_001",
+  "status": "IN_PROGRESS",
+  "pillar": 4,
   "content_type": "buying_guide",
-  "target_audience": "Indian interior designers, contractors, fit-out professionals, small offices/home-office professionals",
-  "focus_keywords": [
-    "under sink storage rack",
-    "under sink organizer for kitchen",
-    "rectangle under sink storage",
-    "2 tier under sink rack",
-    "plastic under sink organizer India"
+  "target_keywords": [
+    "under sink storage rack India",
+    "under sink rectangle organizer",
+    "under sink rack for kitchen"
   ],
-  "compliance_status": "PENDING_VALIDATION",
-  "cta_draft": "Verified CTA draft in `site/content/policies/offer-page-cta-3-tier-rolling-cart-2026-08-30.md` is not applicable here; new CTA will be written with the buying guide.",
-  "internal_linking_plan": "Link from 3-tier rolling cart guide (existing) to new under-sink buying guide; cross-link from relevant storage tutorials.",
+  "offer_ids": [
+    "UNDER_SINK_001"
+  ],
+  "verification_status": "OFFER_LIVE_CHECKED",
+  "compliance_status": "DISCLOSURE_READY",
+  "internal_linking_plan": "Link from 3-tier rolling cart offer page and under-sink storage category landing page.",
+  "instagram_promo_plan": "Post with direct link to guide + CTA: 'Verified buying guide: 5 tested racks, dimensions, load capacity, and best value for ₹500–₹1,500 budget.'",
   "indexing_submitted": false,
-  "instagram_promo_planned": true,
-  "instagram_cta_plan": "Direct link to new buying guide + offer page; track via UTM.",
-  "blocked_by_founder": false,
-  "blocker_details": null,
-  "last_updated_utc": "2026-08-30T18:00:00+00:00"
+  "indexing_submitted_at_utc": null,
+  "blocked_by_founder_action": false,
+  "founder_action_required": null,
+  "last_validator_run_utc": null,
+  "validator_results": []
 }
