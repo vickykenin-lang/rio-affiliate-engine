@@ -1,9 +1,13 @@
 {
-  "last_completed": "Commit and submit for indexing the newly created under-sink storage rack buying guide with validated CTA and internal linking",
-  "next_task": "Publish Instagram promo with direct link to new guide",
-  "status": "READY_TO_PUBLISH_INSTAGRAM",
-  "asset_url": "https://www.rioaffiliate.in/buying-guides/under-sink-storage-rack-buying-guide-2026-08-30/",
-  "offer_id": "UNDER_SINK_001",
-  "cta_policy_file": "site/content/policies/cta-under-sink-storage-rack-buying-guide-2026-08-30.md",
-  "verified_at": "2026-08-30T01:15:00+05:30"
+  "last_task": "Create verified high-intent buying guide for kitchen cabinet organizers — highest-impact revenue action with ₹0 revenue and Instagram telemetry unavailable.",
+  "last_result": "PENDING_VALIDATION",
+  "next_task": "After validator pass, commit, submit for indexing, then publish Instagram promo with direct link.",
+  "current_offer_id": "KITCHEN_CABINET_001",
+  "status": "CONTENT_DRAFT_READY",
+  "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
+  "verified_at_utc": null,
+  "cta_policy_path": null,
+  "internal_links_added": false,
+  "indexed_submitted": false,
+  "instagram_published": false
 }
