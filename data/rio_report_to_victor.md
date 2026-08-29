@@ -188,3 +188,5 @@ Fetched `https://raw.githubusercontent.com/vickykenin-lang/rio-affiliate-engine/
 - 2026-08-28T04:32+05:30 IST — posted **Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66** (offer `SPICE_RACK_001`) to Instagram @riosallerior. Media ID `18109466515847072`. Permalink: https://www.instagram.com/p/Dcj651KFo5h/
 
 - 2026-08-29T04:40+05:30 IST — posted **Signoraware Family Fresh Tab BPA-Free Airtight Container Set (2.5L + 1.2L + 500ml + 160ml)** (offer `CONTAINER_001`) to Instagram @riosallerior. Media ID `17980069911095536`. Permalink: https://www.instagram.com/p/DcmgoR-kgAE/
+
+- 2026-08-29T22:50+05:30 IST — posted **Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black** (offer `DRAWER_001`) to Instagram @riosallerior. Media ID `18112848191063932`. Permalink: https://www.instagram.com/p/DcodW-8jfdD/
