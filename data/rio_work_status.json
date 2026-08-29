@@ -1,34 +1,20 @@
 {
-  "status": "COMPLETED",
+  "status": "WAITING",
   "current_task": "Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.",
-  "started_at": "2026-08-30T01:16:33+05:30",
-  "updated_at": "2026-08-30T01:16:38+05:30",
+  "started_at": "2026-08-30T01:30:32+05:30",
+  "updated_at": "2026-08-30T01:30:39+05:30",
   "ai_engine": "bedrock-qwen",
   "last_completed": "Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.",
-  "last_result": "PILLAR:1\n\ntask: Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.\n\nwhy: Buying guide is committed, indexed-ready, and deployment-complete. With ₹0 revenue, Instagram telemetry unavailable (collector failed), and no clicks measured, the highest-impact next step is to publish Instagram promo with direct link to generate verified conversions.\n\nchanges:\n- Updates `data/content_publish_state.json` with Instagram-publish-ready state.\n- Appends audit record for traceability.\n\nNEXT_TASK: After Instagram post is published, monitor for verified clicks/conversions once Instagram metrics collector is restored, or proceed to next revenue action if telemetry remains unavailable.",
+  "last_result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action.",
   "changed_files": [
     "data/content_publish_state.json",
     "data/autonomy_audit.jsonl"
   ],
-  "validators": "PASS",
-  "next_task": "After Instagram post is published, monitor for verified clicks/conversions once Instagram metrics collector is restored, or proceed to next revenue action if telemetry remains unavailable.",
+  "validators": "NOT_RUN",
+  "next_task": "Choose a different highest-impact executable revenue action.",
   "blocker": null,
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-08-30T00:31:36+05:30",
-      "status": "WORKING",
-      "task": "After validator pass, commit, and submit for indexing, publish Instagram content with updated CTA and internal link to offer page.",
-      "engine": "selecting",
-      "result": null
-    },
-    {
-      "at": "2026-08-30T00:31:46+05:30",
-      "status": "WAITING",
-      "task": "Deploy validated CTA and internal linking to live 3-tier rolling cart offer page, commit, submit for indexing, then publish Instagram content with improved CTA and direct link.",
-      "engine": "bedrock-qwen",
-      "result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action."
-    },
     {
       "at": "2026-08-30T00:45:35+05:30",
       "status": "WORKING",
@@ -154,6 +140,20 @@
       "task": "Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:1\n\ntask: Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.\n\nwhy: Buying guide is committed, indexed-ready, and deployment-complete. With ₹0 revenue, Instagram telemetry unavailable (collector failed), and no clicks measured, the highest-impact next step is to publish Instagram promo with direct link to generate verified conversions.\n\nchanges:\n- Updates `data/content_publish_state.json` with Instagram-publish-ready state.\n- Appends audit record for traceability.\n\nNEXT_TASK: After Instagram post is published, monitor for verified clicks/conversions once Instagram metrics collector is restored, or proceed to next revenue action if telemetry remains unavailable."
+    },
+    {
+      "at": "2026-08-30T01:30:32+05:30",
+      "status": "WORKING",
+      "task": "After Instagram post is published, monitor for verified clicks/conversions once Instagram metrics collector is restored, or proceed to next revenue action if telemetry remains unavailable.",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-08-30T01:30:39+05:30",
+      "status": "WAITING",
+      "task": "Publish Instagram promo for newly created under-sink storage rack buying guide with direct link to drive verified conversions.",
+      "engine": "bedrock-qwen",
+      "result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action."
     }
   ]
 }
