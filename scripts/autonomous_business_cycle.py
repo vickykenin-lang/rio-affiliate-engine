@@ -7,7 +7,7 @@ from telegram_chat import call_llm
 from rio_autonomous_executor import execute as execute_plan
 from rio_work_dashboard import record
 
-ROOT=Path(__file__).resolve().parents[1]; WORK=ROOT/'data/rio_work_status.json'; SNAPSHOT=ROOT/'data/dashboard_snapshot.json'; STATUS=ROOT/'data/status.json'; CONTROL=ROOT/'data/control.json'; AUDIT=ROOT/'data/autonomy_audit.jsonl'; SOUL_STATUS=ROOT/'data/soul_runtime_status.json'; COMMERCIAL_POLICY=ROOT/'data/COMMERCIAL_VALIDATION_POLICY.json'; TELEMETRY=ROOT/'data/telemetry_state.json'; ATTRIBUTION=ROOT/'data/affiliate_attribution_state.json'
+ROOT=Path(__file__).resolve().parents[1]; WORK=ROOT/'data/rio_work_status.json'; SNAPSHOT=ROOT/'data/dashboard_snapshot.json'; STATUS=ROOT/'data/status.json'; CONTROL=ROOT/'data/control.json'; AUDIT=ROOT/'data/autonomy_audit.jsonl'; SOUL_STATUS=ROOT/'data/soul_runtime_status.json'; COMMERCIAL_POLICY=ROOT/'data/COMMERCIAL_VALIDATION_POLICY.json'; TELEMETRY=ROOT/'data/telemetry_state.json'; ATTRIBUTION=ROOT/'data/affiliate_attribution_state.json'; EMERGENCY_PAUSE=ROOT/'data/emergency_pause_state.json'
 IST=timezone(timedelta(hours=5,minutes=30)); BOT=(os.environ.get('TELEGRAM_BOT_TOKEN_RIO') or '').strip(); CHAT=(os.environ.get('TELEGRAM_CHAT_ID_RIO') or '').strip()
 PILLARS={1:'website development/conversion/SEO',2:'new affiliate networks and product opportunities',3:'AdSense readiness and monetization',4:'product-led blog/content',5:'Flipkart or other commerce/platform expansion',6:'Instagram sales/content execution'}
 
@@ -77,8 +77,10 @@ def victor_directive():
     except Exception:return ''
 
 def main():
-    control=jload(CONTROL,{'kill_switch':False});memory=jload(WORK,{});snap=jload(SNAPSHOT,{});health=jload(STATUS,{});commercial_policy=jload(COMMERCIAL_POLICY,{});telemetry=jload(TELEMETRY,{});attribution=jload(ATTRIBUTION,{});directive=victor_directive()
+    control=jload(CONTROL,{'kill_switch':False});memory=jload(WORK,{});snap=jload(SNAPSHOT,{});health=jload(STATUS,{});commercial_policy=jload(COMMERCIAL_POLICY,{});telemetry=jload(TELEMETRY,{});attribution=jload(ATTRIBUTION,{});emergency=jload(EMERGENCY_PAUSE,{});directive=victor_directive()
     if control.get('kill_switch') or health.get('all_validators_pass') is not True:return 0
+    if emergency.get('global_pause_active') is True or emergency.get('department_pause_active') is True or str(emergency.get('system_state') or '').upper()=='PAUSED':
+        record('PAUSED',current_task='Emergency pause active',engine='emergency-pause',validators='PAUSE_FAIL_CLOSED',result='Founder/Victor emergency pause blocks autonomous execution and external actions.',next_task=memory.get('next_task'),blocker='EMERGENCY_PAUSE_ACTIVE',founder_action_needed=False);return 0
     if paused(control):
         print('[autonomous_cycle] maintenance pause active until',control.get('maintenance_pause_until'));return 0
     soul_ok,soul=soul_gate()
