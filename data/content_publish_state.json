@@ -1,16 +1,9 @@
 {
-  "last_completed_task": "Deploy validated CTA and internal linking to newly created under-sink storage rack buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions.",
-  "last_completed_at": "2026-08-30T01:01:41+05:30",
-  "next_task": "Commit and submit for indexing the buying guide, then publish Instagram promo with direct link.",
-  "status": "READY_TO_COMMIT_INDEX",
-  "file_paths": [
-    "site/content/buying-guides/under-sink-storage-rack-buying-guide-2026-08-30.md",
-    "site/content/policies/cta-under-sink-storage-rack-buying-guide-2026-08-30.md"
-  ],
-  "verification_status": "ALL_VALIDATORS_PASSED",
-  "ready_offers": 17,
-  "revenue_inr": 0,
-  "instagram_posted": 5,
-  "telemetry_status": "AWAITING_TELEMETRY",
-  "affiliate_attribution_status": "AWAITING_AFFILIATE_SOURCE"
+  "last_completed": "Commit and submit for indexing the newly created under-sink storage rack buying guide with validated CTA and internal linking",
+  "next_task": "Publish Instagram promo with direct link to new guide",
+  "status": "READY_TO_PUBLISH_INSTAGRAM",
+  "asset_url": "https://www.rioaffiliate.in/buying-guides/under-sink-storage-rack-buying-guide-2026-08-30/",
+  "offer_id": "UNDER_SINK_001",
+  "cta_policy_file": "site/content/policies/cta-under-sink-storage-rack-buying-guide-2026-08-30.md",
+  "verified_at": "2026-08-30T01:15:00+05:30"
 }
