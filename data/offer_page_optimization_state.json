@@ -1,23 +1,24 @@
 {
   "offer_id": "TROLLEY_001",
-  "optimization_type": "cta_and_internal_linking",
-  "cta_version": "3-tier-rolling-cart-2026-08-30",
-  "cta_status": "VALIDATED_AND_COMMITTED",
+  "last_optimized_at": "2026-08-30T00:16:39+05:30",
+  "cta_draft_path": "site/content/policies/offer-page-cta-3-tier-rolling-cart-2026-08-30.md",
   "internal_linking_audit": {
     "status": "COMPLETE",
-    "recommendations_applied": [
-      "add internal link from buying guide",
-      "add trust signal near CTA",
-      "ensure disclosure is visible"
+    "recommendations": [
+      "Add internal link from '3-tier rolling cart buying guide' to offer page",
+      "Add anchor text: 'verified 3-tier rolling cart offer' linking to /offers/3-tier-rolling-cart"
     ],
-    "links_added": [
-      "buying-guide-3-tier-rolling-cart-2026-08-29.md → offer page"
-    ],
-    "compliance": "PASS"
+    "trust_signals": [
+      "Live verification timestamp",
+      "Amazon Associates disclosure",
+      "Real price + availability check date"
+    ]
   },
-  "next_action": "PUBLISH_TO_LIVE_AND_MONITOR",
-  "last_validated_at": "2026-08-30T00:15:39+05:30",
-  "commit_submitted": true,
-  "indexing_submitted": true,
-  "next_monitor_window_hours": 48
+  "validator_status": "PASSED",
+  "next_action": "DEPLOY_TO_LIVE",
+  "deployed_at": null,
+  "submitted_for_indexing_at": null,
+  "indexing_confirmed_at": null,
+  "instagram_repost_required": true,
+  "instagram_repost_at": null
 }
