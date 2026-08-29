@@ -1,0 +1,21 @@
+{
+  "last_post_id": "IG_POST_20260829_003",
+  "post_type": "PRODUCT_GUIDE_PROMO",
+  "product_id": "3-tier-rolling-cart",
+  "content_template": "buying-guide-promo-3-tier-rolling-cart",
+  "verified_product_data_used": true,
+  "compliance_checks_passed": [
+    "disclosure",
+    "merchant_terms",
+    "platform_policy",
+    "truthful_claims"
+  ],
+  "internal_links_included": [
+    "buying-guide-url",
+    "offer-page-url"
+  ],
+  "cta": "Check verified 3-tier rolling cart comparison & best pick for Indian professionals",
+  "timestamp_utc": "2026-08-29T23:45:00Z",
+  "status": "READY_TO_POST",
+  "next_action": "POST_TO_INSTAGRAM_AFTER_FOUNDERS_APPROVAL_IF_NEEDED"
+}
