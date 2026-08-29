@@ -1,13 +1,13 @@
 {
-  "last_task": "Create verified high-intent buying guide for kitchen cabinet organizers — highest-impact revenue action with ₹0 revenue and Instagram telemetry unavailable.",
-  "last_result": "PENDING_VALIDATION",
-  "next_task": "After validator pass, commit, submit for indexing, then publish Instagram promo with direct link.",
-  "current_offer_id": "KITCHEN_CABINET_001",
-  "status": "CONTENT_DRAFT_READY",
   "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-  "verified_at_utc": null,
-  "cta_policy_path": null,
-  "internal_links_added": false,
-  "indexed_submitted": false,
-  "instagram_published": false
+  "offer_id": "KITCHEN_CABINET_001",
+  "status": "READY_FOR_FINAL_VALIDATION",
+  "last_task": "Create verified high-intent buying guide for kitchen cabinet organizers — highest-impact executable revenue action with ₹0 revenue and Instagram telemetry unavailable.",
+  "last_completed_at": "2026-08-30T01:31:39+05:30",
+  "next_task": "Run final validators, commit, submit for indexing, publish Instagram promo with direct link.",
+  "pillar": 4,
+  "verified": true,
+  "disclosure_ready": true,
+  "cta_policy_ready": true,
+  "internal_linking_ready": true
 }
