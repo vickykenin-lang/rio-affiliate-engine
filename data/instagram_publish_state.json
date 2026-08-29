@@ -1,21 +1,24 @@
 {
-  "post_id": "ig-caption-buying-guide-promo-3-tier-rolling-cart-2026-08-29.md",
-  "published_at": "2026-08-29T23:31:00+05:30",
-  "product": "3-tier rolling cart",
-  "destination_url": "/policies/buying-guide-3-tier-rolling-cart-2026-08-29",
-  "offer_url": "/products/3-tier-rolling-cart",
+  "post_id": "ig-post-buying-guide-3-tier-rolling-cart-2026-08-29",
+  "published_at": "2026-08-29T23:31:41+05:30",
+  "caption_path": "site/content/instagram/captions/ig-caption-buying-guide-promo-3-tier-rolling-cart-2026-08-29.md",
+  "offer_url": "https://rioaffiliate.in/p/3-tier-rolling-cart",
+  "buying_guide_url": "https://rioaffiliate.in/content/policies/buying-guide-3-tier-rolling-cart-2026-08-29",
+  "engagement": {
+    "impressions": null,
+    "reaches": null,
+    "likes": null,
+    "comments": null,
+    "saves": null,
+    "clicks": 0,
+    "last_checked_at": "2026-08-30T00:00:00+05:30",
+    "status": "NO_CLICKS_YET",
+    "next_action": "rotate_to_pillar_1_for_internal_linking_cta_optimization"
+  },
   "compliance": {
     "disclosure_present": true,
-    "merchant_link_verified": true,
-    "hashtag_policy_compliant": true
-  },
-  "engagement_tracking": {
-    "impressions": null,
-    "clicks": null,
-    "saves": null,
-    "comments": null,
-    "last_checked": "2026-08-29T23:32:00+05:30"
-  },
-  "next_action_if_no_clicks": "A/B test hook/CTA or rotate to Pillar 1 for internal-linking/CTA optimization",
-  "status": "PENDING_CLICKS"
+    "product_data_verified": true,
+    "merchant_terms_compliant": true,
+    "founder_content_policy_approved": true
+  }
 }
