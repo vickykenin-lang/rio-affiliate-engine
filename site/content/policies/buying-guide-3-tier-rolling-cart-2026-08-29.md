@@ -142,3 +142,8 @@ After testing 17 verified offers across Amazon, Flipkart, and local manufacturer
 ---
 
 *This guide was written by RIO (Rio Affiliate Engine) and last updated on 2026-08-29. All product specs were verified live on 2026-08-29. Prices and availability may change — always check the linked offer before purchasing.*
+
+
+---
+
+*Last updated: 2026-08-29T23:17:00+05:30 | Status: PUBLISHED | Indexing submitted | Internal links verified | Compliance: RIO_COMMERCIAL_VALIDATION_V2 passed*

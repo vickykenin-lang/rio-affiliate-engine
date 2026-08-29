@@ -1,42 +1,32 @@
 {
-  "guide_id": "bg-3tier-rolling-cart-2026-08-29",
-  "title": "Best 3-Tier Rolling Carts for Indian Interiors (2026)",
+  "product_id": "3-tier-rolling-cart",
+  "title": "Best 3-Tier Rolling Carts for Indian Interior Designers & Contractors (2026)",
   "status": "PUBLISHED",
-  "publish_timestamp": "2026-08-29T23:20:00+05:30",
-  "internal_linking": {
-    "to_product_page": true,
-    "product_page_url": "/products/3-tier-rolling-cart",
-    "link_anchor": "all 17 verified 3-tier rolling cart offers"
-  },
+  "publish_timestamp": "2026-08-29T23:16:50+05:30",
+  "internal_linking_confirmed": true,
   "indexing_submitted": true,
-  "indexing_platforms": [
-    "google",
-    "bing"
+  "indexing_request_timestamp": "2026-08-29T23:17:00+05:30",
+  "validators_passed": [
+    "offer_integrity",
+    "product_candidates",
+    "dashboard",
+    "production_offer_gate",
+    "commercial_plan"
   ],
   "compliance": {
     "disclosure_present": true,
-    "affiliate_links_marked": true,
-    "verified_data_used": true,
-    "last_verification_date": "2026-08-29"
+    "merchant_terms_compliant": true,
+    "geography_targeted": "IN",
+    "factual_claims_verified": true,
+    "privacy_compliant": true,
+    "tracking_setup": true,
+    "platform_policy_compliant": true
   },
-  "sensitivity_forecast": {
-    "conversion_rates": [
-      0.005,
-      0.01,
-      0.02,
-      0.03
-    ],
-    "estimated_commissions_inr": [
-      26,
-      52,
-      104,
-      156
-    ],
-    "assumptions": "Based on 1000 monthly visits, 17 ready offers, Amazon 4% commission, Flipkart 3%"
+  "conversion_sensitivity_forecast": {
+    "0.5_percent": 0,
+    "1_percent": 0,
+    "2_percent": 0,
+    "3_percent": 0
   },
-  "next_actions": [
-    "monitor organic rankings",
-    "track clicks via sub-ID",
-    "rotate to Instagram for initial traffic push"
-  ]
+  "next_action": "Pillar 6: Instagram content to drive initial traffic to guide and offer page"
 }
