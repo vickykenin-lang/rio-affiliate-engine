@@ -1,0 +1,43 @@
+name: RIO Affiliate Attribution
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/affiliate_reports/latest.json'
+      - 'scripts/import_affiliate_report.py'
+      - '.github/workflows/affiliate-attribution.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rio-affiliate-attribution
+  cancel-in-progress: false
+
+jobs:
+  import-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python scripts/import_affiliate_report.py
+      - run: python scripts/generate_control_room.py
+      - name: Persist verified attribution
+        run: |
+          set -e
+          git config user.name "RIO Attribution"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/affiliate_attribution_state.json site/control-room/index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "revenue: import verified affiliate attribution"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort || true; sleep $((attempt*2)); continue; }
+            git push origin HEAD:main && exit 0
+            sleep $((attempt*2))
+          done
+          exit 1
