@@ -1,0 +1,53 @@
+name: RIO Telemetry and Control Room
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/collect_instagram_metrics.py'
+      - 'scripts/generate_control_room.py'
+      - 'data/telemetry_state.json'
+      - 'data/affiliate_attribution_state.json'
+      - 'data/ig_published.json'
+      - 'data/rio_work_status.json'
+      - '.github/workflows/telemetry-control-room.yml'
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rio-telemetry-control-room
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Collect Instagram media and insights
+        env:
+          IG_ACCESS_TOKEN_RIO: ${{ secrets.IG_ACCESS_TOKEN_RIO }}
+          IG_GRAPH_VERSION: v23.0
+        run: python scripts/collect_instagram_metrics.py
+      - name: Generate RIO Control Room
+        run: python scripts/generate_control_room.py
+      - name: Persist telemetry and dashboard
+        run: |
+          git config user.name "RIO Telemetry"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/telemetry_state.json data/affiliate_attribution_state.json site/control-room/index.html
+          if git diff --cached --quiet; then
+            echo "No telemetry changes"
+            exit 0
+          fi
+          git commit -m "telemetry: refresh RIO observability and control room"
+          git pull --rebase --autostash
+          git push
