@@ -1,9 +1,19 @@
 {
-  "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-  "offer_id": "KITCHEN_CABINET_001",
-  "status": "DEPLOYMENT_READY",
-  "cta_deployed": true,
-  "internal_linking_deployed": true,
-  "last_validated_at": "2026-08-30T02:30:00+05:30",
-  "next_task": "After deployment/index submission, publish Instagram promo with direct link to new guide."
+  "kitchen_cabinet_001": {
+    "status": "PUBLISHED",
+    "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
+    "deployed_at": "2026-08-30T02:36+05:30",
+    "cta_validated": true,
+    "internal_linking_validated": true,
+    "index_submitted": true,
+    "instagram_promo": {
+      "status": "READY_TO_POST",
+      "direct_link": "https://rio-affiliate-engine.in/content/kitchen-cabinet-organizers-buying-guide-2026-08-30",
+      "media_id": null,
+      "caption": "Kitchen cabinet organizers for Indian homes — verified 5-star picks with real measurements, prices & limitations. No fluff, just smart storage for designers & contractors. 🇮🇳\n\n👉 Full buying guide: [LINK]\n\n#KitchenStorage #IndianInteriorDesign #HomeOrganization #ContractorTools",
+      "posted_at_utc": null,
+      "clicks": null,
+      "collector_status": "AWAITING_POST"
+    }
+  }
 }
