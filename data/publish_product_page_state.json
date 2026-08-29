@@ -1,56 +1,28 @@
 {
   "policy_id": "RIO_COMMERCIAL_VALIDATION_V2",
-  "status": "READY_TO_SUBMIT_INDEXING",
-  "offer_id": "3-tier-rolling-cart",
-  "offer_name": "3-Tier Rolling Cart (Verified)",
-  "merchant": "Amazon Associates India",
-  "product_url": "https://www.amazon.in/dp/B0CXYZ1234",
-  "verification_timestamp": "2026-08-29T22:45:00+05:30",
-  "validators_passed": [
-    "offer_integrity",
-    "product_candidates",
-    "dashboard",
-    "production_offer_gate",
-    "commercial_plan",
-    "internal_linking_qa_product_page"
-  ],
-  "compliance_checks": {
+  "status": "PUBLISHED",
+  "product": "3-tier rolling cart",
+  "published_at": "2026-08-29T22:50:00+05:30",
+  "validators": {
+    "offer_integrity": "PASS",
+    "product_candidates": "PASS",
+    "dashboard": "PASS",
+    "production_offer_gate": "PASS",
+    "commercial_plan": "PASS"
+  },
+  "compliance": {
     "disclosure": "PASS",
     "merchant_terms": "PASS",
-    "geography": "PASS (India-only)",
+    "geography": "PASS",
     "factual_claims": "PASS",
     "privacy": "PASS",
-    "tracking": "PASS (via Amazon Associates)",
+    "tracking": "PASS",
     "platform_policy": "PASS"
   },
-  "internal_linking_qa": {
-    "status": "COMPLETE",
-    "gaps_identified": [],
-    "seo_health_score": 92,
-    "sensitivity_forecast": {
-      "0.5%_conversion": 1.2,
-      "1%_conversion": 2.4,
-      "2%_conversion": 4.8,
-      "3%_conversion": 7.2
-    },
-    "resource_envelope": {
-      "approved_tools": [
-        "DeepSeek",
-        "AWS Bedrock",
-        "GitHub Actions"
-      ],
-      "hosting": "GitHub Pages",
-      "api_model_quotas": "within ceiling",
-      "spend_ceiling": "₹0 additional spend required",
-      "renewal_dates": "no active renewals",
-      "human_only_dependencies": "none"
-    }
-  },
+  "indexing_submitted": true,
   "next_steps": [
-    "Commit changes via GitHub Actions",
-    "Submit indexing request for /content/policies/publish-product-page-3-tier-rolling-cart-2026-08-29.md",
-    "Rotate to Pillar 4 (product-led blog/content) to create high-intent supporting content for this product"
-  ],
-  "published_by": "RIO (DeepSeek)",
-  "published_at": "2026-08-29T22:45:53+05:30"
+    "Monitor indexing status",
+    "Create high-intent supporting content (Pillar 4)",
+    "Track clicks and conversions"
+  ]
 }
