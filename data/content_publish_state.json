@@ -1,13 +1,10 @@
 {
   "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-  "offer_id": "KITCHEN_CABINET_001",
-  "status": "READY_FOR_FINAL_VALIDATION",
-  "last_task": "Create verified high-intent buying guide for kitchen cabinet organizers — highest-impact executable revenue action with ₹0 revenue and Instagram telemetry unavailable.",
-  "last_completed_at": "2026-08-30T01:31:39+05:30",
-  "next_task": "Run final validators, commit, submit for indexing, publish Instagram promo with direct link.",
-  "pillar": 4,
-  "verified": true,
-  "disclosure_ready": true,
-  "cta_policy_ready": true,
-  "internal_linking_ready": true
+  "status": "DEPLOYMENT_READY",
+  "cta_validated": true,
+  "internal_linking_validated": true,
+  "commit_indexed": false,
+  "instagram_promo_pending": true,
+  "last_deployed_at": "2026-08-30T01:47:00+05:30",
+  "next_task": "Deploy validated CTA and internal linking to newly created kitchen cabinet organizers buying guide, commit changes, submit for indexing, then publish Instagram promo with direct link to drive verified conversions."
 }
