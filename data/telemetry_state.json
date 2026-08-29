@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "AWAITING_TELEMETRY",
+  "policy": "UNKNOWN_IS_NOT_ZERO",
+  "instagram": {
+    "collector": "scripts/collect_instagram_metrics.py",
+    "status": "CONFIGURED_PENDING_FIRST_SUCCESS",
+    "last_success_at_utc": null,
+    "posts": {}
+  },
+  "website": {
+    "click_collector": "NOT_CONFIGURED",
+    "status": "METRICS_UNAVAILABLE",
+    "clicks": null,
+    "sessions": null,
+    "source": null
+  },
+  "decision_guard": {
+    "allow_no_click_decision": false,
+    "rule": "A/B or no-click action is allowed only when clicks are measured by a named collector and observation window has actually elapsed. Null/unknown can never be coerced to zero."
+  }
+}
