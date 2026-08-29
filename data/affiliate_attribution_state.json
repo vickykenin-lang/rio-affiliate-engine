@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "AWAITING_AFFILIATE_SOURCE",
+  "policy": "NO_PURCHASE_OR_REVENUE_WITHOUT_SOURCE_EVIDENCE",
+  "clicks": null,
+  "orders": null,
+  "commission_inr": null,
+  "settled_revenue_inr": 0,
+  "source": null,
+  "last_import_at_utc": null,
+  "accepted_sources": ["amazon_associates_report", "earnkaro_report", "cuelinks_report", "other_verified_affiliate_report"],
+  "decision_guard": "Missing report means UNKNOWN, never zero conversions. Revenue success requires traceable report evidence."
+}
