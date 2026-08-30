@@ -85,16 +85,18 @@ jobs:
           import json, os
           p=f"integration/results/victor_tasks/{os.environ['VICTOR_RIO_TASK_ID']}.json"
           d=json.load(open(p,encoding='utf-8')); s=d.get('strict_supervision') or {}
+          payload=json.loads(os.environ.get('VICTOR_RIO_TASK_PAYLOAD','{}'))
+          goal=d.get('task_type')=='GOAL_EXECUTE'
           required=['status','objective_alignment','solution','next_action','evidence','revert_to_victor','requires_follow_up']
           missing=[k for k in required if k not in s]
           if missing: raise SystemExit('STRICT_RIO_REVERT_MISSING:'+','.join(missing))
           if s.get('revert_to_victor') is not True: raise SystemExit('STRICT_RIO_REVERT_NOT_CONFIRMED')
           if d.get('objective_changed') or d.get('credential_transfer_performed'):
               raise SystemExit('RIO_BRIDGE_BOUNDARY_VIOLATION')
-          if d.get('public_action_performed'):
-              raise SystemExit('RIO_GOAL_TRANSPORT_PUBLIC_SIDE_EFFECT_NOT_ALLOWED')
+          if d.get('public_action_performed') and not (goal and payload.get('external_action_authorized') is True):
+              raise SystemExit('RIO_UNAUTHORIZED_PUBLIC_SIDE_EFFECT')
           if d.get('governed_business_cycle_performed'):
-              assert d.get('task_type')=='GOAL_EXECUTE'
+              assert goal
               assert d.get('snapshot',{}).get('production_state')=='ACTIVE'
           print('STRICT_RIO_REVERT_ENVELOPE_OK')
           PY
@@ -112,12 +114,8 @@ jobs:
           git pull --rebase --autostash
           git push
 
-      - name: Reply in Management Group as RIO
-        env:
-          TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
-          TELEGRAM_MANAGEMENT_CHAT_ID: ${{ secrets.TELEGRAM_MANAGEMENT_CHAT_ID }}
-        run: python scripts/telegram_management_reply.py
-
+      # Department result stays machine-to-machine. Founder-facing reporting is
+      # emitted only by Victor after result verification/certification.
       - uses: actions/upload-artifact@v4
         with:
           name: victor-rio-result-${{ inputs.task_id }}
