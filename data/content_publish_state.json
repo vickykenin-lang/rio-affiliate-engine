@@ -1,23 +1,14 @@
 {
   "kitchen_cabinet_001": {
-    "offer_id": "KITCHEN_CABINET_001",
-    "status": "PUBLISHED",
-    "last_published_at": "2026-08-30T02:37:04+05:30",
-    "instagram_promo": {
-      "status": "POSTED",
-      "media_id": "17877752013535173",
-      "posted_at": "2026-08-23T16:04+05:30"
-    }
-  },
-  "under_sink_001": {
-    "offer_id": "UNDER_SINK_001",
+    "offer_id": "kitchen_cabinet_001",
+    "product_name": "Amazon Basics Plastic Under Sink Storage Organizer Rack, 3-Tier, White",
     "status": "DEPLOYMENT_READY",
-    "draft_path": "site/content/buying-guides/under-sink-organizers-buying-guide-2026-08-30.md",
+    "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
     "cta_validated": true,
     "internal_linking_validated": true,
-    "disclosure_compliant": true,
-    "merchant_terms_compliant": true,
-    "next_action": "DEPLOY_AND_SUBMIT_FOR_INDEXING",
-    "last_updated_at": "2026-08-30T12:16+05:30"
+    "indexed_submitted_at": "2026-08-30T23:15+05:30",
+    "instagram_promo_status": "READY_TO_POST",
+    "last_validator_run": "2026-08-30T23:12+05:30",
+    "validator_pass": true
   }
 }
