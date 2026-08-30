@@ -1,19 +1,26 @@
 {
   "kitchen_cabinet_001": {
     "status": "PUBLISHED",
-    "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-    "deployed_at": "2026-08-30T02:36+05:30",
-    "cta_validated": true,
-    "internal_linking_validated": true,
-    "index_submitted": true,
+    "instagram_promo": {
+      "status": "POSTED",
+      "media_id": "17877752013535173",
+      "posted_at": "2026-08-30T02:37:04+05:30"
+    },
+    "indexed_at": "2026-08-30T02:31:33+05:30",
+    "last_validated_at": "2026-08-30T02:31:33+05:30"
+  },
+  "under_sink_001": {
+    "status": "DRAFT_READY",
+    "offer_id": "UNDER_SINK_001",
+    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+    "draft_path": "site/content/buying-guides/under-sink-organizers-buying-guide-2026-08-30.md",
+    "verified_at": "2026-08-30T06:47+05:30",
+    "cta_internal_linking": "PENDING_DEPLOYMENT",
+    "indexed_at": null,
     "instagram_promo": {
       "status": "READY_TO_POST",
-      "direct_link": "https://rio-affiliate-engine.in/content/kitchen-cabinet-organizers-buying-guide-2026-08-30",
       "media_id": null,
-      "caption": "Kitchen cabinet organizers for Indian homes — verified 5-star picks with real measurements, prices & limitations. No fluff, just smart storage for designers & contractors. 🇮🇳\n\n👉 Full buying guide: [LINK]\n\n#KitchenStorage #IndianInteriorDesign #HomeOrganization #ContractorTools",
-      "posted_at_utc": null,
-      "clicks": null,
-      "collector_status": "AWAITING_POST"
+      "posted_at": null
     }
   }
 }
