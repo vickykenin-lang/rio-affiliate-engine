@@ -3,16 +3,16 @@
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "specific product names/models",
-   "exact dimensions or measurements",
-   "price range or actual prices",
-   "material and build quality details",
-   "honest cons or limitations",
-   "who it is/isn't good for",
-   "delivery/return/installation info",
-   "user review excerpts or ratings"
+   "No specific product names or models",
+   "No real measurements or dimensions",
+   "No actual prices or price ranges",
+   "No material specifics (e.g., plastic, metal)",
+   "No honest cons or limitations",
+   "No user review excerpts or ratings",
+   "No delivery/return information",
+   "No clarity on who it is/isn't for"
   ],
-  "biggest_weakness": "It's a generic listicle with no concrete product details, measurements, or real user evidence, just vague promises and links to other guides.",
+  "biggest_weakness": "It's a generic listicle with no concrete product details or verifiable specifics, just vague zone suggestions and links to other guides.",
   "score": 2
  },
  "articles/best-airtight-containers-indian-pantry.html": {
@@ -20,14 +20,14 @@
   "would_click_buy_link": false,
   "missing_trust_signals": [
    "no actual price or price range",
-   "no exact dimensions/capacity in litres for each container",
-   "no material specifics (e.g., PP, Tritan, glass)",
+   "no exact dimensions or capacity details",
+   "no material specifics (e.g., PP, Tritan)",
    "no honest cons or limitations",
-   "no who it's not good for",
-   "no delivery/return/warranty info",
-   "no user review or real-world usage evidence"
+   "no user reviews or real-world testing",
+   "no delivery/return info",
+   "no clarity on who it's not for"
   ],
-  "biggest_weakness": "It's a thin, generic framework with only one vague product mention and zero concrete measurements or real user validation, reading like placeholder content rather than a genuine buying guide.",
+  "biggest_weakness": "It's a generic framework with only one product mention and no concrete data, so it reads like thin filler rather than a real buying guide.",
   "score": 2
  },
  "articles/best-baby-corner-guards-edge-protectors-india.html": {
@@ -37,55 +37,53 @@
    "no real price or price range",
    "no exact dimensions or thickness",
    "no material specifics beyond 'nitrile foam'",
-   "no honest cons or adhesion failure caveats",
-   "no comparison with other brands",
-   "no user review excerpts or ratings",
+   "no honest cons or limitations",
+   "no adhesion durability test results",
+   "no user review evidence or ratings",
+   "no comparison with alternatives",
    "no delivery/return info"
   ],
-  "biggest_weakness": "It's a thin, generic listicle with only one product and no concrete measurements, pricing, or real user evidence to back its claims.",
-  "score": 2
+  "biggest_weakness": "It reads like a generic template with no concrete measurements, prices, or real user evidence to back up its claims.",
+  "score": 3
  },
  "articles/best-balcony-storage-solutions-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
+  "would_trust": true,
+  "would_click_buy_link": true,
   "missing_trust_signals": [
-   "no actual price or price range",
-   "no exact dimensions/weight capacity",
-   "no material thickness or rust-proofing details",
-   "no honest cons or limitations",
-   "no user reviews or real-world testing",
-   "no comparison with other brands/models",
-   "no delivery/installation/return info"
+   "no exact price or price range",
+   "no dimensions/size of holder",
+   "no installation details (screw/adhesive) for this model",
+   "no pros/cons or who it's not for",
+   "no delivery/return info"
   ],
-  "biggest_weakness": "It's a placeholder with no concrete product data or verdict—just a promise to verify later.",
-  "score": 2
+  "biggest_weakness": "It's a single product with no actual comparison or measured specs, so it feels thin despite the honest framing.",
+  "score": 6
  },
  "articles/best-bathroom-storage-organizers-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
    "exact load capacity in kg",
-   "specific rust-resistance test/grade",
-   "honest cons or limitations",
-   "who it's not good for",
-   "delivery/return info"
+   "installation/removal details for adhesive on tiles",
+   "warranty or durability guarantee",
+   "honest cons or limitations beyond size",
+   "comparison with other products in the guide"
   ],
-  "biggest_weakness": "No load-limit or durability test data, only listing specs and a snapshot price.",
-  "score": 7
+  "biggest_weakness": "The article only covers one product and lacks the promised comparative rankings, making it feel incomplete as a buying guide.",
+  "score": 6
  },
  "articles/best-cabinet-drawer-safety-locks-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no actual price or price range",
-   "no specific dimensions or adhesive strength rating",
-   "no honest cons or limitations",
-   "no comparison of multiple products/brands",
-   "no user review excerpts or durability data",
-   "no delivery/return/warranty info",
-   "no clarity on which cabinets/drawers it suits"
+   "no price mentioned",
+   "no exact dimensions or adhesive strength specs",
+   "no user review excerpts or durability evidence",
+   "no honest cons or comparison vs alternatives",
+   "no pack count vs actual need guidance",
+   "no delivery/return info"
   ],
-  "biggest_weakness": "It only features one product with no real measurements, price, or independent durability evidence, making it feel like a thin affiliate placeholder rather than a genuine buying guide.",
+  "biggest_weakness": "Only one product listed with no real measurements, price, or independent verification of long-term adhesion claims.",
   "score": 3
  },
  "articles/best-desk-cable-organizers-home-office-india.html": {
@@ -94,11 +92,11 @@
   "missing_trust_signals": [
    "exact desk edge thickness compatibility",
    "material thickness/gauge",
-   "installation difficulty/time",
-   "honest cons (e.g., screw holes required)",
-   "who it's not good for (e.g., glass desks)"
+   "honest cons or limitations",
+   "who it's not good for",
+   "delivery time/return process details"
   ],
-  "biggest_weakness": "Only one product covered, no comparison or alternatives for different desk types/budgets.",
+  "biggest_weakness": "Only one product reviewed, so no comparative ranking despite the title promising 'best' organizers.",
   "score": 7
  },
  "articles/best-electric-socket-covers-childproofing-india.html": {
@@ -106,219 +104,220 @@
   "would_click_buy_link": true,
   "missing_trust_signals": [
    "exact price range",
-   "material thickness/grade",
-   "durability test data",
-   "honest cons",
-   "delivery/return info"
+   "specific dimensions of covers",
+   "material grade (ABS type/thickness)",
+   "honest cons or limitations",
+   "delivery/return info",
+   "who it is not good for"
   ],
-  "biggest_weakness": "No real durability evidence or user-testing specifics beyond generic 'read reviews' advice.",
+  "biggest_weakness": "No real-world durability test or user review evidence beyond generic 'read reviews' advice.",
   "score": 6
  },
  "articles/best-foldable-furniture-small-indian-apartments.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
+  "would_trust": true,
+  "would_click_buy_link": true,
   "missing_trust_signals": [
-   "specific price range",
-   "exact dimensions (folded/unfolded)",
-   "material and weight details",
-   "honest cons or limitations",
-   "user review excerpts or ratings",
-   "comparison with alternatives",
-   "delivery/return info"
+   "no exact folded dimensions",
+   "no material/wood type specifics",
+   "no honest cons or durability caveats",
+   "no user review excerpts or ratings",
+   "no price range or typical price"
   ],
-  "biggest_weakness": "It only features one product with no concrete specs, price, or user review evidence, making it feel like a thin placeholder rather than a real buying guide.",
-  "score": 3
+  "biggest_weakness": "It only features one product and gives no concrete measurements or real user feedback, so you can't judge fit or durability before clicking.",
+  "score": 6
  },
  "articles/best-kitchen-trolleys-small-spaces-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "no price range mentioned",
-   "no material thickness/quality details",
-   "no wheel type/lock info",
-   "no load capacity stated",
+   "no price range or MRP",
+   "no material specifics (plastic type/thickness)",
+   "no wheel quality or load capacity details",
    "no honest cons or limitations",
    "no delivery/return info"
   ],
-  "biggest_weakness": "Only one product is covered, with no real comparison or user-verified feedback, so it feels thin for a buying guide.",
+  "biggest_weakness": "Only one product listed, with no actual measurements of the gap it fits or load/stability testing, so the 'ranking' is thin and unproven.",
   "score": 6
  },
  "articles/best-no-drill-baby-safety-gates-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no actual price or price range",
-   "no exact dimensions or weight of gate",
-   "no material thickness/quality specifics",
-   "no honest cons or failure scenarios",
-   "no user review excerpts or ratings",
-   "no delivery/return/installation details",
+   "no real price or price range",
+   "no exact dimensions/weight of gate",
+   "no material thickness or build quality details",
+   "no honest cons or limitations",
+   "no fit/sturdiness test results or user review evidence",
+   "no delivery/return/cod info",
    "no comparison with other brands/models"
   ],
-  "biggest_weakness": "It only names one product with no real measurements, user feedback, or price, so it reads like a thin placeholder rather than a genuine buying guide.",
+  "biggest_weakness": "It only describes one product with generic specs and no real measurements, test data, or user evidence, making it feel like a thin affiliate placeholder rather than a genuine buying guide.",
   "score": 3
  },
  "articles/best-spice-racks-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "no honest cons or limitations",
-   "no user review summary",
-   "no material durability detail (plastic quality)",
-   "no delivery/return info"
+   "real price mentioned",
+   "exact dimensions",
+   "material specifics",
+   "who it's/isn't good for",
+   "honest cons",
+   "delivery/return info"
   ],
-  "biggest_weakness": "Only one product covered, so no real comparison across types or brands.",
+  "biggest_weakness": "No honest cons or limitations for the product.",
   "score": 7
  },
  "articles/best-under-bed-storage-options-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
+  "would_trust": false,
+  "would_click_buy_link": false,
   "missing_trust_signals": [
-   "exact dimensions/height of bag",
-   "material thickness/grammage",
-   "honest cons or limitations",
-   "who it's not good for",
-   "delivery/return info"
+   "no real price or price range",
+   "no exact dimensions or fit measurements",
+   "no material specifics (nylon type, thickness)",
+   "no honest cons or limitations",
+   "no user review evidence or ratings",
+   "no delivery/return info",
+   "no comparison with alternatives"
   ],
-  "biggest_weakness": "No actual price or dimensions given, so you can't judge fit or value without clicking away.",
-  "score": 7
+  "biggest_weakness": "It only highlights one product with no concrete specifics or independent validation, making it feel like a thin affiliate placeholder rather than a genuine buying guide.",
+  "score": 3
  },
  "articles/best-under-sink-organizers-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "No actual price or price range",
-   "No real user reviews or ratings",
-   "No comparison vs other brands",
-   "No honest cons or limitations",
-   "No installation/delivery/return info",
-   "No material specifics (plastic type, rust-proofing)"
+   "no real price or price range",
+   "no exact fit dimensions for typical Indian cabinets",
+   "no material specifics (plastic type, rust-resistance)",
+   "no honest cons or limitations",
+   "no user reviews or real-world feedback",
+   "no delivery/return/customer support info",
+   "no comparison with alternatives"
   ],
-  "biggest_weakness": "It's a single product placeholder with no real measurements, price, or user validation — reads like a template, not a tested guide.",
-  "score": 2
+  "biggest_weakness": "It's a generic framework with only one product and no concrete specifics, making it feel like placeholder content rather than a genuine buying guide.",
+  "score": 3
  },
  "articles/best-wardrobe-organizers-small-bedrooms-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no real price or size dimensions",
-   "no material thickness/quality details",
+   "no real price or price range",
+   "no exact dimensions or measurements",
+   "no material specifics (e.g., plastic type, thickness)",
    "no honest cons or limitations",
    "no user review excerpts or ratings",
-   "no delivery/return info",
-   "no alternative product comparison"
+   "no comparison with alternatives",
+   "no delivery/return information"
   ],
-  "biggest_weakness": "It only features one vague product with no measurements, price, or user evidence, making it feel like a thin placeholder rather than a genuine buying guide.",
+  "biggest_weakness": "It only features one product with no concrete specs, price, or user evidence, making it feel like a shallow placeholder rather than a genuine buying guide.",
   "score": 2
  },
  "articles/compact-storage-work-from-home-corner-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "exact dimensions of desk compatibility",
-   "material thickness/weight capacity",
+   "exact material thickness/weight capacity",
    "honest cons or limitations",
-   "delivery/return info",
-   "who it's not good for"
+   "who it's not good for",
+   "delivery/return info"
   ],
-  "biggest_weakness": "No mention of whether the tray fits typical Indian desks or how much weight it can hold, leaving fit uncertainty.",
+  "biggest_weakness": "No mention of any downsides or edge cases (e.g., desk thickness compatibility, installation difficulty).",
   "score": 7
  },
  "articles/kitchen-drawer-organizers-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "exact fit for common Indian drawer sizes",
-   "material durability/long-term test",
+   "exact dimensions of drawer fit",
+   "material durability/ABS quality",
    "honest cons or limitations",
-   "who it's not good for",
-   "delivery/return info"
+   "delivery/return info",
+   "who it's not good for"
   ],
-  "biggest_weakness": "No real-world usage test or user feedback, only listing verification and specs.",
+  "biggest_weakness": "No real-world user feedback or long-term durability test, only listing specs and a snapshot price.",
   "score": 7
  },
  "articles/no-drill-bathroom-storage-rented-homes-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no real price mentioned",
-   "no exact dimensions or weight capacity",
-   "no material specifics beyond 'plastic'",
-   "no honest cons or limitations",
-   "no user reviews or ratings",
-   "no comparison with alternatives",
-   "no delivery/return info"
+   "no actual weight limit stated",
+   "no adhesive type or residue-free claim verified",
+   "no real user review or test data",
+   "no dimensions or material thickness",
+   "no honest cons or failure scenarios",
+   "no comparison vs suction mounts",
+   "no price range or typical cost"
   ],
-  "biggest_weakness": "It's a vague, generic listicle with no concrete measurements, pricing, or user feedback, making it impossible to trust as a real buying guide.",
-  "score": 2
- },
- "articles/no-drill-kitchen-organizers-renters-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price mentioned",
-   "no exact dimensions or weight capacity",
-   "no material specifics (e.g., metal grade, adhesive type)",
-   "no honest cons or limitations",
-   "no delivery/return info",
-   "no user reviews or ratings",
-   "no comparison with alternatives"
-  ],
-  "biggest_weakness": "It only highlights one product with no concrete specs, price, or user feedback, making it feel like a placeholder rather than a genuine buying guide.",
+  "biggest_weakness": "It only names one product with zero concrete specs, measurements, or test results, so the 'framework' is just a promise, not evidence.",
   "score": 3
  },
- "articles/organize-small-kitchen-counter-without-cabinets-india.html": {
+ "articles/no-drill-kitchen-organizers-renters-india.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "no exact price range",
-   "no dimensions/width specifics",
-   "no material quality details",
-   "no honest cons or limitations",
-   "no delivery/return info"
+   "no exact price or dimensions",
+   "no material specifics (e.g., metal gauge, adhesive type)",
+   "no honest cons or limitations beyond surface dependence",
+   "no delivery/return info",
+   "no who it's not good for"
   ],
-  "biggest_weakness": "It names only one product and gives no measurements, price, or comparison against alternatives, so the ranking feels thin and unverified despite the verification date.",
+  "biggest_weakness": "Lacks concrete specifics like price, dimensions, and material details that a skeptical buyer needs to compare.",
   "score": 6
+ },
+ "articles/organize-small-kitchen-counter-without-cabinets-india.html": {
+  "would_trust": false,
+  "would_click_buy_link": false,
+  "missing_trust_signals": [
+   "no actual price or price range",
+   "no exact dimensions of the trolley",
+   "no material quality or thickness details",
+   "no honest cons or limitations",
+   "no who it's not good for",
+   "no delivery/return/customer service info"
+  ],
+  "biggest_weakness": "It only names one product with no measurements, price, or user-verified feedback, so the 'ranking' is just a placeholder, not a real review.",
+  "score": 3
  },
  "articles/small-kitchen-storage-ideas-india.html": {
   "would_trust": true,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no actual product recommendations",
+   "no specific product recommendations",
    "no real measurements or dimensions",
-   "no specific material guidance",
-   "no price range or budget advice",
+   "no actual price range mentioned",
    "no pros/cons or honest limitations",
    "no delivery/return info"
   ],
-  "biggest_weakness": "It's a placeholder page with no product-specific data, rankings, or actionable specifics — just a framework and promises of future content.",
+  "biggest_weakness": "It's a placeholder with no actual product data or rankings, just a framework and promise of future content.",
   "score": 2
  },
  "articles/under-sink-storage-ideas-indian-kitchens.html": {
   "would_trust": true,
   "would_click_buy_link": true,
   "missing_trust_signals": [
-   "no exact dimensions or price",
-   "no material/moisture-resistance specs",
-   "no honest cons or who it's not for",
+   "no exact dimensions/measurements",
+   "no material specifics",
+   "no honest cons or limitations",
    "no delivery/return info"
   ],
-  "biggest_weakness": "No concrete measurements or price, so you can't verify fit or value before clicking through.",
+  "biggest_weakness": "It names only one product and gives no concrete specs or price, so you can't compare before clicking.",
   "score": 6
  },
  "articles/weatherproof-balcony-storage-ideas-india.html": {
   "would_trust": false,
   "would_click_buy_link": false,
   "missing_trust_signals": [
-   "no exact price or price range",
-   "no dimensions/capacity specs",
-   "no material specifics (e.g., grade of plastic/metal)",
+   "no real price or price range",
+   "no exact dimensions/capacity specs",
+   "no material specifics (grade of plastic/metal)",
    "no honest cons or limitations",
-   "no user testing or real-world photos",
-   "no comparison with alternatives",
-   "no delivery/return/warranty info"
+   "no user testing or real-world verification",
+   "no delivery/return/warranty info",
+   "no comparison vs alternatives"
   ],
-  "biggest_weakness": "It's a thin, generic framework with only one product mention and zero concrete data, so it reads like placeholder content rather than a real buying guide.",
-  "score": 2
+  "biggest_weakness": "It's a thin, generic framework with only one product mention and zero concrete measurements or verified user experience, so it reads like placeholder filler rather than a real buying guide.",
+  "score": 3
  }
 }
