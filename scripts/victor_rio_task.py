@@ -74,8 +74,6 @@ def build_content_facts():
         "deployment_ready_count": len(set(deployment_ready_ids)),
         "actually_published_count": len(posted),
         "actually_published_ids": sorted(posted.keys()),
-        # No canonical design-generation marker exists yet. Unknown is safer than
-        # converting absence of evidence into a false negative.
         "new_design_started_verified": None,
         "new_design_evidence": [],
     }
@@ -106,6 +104,7 @@ def main():
     work_state = str(work.get("status") or "UNKNOWN").upper()
     founder_action = bool(work.get("founder_action_needed")) or work_state == "VICKY_ACTION_REQUIRED"
     changed = [str(x) for x in (work.get("changed_files") or []) if x]
+    external_action_authorized = goal_mode and payload.get("external_action_authorized") is True
     public_action_performed = goal_mode and "data/ig_published.json" in worktree_changed
 
     evidence = [
@@ -153,6 +152,7 @@ def main():
         "observed_at": datetime.now(timezone.utc).isoformat(),
         "execution_status": execution_status,
         "governed_business_cycle_performed": goal_mode,
+        "external_action_authorized": bool(external_action_authorized),
         "public_action_performed": bool(public_action_performed),
         "objective_changed": False,
         "credential_transfer_performed": False,
