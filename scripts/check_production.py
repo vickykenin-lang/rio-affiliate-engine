@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Verify that RIO is genuinely reachable in production."""
+# Control Room checks intentionally remain in the production gate so generator regressions cannot silently ship.
 import json
 import os
 import sys
@@ -36,14 +37,11 @@ home_text = home["body"].decode("utf-8", errors="replace")
 checks["homepage_200"] = home["ok"]
 checks["disclosure_present"] = "affiliate disclosure" in home_text.casefold()
 
-# Verify the affiliate tag where a real, published affiliate offer actually exists.
-# The homepage is not required to contain a merchant link merely to satisfy health checks.
 affiliate_page = fetch(AFFILIATE_CHECK_PATH)
 affiliate_text = affiliate_page["body"].decode("utf-8", errors="replace")
 checks["affiliate_offer_page_200"] = affiliate_page["ok"]
 checks["affiliate_tag_present"] = affiliate_page["ok"] and "tag=rioaffiliate-21" in affiliate_text
 
-# Certify the Founder-facing Control Room itself, not just the base site.
 control_room = fetch(CONTROL_ROOM_PATH)
 control_room_text = control_room["body"].decode("utf-8", errors="replace")
 control_room_lower = control_room_text.casefold()
