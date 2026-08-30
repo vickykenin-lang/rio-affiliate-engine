@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data'; OUT=ROOT/'site/control-room/index.html'
+CANONICAL='https://vickykenin-lang.github.io/rio-affiliate-engine/control-room/'
 
 def load(name, default):
     try:return json.loads((DATA/name).read_text(encoding='utf-8'))
@@ -43,7 +44,7 @@ def main():
     ig_status=esc((telemetry.get('instagram') or {}).get('status'))
     website_status=esc((telemetry.get('website') or {}).get('status'))
     attribution_status=esc(attr.get('status'))
-    html_doc=f'''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RIO Control Room</title><style>
+    html_doc=f'''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RIO Control Room</title><link rel="canonical" href="{CANONICAL}"><style>
 body{{font-family:system-ui;margin:0;background:#0d1117;color:#e6edf3}}main{{max-width:1280px;margin:auto;padding:24px}}a{{color:#58a6ff}}.top{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}}.card,.panel,.post{{background:#161b22;border:1px solid #30363d;border-radius:14px}}.card{{padding:16px}}.card small,.post small{{display:block;color:#8b949e}}.card strong{{font-size:28px}}.panel{{padding:18px;margin:16px 0}}.posts{{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}}.post{{overflow:hidden}}.post img,.noimg{{width:100%;height:420px;object-fit:cover;background:#21262d;display:flex;align-items:center;justify-content:center;color:#8b949e}}.igembed{{width:100%;height:560px;background:white}}.pad{{padding:12px}}.metrics{{font-size:13px;color:#8b949e;margin:8px 0}}.actions a{{display:inline-block;margin:4px 8px 4px 0;padding:10px 12px;border:1px solid #30363d;border-radius:9px;text-decoration:none}}code{{white-space:pre-wrap}}</style></head><body><main>
 <div class="top"><div><h1>RIO Control Room</h1><p>Revenue, actual Instagram posts, website, telemetry and live development in one place.</p></div><div class="actions"><a href="../">Open Live Website</a><a href="../dashboard/">CEO Dashboard</a><a href="../products/">Products</a><a href="../guides/">Guides</a><a href="../blog/">Blog</a></div></div>
 <div class="grid"><div class="card"><small>Ready offers</small><strong>{esc(snap.get('ready_offers'))}</strong></div><div class="card"><small>Instagram posted</small><strong>{esc(snap.get('instagram_posted'))}</strong></div><div class="card"><small>Revenue</small><strong>₹{esc(snap.get('revenue_inr'))}</strong></div><div class="card"><small>Telemetry</small><strong>{tele_status}</strong></div><div class="card"><small>Affiliate attribution</small><strong>{attribution_status}</strong></div></div>
@@ -53,6 +54,6 @@ body{{font-family:system-ui;margin:0;background:#0d1117;color:#e6edf3}}main{{max
 <section class="panel"><h2>Website & Content</h2><div class="actions"><a href="../" target="_blank">Homepage</a><a href="../products/" target="_blank">Product pages</a><a href="../guides/" target="_blank">Buying guides</a><a href="../articles/" target="_blank">Articles</a><a href="../compare.html" target="_blank">Compare page</a></div></section>
 </main></body></html>'''
     OUT.parent.mkdir(parents=True,exist_ok=True);OUT.write_text(html_doc,encoding='utf-8')
-    print('RIO Control Room generated with Instagram embeds')
+    print('RIO Control Room generated with canonical URL and Instagram embeds')
 
 if __name__=='__main__':main()
