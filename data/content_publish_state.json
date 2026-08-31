@@ -2,13 +2,24 @@
   "kitchen_cabinet_001": {
     "status": "DEPLOYMENT_READY",
     "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-    "cta_deployed": true,
-    "internal_linking_deployed": true,
+    "cta_validated": true,
+    "internal_linking_validated": true,
+    "disclosure_compliant": true,
+    "x_to_x_gate_passed": true,
     "submitted_for_indexing": false,
     "instagram_promo_pending": true,
-    "last_updated_at": "2026-08-31T01:00+05:30",
-    "verified_offer_id": "kitchen_cabinet_001",
-    "audience_fit": "strong",
-    "ready_for_traffic": true
+    "offer_id": "kitchen_cabinet_001",
+    "offer_name": "wolpin Kitchen Cabinet Storage Organizer Rack with Pull-Out Drawer & Adjustable Shelves",
+    "offer_url": "https://www.amazon.in/dp/B0CQXJZK6H",
+    "audience_fit": [
+      "interior_designers",
+      "contractors",
+      "home_office_professionals"
+    ],
+    "verified_at": "2026-08-30T18:00+05:30",
+    "deployed_at": null,
+    "indexed_at": null,
+    "instagram_posted_at": null,
+    "last_audit": "2026-08-31T11:17+05:30"
   }
 }
