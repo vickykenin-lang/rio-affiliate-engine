@@ -192,3 +192,5 @@ Fetched `https://raw.githubusercontent.com/vickykenin-lang/rio-affiliate-engine/
 - 2026-08-29T22:50+05:30 IST — posted **Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black** (offer `DRAWER_001`) to Instagram @riosallerior. Media ID `18112848191063932`. Permalink: https://www.instagram.com/p/DcodW-8jfdD/
 
 - 2026-08-30T23:12+05:30 IST — posted **Nieifi KIMEE Set of 2 Metal Corner Shelf, Rustproof No-Drill Self-Adhesive Wall Mount (8 & 9 Inch)** (offer `NODRILL_001`) to Instagram @riosallerior. Media ID `18101575730257542`. Permalink: https://www.instagram.com/p/DcrEvWYmuU5/
+
+- 2026-09-01T01:04+05:30 IST — posted **EUDELE Aluminium Self-Adhesive Bathroom Shelf, No-Drill Wall Mount (Pack of 2, Black)** (offer `BATHROOM_SHELF_001`) to Instagram @riosallerior. Media ID `18114163570771311`. Permalink: https://www.instagram.com/p/Dct2X62FOl_/
