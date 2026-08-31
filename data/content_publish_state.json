@@ -1,21 +1,16 @@
 {
   "kitchen_cabinet_001": {
     "status": "QA_IN_PROGRESS",
-    "last_qa_at": "2026-08-31T17:15+05:30",
-    "qa_checks": [
-      "cta_validated",
-      "internal_linking_present",
-      "disclosure_present",
-      "offer_integrity_pass",
-      "compliance_pass"
-    ],
-    "next_action": "PUBLISH_INSTAGRAM_PROMO_AFTER_QA_PASS",
-    "draft_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
-    "cta_target_url": "https://www.amazon.in/dp/B09XKJH7QY?tag=rioaffiliate-21",
+    "last_qa_at": "2026-08-31T17:21+05:30",
+    "qa_by": "bedrock-qwen",
+    "next_action": "publish_instagram_promo_after_qa_pass",
     "internal_links": [
-      "under-sink-organizers-buying-guide",
-      "spice-rack-buying-guide"
+      "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md"
     ],
-    "disclosure_text": "As an Amazon Associate I earn from qualifying purchases."
+    "cta_verified": true,
+    "disclosure_present": true,
+    "geography_compliant": true,
+    "merchant_terms_reviewed": true,
+    "tracking_configured": true
   }
 }
