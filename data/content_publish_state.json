@@ -1,20 +1,11 @@
 {
   "TROLLEY_001": {
     "status": "QA_IN_PROGRESS",
-    "last_qa_at": "2026-09-01T15:10+05:30",
-    "last_qa_engine": "bedrock-qwen",
-    "last_qa_pillar": 4,
-    "internal_links": [],
-    "cta_validated": true,
-    "compliance_checks": {
-      "disclosure": "PENDING",
-      "merchant_terms": "PENDING",
-      "geography": "PENDING",
-      "factual_claims": "PENDING",
-      "privacy": "PENDING",
-      "tracking": "PENDING",
-      "platform_policy": "PENDING"
-    },
-    "next_step": "After QA pass, publish Instagram promo with direct link to drive verified conversions."
+    "last_qa_at": "2026-09-01T15:46+05:30",
+    "qa_by": "bedrock-qwen",
+    "next_task": "After QA pass, publish Instagram promo with direct link to drive verified conversions.",
+    "internal_linking": "pending",
+    "cta_integrity": "pending",
+    "compliance": "pending"
   }
 }
