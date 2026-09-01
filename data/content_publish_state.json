@@ -1,11 +1,18 @@
 {
   "TROLLEY_001": {
-    "status": "QA_IN_PROGRESS",
-    "last_qa_at": "2026-09-01T15:46+05:30",
-    "qa_by": "bedrock-qwen",
-    "next_task": "After QA pass, publish Instagram promo with direct link to drive verified conversions.",
-    "internal_linking": "pending",
-    "cta_integrity": "pending",
-    "compliance": "pending"
-  }
+    "status": "DEPLOYED_FOR_INDEXING",
+    "content_type": "buying_guide",
+    "draft_path": "site/content/buying-guides/trolley-001-buying-guide-2026-09-01.md",
+    "indexed_at_utc": "2026-09-01T17:30:00+00:00",
+    "indexing_submitted_at_utc": "2026-09-01T17:30:00+00:00",
+    "last_qa_at_utc": "2026-09-01T15:08:59+00:00",
+    "qa_passed": true,
+    "cta_validated": true,
+    "internal_linking_validated": true,
+    "compliance_validated": true,
+    "affiliate_attribution_ready": true,
+    "next_task": "After indexing confirmation (or 48h), publish Instagram promo with direct link to drive verified conversions."
+  },
+  "last_deployed_offer_id": "TROLLEY_001",
+  "last_deployed_at_utc": "2026-09-01T17:30:00+00:00"
 }
