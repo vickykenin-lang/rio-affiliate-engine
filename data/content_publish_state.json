@@ -1,26 +1,13 @@
 {
   "kitchen_cabinet_001": {
-    "status": "PUBLISHED_INSTAGRAM",
-    "last_published_at": "2026-08-31T23:45+05:30",
-    "platform": "instagram",
-    "cta": "Shop verified kitchen cabinet organizers → [Direct Link]",
-    "internal_linking": "linked from 3 relevant under-sink & storage guides",
-    "compliance": {
-      "disclosure": "✅ Amazon Associates disclosure present",
-      "merchant_terms": "✅ Verified compliant",
-      "geography": "✅ India-only",
-      "factual_claims": "✅ All specs verified",
-      "privacy": "✅ No tracking beyond affiliate attribution",
-      "tracking": "✅ UTM: utm_source=instagram&utm_medium=social&utm_campaign=kitchen_cabinet_001",
-      "platform_policy": "✅ No spammy promotion; useful buying guide + direct CTA"
-    },
-    "instagram_post": {
-      "caption": "Indian interior designers & contractors: This verified 2-tier kitchen cabinet organizer fits tight spaces, holds heavy items, and installs in minutes. No drilling needed. \n\n✅ Verified price: ₹1,299\n✅ Amazon Associates disclosure: linked below\n✅ Direct link in bio →\n\n#KitchenStorage #IndianInteriorDesign #HomeOrganization",
-      "media_id": "PENDING",
-      "posted_at": null,
-      "clicks": null,
-      "click_source": "AWAITING_POST_METRICS"
-    },
-    "next_review_at": "2026-09-02T00:00+05:30"
+    "status": "DEPLOYED_FOR_INDEXING",
+    "last_deployed_at": "2026-09-01T06:57+05:30",
+    "deployed_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
+    "cta_validated": true,
+    "internal_linking_validated": true,
+    "compliance_validated": true,
+    "indexing_submitted": true,
+    "indexing_submitted_at": "2026-09-01T06:57+05:30",
+    "next_action": "After indexing confirmation, publish Instagram promo with direct link to drive verified conversions."
   }
 }
