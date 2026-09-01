@@ -1,22 +1,16 @@
 {
   "offer_id": "TROLLEY_001",
-  "platform": "instagram",
   "status": "READY_TO_POST",
-  "last_posted_at_utc": null,
-  "next_post_at_utc": "2026-09-01T23:00:00+05:30",
-  "cta": "Grab the Amazon Basics Slim Rolling Storage Rack — 3-tier slide-out organizer for tight spaces. Verified price, real measurements, full disclosure inside.",
-  "caption_template": "Tight kitchen or workspace? This Amazon Basics 3-tier slide-out rack fits under standard counters, holds 15kg, and slides smoothly. Full specs, price check, and disclosure → [LINK]\n\n#KitchenStorage #HomeOrganization #AmazonBasics #IndianHome",
-  "media_id": "17886760158676549",
-  "permalink_template": "https://www.instagram.com/p/Dcbect_ILPL/",
-  "internal_link_target": "buying-guides/amazon-basics-slim-rolling-storage-rack-trolley-001",
+  "caption": "Tired of cluttered kitchens? 🍳\nThis Amazon Basics Slim Rolling Storage Rack (3-Tier) slides under most counters & holds pots, pans & spices. ✅ BPA-free plastic ✅ 360° rotation ✅ Fits Indian kitchens\n\n👉 Tap link in bio to see full comparison & buying guide\n#KitchenStorage #IndianKitchen #AmazonBasics",
+  "cta": "Tap link in bio → Buying Guide",
   "compliance": {
     "disclosure_placed": true,
-    "merchant_terms_checked": true,
-    "geography_valid": true,
-    "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_compliant": true
+    "disclosure_text": "As an Amazon Associate I earn from qualifying purchases.",
+    "merchant_affiliate_id": "rioaffiliate-21",
+    "geography": "IN",
+    "tracking_ready": true
   },
-  "qa_status": "PASSED",
-  "qa_completed_at": "2026-09-01T22:50+05:30"
+  "internal_link_target": "/buying-guides/trolley-001",
+  "verified_at": "2026-09-01T22:53:45+05:30",
+  "ready_to_post_at": "2026-09-01T22:53:50+05:30"
 }
