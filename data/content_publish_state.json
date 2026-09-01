@@ -1,13 +1,20 @@
 {
-  "kitchen_cabinet_001": {
-    "status": "DEPLOYED_FOR_INDEXING",
-    "last_deployed_at": "2026-09-01T06:57+05:30",
-    "deployed_path": "site/content/buying-guides/kitchen-cabinet-organizers-buying-guide-2026-08-30.md",
+  "TROLLEY_001": {
+    "status": "QA_IN_PROGRESS",
+    "last_qa_at": "2026-09-01T15:10+05:30",
+    "last_qa_engine": "bedrock-qwen",
+    "last_qa_pillar": 4,
+    "internal_links": [],
     "cta_validated": true,
-    "internal_linking_validated": true,
-    "compliance_validated": true,
-    "indexing_submitted": true,
-    "indexing_submitted_at": "2026-09-01T06:57+05:30",
-    "next_action": "After indexing confirmation, publish Instagram promo with direct link to drive verified conversions."
+    "compliance_checks": {
+      "disclosure": "PENDING",
+      "merchant_terms": "PENDING",
+      "geography": "PENDING",
+      "factual_claims": "PENDING",
+      "privacy": "PENDING",
+      "tracking": "PENDING",
+      "platform_policy": "PENDING"
+    },
+    "next_step": "After QA pass, publish Instagram promo with direct link to drive verified conversions."
   }
 }
