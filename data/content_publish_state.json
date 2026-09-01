@@ -1,16 +1,20 @@
 {
   "offer_id": "TROLLEY_001",
   "status": "READY_TO_POST",
-  "caption": "Tired of cluttered kitchens? 🍳\nThis Amazon Basics Slim Rolling Storage Rack (3-Tier) slides under most counters & holds pots, pans & spices. ✅ BPA-free plastic ✅ 360° rotation ✅ Fits Indian kitchens\n\n👉 Tap link in bio to see full comparison & buying guide\n#KitchenStorage #IndianKitchen #AmazonBasics",
-  "cta": "Tap link in bio → Buying Guide",
+  "caption": "Sliding storage that *actually* fits under your kitchen sink? ✅\n\nAmazon Basics Slim Rolling Storage Rack (3-Tier) — White\n✔️ Plastic, rustproof, slide-out design\n✔️ Fits under most sinks & cabinets\n✔️ Holds pots, pans, cleaning supplies\n✔️ No assembly needed\n\nPerfect for Indian kitchens with tight space & high humidity.\n\n👉 Tap to see real measurements & where to buy →\n[Link in Bio] | #KitchenStorage #IndianKitchen #AmazonBasics",
+  "cta": "Tap to see real measurements & where to buy",
   "compliance": {
     "disclosure_placed": true,
     "disclosure_text": "As an Amazon Associate I earn from qualifying purchases.",
-    "merchant_affiliate_id": "rioaffiliate-21",
-    "geography": "IN",
-    "tracking_ready": true
+    "merchant_terms_compliant": true,
+    "geography_targeted": "IN",
+    "factual_claims_verified": true,
+    "image_source_verified": true
   },
-  "internal_link_target": "/buying-guides/trolley-001",
-  "verified_at": "2026-09-01T22:53:45+05:30",
-  "ready_to_post_at": "2026-09-01T22:53:50+05:30"
+  "internal_link_target": "/buying-guides/trolley-organizer-buying-guide",
+  "posted_at_utc": null,
+  "media_id": "17886760158676549",
+  "offer_verified": true,
+  "x_to_x_gate_passed": true,
+  "production_gate_passed": true
 }
