@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Return an evidence-backed RIO result to Dr. Victor.
 
-Normal Victor probes remain read-only. A Victor Goal Contract may run one existing
-RIO governed autonomous business cycle before this reporter is called; this file
-only reports the resulting evidence and never bypasses RIO's own gates.
+Normal Victor probes remain read-only. A Victor Goal Contract or owned-problem
+recovery may run one existing RIO governed autonomous business cycle before this
+reporter is called; this file only reports the resulting evidence and never
+bypasses RIO's own gates.
 """
 import json
 import os
@@ -39,8 +40,14 @@ def git_changed_files():
 
 
 def is_goal_contract(payload):
-    text = str(payload.get("founder_message") or "")
-    return "VICTOR GOAL CONTRACT" in text.upper() or payload.get("execution_mode") == "GOAL_EXECUTE"
+    text = str(payload.get("founder_message") or "").upper()
+    task_type = os.getenv("VICTOR_RIO_TASK_TYPE", "").strip().upper()
+    return (
+        task_type == "GOAL_EXECUTE"
+        or "VICTOR GOAL CONTRACT" in text
+        or "VICTOR OWNED PROBLEM RECOVERY" in text
+        or payload.get("execution_mode") == "GOAL_EXECUTE"
+    )
 
 
 def extract_goal_id(payload):
