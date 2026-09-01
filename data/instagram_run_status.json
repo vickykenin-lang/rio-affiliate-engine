@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-09-01T01:04+05:30",
- "status": "INSTAGRAM_POSTED",
- "offer_id": "BATHROOM_SHELF_001",
- "detail": "Successfully posted to Instagram as Meta media 18114163570771311.",
- "posted_count": 7,
+ "updated_at": "2026-09-01T22:53+05:30",
+ "status": "BLOCKED_VALIDATION",
+ "offer_id": null,
+ "detail": "RIO validators are not known-passing; nothing can publish until data/status.json.all_validators_pass is true.",
+ "posted_count": 0,
  "pending_count": 0
 }
