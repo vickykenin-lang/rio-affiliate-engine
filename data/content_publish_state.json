@@ -1,20 +1,20 @@
 {
-  "offer_id": "DRAWER_001",
+  "offer_id": "NODRILL_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize kitchen efficiency with this expandable cutlery drawer organizer by Purawood! 🍽️\n\n✅ 2 Removable slots for flexible sorting\n✅ BPA-free, food-safe plastic\n✅ Fits standard drawers\n✅ Easy installation — no tools needed\n\nPerfect for Indian kitchens where space is tight but organization is non-negotiable. \n\n👉 Tap to see full specs, real measurements & where to buy.",
-  "cta": "Tap to see full specs & buy",
+  "caption": "No-drill corner shelf that holds up to 5kg? Yes. ✅ Rustproof. ✅ Adhesive mount. ✅ 2-piece set (8\" & 9\"). Perfect for kitchens, bathrooms, or small spaces. Link in bio for details & pricing. #NoDrill #StorageHack #IndianHome #InteriorDesignIndia",
+  "cta": "Link in bio",
   "compliance": {
     "disclosure_placed": true,
+    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you.",
     "merchant_terms_ok": true,
     "geography_ok": true,
-    "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_ok": true
+    "factual_claims_ok": true,
+    "tracking_ready": true
   },
-  "internal_link_target": "/buy/drawer_organizer_purawood",
-  "posted_at_utc": null,
-  "media_id": "18112848191063932",
-  "product_name": "Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black",
-  "offer_status": "READY",
-  "last_validator_run": "2026-09-02T15:16+05:30"
+  "internal_link_target": "/storage/nodrill-corner-shelf",
+  "product_name": "Nieifi KIMEE Set of 2 Metal Corner Shelf, Rustproof No-Drill Self-Adhesive Wall Mount (8 & 9 Inch)",
+  "media_id": "18101575730257542",
+  "permalink": "https://www.instagram.com/p/DcrEvWYmuU5/",
+  "posted_at": "2026-08-30T23:12+05:30",
+  "last_post_attempt_utc": "2026-09-02T16:38+05:30"
 }
