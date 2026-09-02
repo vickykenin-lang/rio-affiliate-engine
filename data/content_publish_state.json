@@ -1,20 +1,19 @@
 {
-  "offer_id": "TROLLEY_001",
+  "offer_id": "SPICE_RACK_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — perfect for kitchens, bathrooms, and balconies. 3-tier plastic slide-out design, white finish, and smooth-rolling wheels. ✅ Verified for Indian homes ✅ No assembly required ✅ Amazon India ready to ship",
-  "cta": "Tap link in bio → Shop now → Use code if available",
+  "caption": "Spice chaos? 🌶️ This 2-tier rotating rack holds 16 pieces & slides under cabinets. BPA-free, easy-clean plastic. ✅ Verified for Indian kitchens. Link in bio.",
+  "cta": "Shop verified Spice Rack →",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliate — I earn a small commission if you buy (at no extra cost to you)",
+    "disclosure_text": "#affiliate",
     "merchant_terms_checked": true,
-    "geography_compliant": true,
+    "geography_targeted": "IN",
     "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_reviewed": true
+    "tracking_enabled": true,
+    "platform_policy_compliant": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B08L5PQY2N",
-  "posted_at_utc": null,
-  "media_id": "17886760158676549",
-  "permalink": "https://www.instagram.com/p/Dcbect_ILPL/",
-  "product_name": "Amazon Basics Slim Rolling Storage Rack, 3-Tiered Shelf Plastic Slide-Out Organizer, White"
+  "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ7H",
+  "verified_at": "2026-09-03T04:50+05:30",
+  "verified_by": "RIO_VALIDATOR_V2",
+  "ready_to_post_since": "2026-09-02T18:32+05:30"
 }
