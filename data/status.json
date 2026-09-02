@@ -63,5 +63,12 @@
   "deepseek",
   "bedrock-glm"
  ],
- "note_en": "Heartbeat OK — 6/6 validators passing; SOUL hard gate valid."
+ "note_en": "Heartbeat OK — 6/6 validators passing; SOUL hard gate valid.",
+ "content_review": {
+  "reviewed_this_run": 23,
+  "errors_this_run": 0,
+  "total_articles_in_report": 23,
+  "avg_score": 4.0,
+  "would_trust_count": 10
+ }
 }
