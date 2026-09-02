@@ -1,21 +1,23 @@
 {
-  "offer_id": "SPICE_RACK_001",
+  "offer_id": "CONTAINER_001",
   "status": "READY_TO_POST",
-  "caption": "Spice chaos solved! 🌶️ This 2-tier revolving rack holds 16 pieces & spins smoothly. BPA-free, easy-clean plastic. Perfect for tight kitchens. 👇\n\n✅ Verified price: ₹399\n✅ In stock\n✅ Fast delivery\n\n🔗 [Buy on Amazon](https://www.amazon.in/dp/B09XKJH7YR?tag=rioaffiliate-21)",
-  "cta": "Buy on Amazon",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier – perfect for tight spaces! 🧹✨\n\n✅ BPA-free plastic\n✅ 2-tier stackable design\n✅ Slide-out convenience\n✅ Amazon Basics quality\n\n👉 Tap link in bio to see full specs & prices.\n\n#HomeStorage #KitchenOrganizer #IndianHome #AmazonFinds",
+  "cta": "Tap link in bio",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#AffiliateLink — I earn commission if you buy through this link.",
+    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you.",
     "merchant_terms_ok": true,
     "geography_ok": true,
     "factual_claims_ok": true,
-    "tracking_tag_ok": true,
+    "privacy_ok": true,
+    "tracking_ready": true,
     "platform_policy_ok": true
   },
-  "internal_link_target": "site/buying-guides/spice-rack-guide.md",
-  "product_name": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66",
-  "media_id": "18109466515847072",
-  "permalink": "https://www.instagram.com/p/Dcj651KFo5h/",
-  "posted_at": "2026-08-28T04:32+05:30",
-  "last_deployed_at": "2026-09-02T11:31+05:30"
+  "internal_link_target": "/buying-guides/kitchen-organizers",
+  "posted_at_utc": null,
+  "media_id": "17980069911095536",
+  "permalink": "https://www.instagram.com/p/DcmgoR-kgAE/",
+  "product_name": "Signoraware Family Fresh Tab BPA-Free Airtight Container Set (2.5L + 1.2L + 500ml + 160ml)",
+  "offer_state": "READY",
+  "last_validated_at": "2026-09-02T14:40+05:30"
 }
