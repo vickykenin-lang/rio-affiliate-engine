@@ -1,23 +1,20 @@
 {
-  "offer_id": "CONTAINER_001",
+  "offer_id": "DRAWER_001",
   "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier – perfect for tight spaces! 🧹✨\n\n✅ BPA-free plastic\n✅ 2-tier stackable design\n✅ Slide-out convenience\n✅ Amazon Basics quality\n\n👉 Tap link in bio to see full specs & prices.\n\n#HomeStorage #KitchenOrganizer #IndianHome #AmazonFinds",
-  "cta": "Tap link in bio",
+  "caption": "Maximize kitchen efficiency with this expandable cutlery drawer organizer by Purawood! 🍽️\n\n✅ 2 Removable slots for flexible sorting\n✅ BPA-free, food-safe plastic\n✅ Fits standard drawers\n✅ Easy installation — no tools needed\n\nPerfect for Indian kitchens where space is tight but organization is non-negotiable. \n\n👉 Tap to see full specs, real measurements & where to buy.",
+  "cta": "Tap to see full specs & buy",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you.",
     "merchant_terms_ok": true,
     "geography_ok": true,
-    "factual_claims_ok": true,
-    "privacy_ok": true,
+    "factual_claims_verified": true,
     "tracking_ready": true,
     "platform_policy_ok": true
   },
-  "internal_link_target": "/buying-guides/kitchen-organizers",
+  "internal_link_target": "/buy/drawer_organizer_purawood",
   "posted_at_utc": null,
-  "media_id": "17980069911095536",
-  "permalink": "https://www.instagram.com/p/DcmgoR-kgAE/",
-  "product_name": "Signoraware Family Fresh Tab BPA-Free Airtight Container Set (2.5L + 1.2L + 500ml + 160ml)",
-  "offer_state": "READY",
-  "last_validated_at": "2026-09-02T14:40+05:30"
+  "media_id": "18112848191063932",
+  "product_name": "Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black",
+  "offer_status": "READY",
+  "last_validator_run": "2026-09-02T15:16+05:30"
 }
