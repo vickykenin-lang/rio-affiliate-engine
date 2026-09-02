@@ -1,19 +1,20 @@
 {
-  "offer_id": "BATHROOM_NODRILL_001",
+  "offer_id": "TROLLEY_001",
   "status": "READY_TO_POST",
-  "caption": "Bathroom storage that stays put—no drilling needed! 🛠️\n\nEUDELE Aluminium Self-Adhesive Bathroom Shelf (Pack of 2, Black) gives you strong, rustproof storage in wet areas—perfect for soap, towels, or plants.\n✅ No-drill adhesive backing\n✅ Rustproof & water-resistant\n✅ Holds up to 2 kg per shelf\n✅ Easy to install & remove\n\nTap to see real measurements & installation demo 👇",
-  "cta": "Tap to see real measurements & installation demo",
+  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — perfect for kitchens, bathrooms, and balconies. 3-tier plastic slide-out design, white finish, and smooth-rolling wheels. ✅ Verified for Indian homes ✅ No assembly required ✅ Amazon India ready to ship",
+  "cta": "Tap link in bio → Shop now → Use code if available",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#ad | Affiliate link — I earn a small commission at no extra cost to you",
+    "disclosure_text": "#affiliate — I earn a small commission if you buy (at no extra cost to you)",
     "merchant_terms_checked": true,
     "geography_compliant": true,
     "factual_claims_verified": true,
     "tracking_ready": true,
     "platform_policy_reviewed": true
   },
-  "internal_link_target": "/products/bathroom_nodrill_001",
-  "verified_at": "2026-09-03T00:06+05:30",
-  "verified_by": "bedrock-qwen",
-  "ready_to_post": true
+  "internal_link_target": "https://www.amazon.in/dp/B08L5PQY2N",
+  "posted_at_utc": null,
+  "media_id": "17886760158676549",
+  "permalink": "https://www.instagram.com/p/Dcbect_ILPL/",
+  "product_name": "Amazon Basics Slim Rolling Storage Rack, 3-Tiered Shelf Plastic Slide-Out Organizer, White"
 }
