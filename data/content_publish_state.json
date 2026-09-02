@@ -1,20 +1,19 @@
 {
-  "offer_id": "TROLLEY_001",
+  "offer_id": "UNDER_SINK_001",
   "status": "READY_TO_POST",
-  "caption": "Sliding storage that *actually* fits under your kitchen sink? ✅\n\nAmazon Basics Slim Rolling Storage Rack (3-Tier) — White\n✔️ Plastic, rustproof, slide-out design\n✔️ Fits under most sinks & cabinets\n✔️ Holds pots, pans, cleaning supplies\n✔️ No assembly needed\n\nPerfect for Indian kitchens with tight space & high humidity.\n\n👉 Tap to see real measurements & where to buy →\n[Link in Bio] | #KitchenStorage #IndianKitchen #AmazonBasics",
-  "cta": "Tap to see real measurements & where to buy",
+  "caption": "Tired of under-sink clutter? 🚿 This 2-tier slide-out rack holds bottles, cleaners & more—no more bending or spills. ✅ BPA-free plastic ✅ Fits most standard cabinets ✅ Easy install\n\n👉 Tap link in bio to see dimensions & pricing.",
+  "cta": "Tap link in bio",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "As an Amazon Associate I earn from qualifying purchases.",
-    "merchant_terms_compliant": true,
-    "geography_targeted": "IN",
-    "factual_claims_verified": true,
-    "image_source_verified": true
+    "disclosure_text": "#affiliate",
+    "merchant": "Amazon Associates India",
+    "geography": "India only",
+    "tracking_enabled": true,
+    "product_identity_preserved": true
   },
-  "internal_link_target": "/buying-guides/trolley-organizer-buying-guide",
-  "posted_at_utc": null,
-  "media_id": "17886760158676549",
-  "offer_verified": true,
-  "x_to_x_gate_passed": true,
-  "production_gate_passed": true
+  "internal_link_target": "/buying-guides/under-sink-organizer",
+  "verified_at": "2026-09-02T06:53+05:30",
+  "x_to_x_gate": "PASS",
+  "production_gate": "PASS",
+  "ready_to_post_since": "2026-08-23T16:04+05:30"
 }
