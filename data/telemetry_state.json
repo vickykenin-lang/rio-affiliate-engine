@@ -16,8 +16,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AV09vJ63trKY_UoiPcl2aZ0\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A-FcyFpimw-YjSPrIB-0Fh9\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "TROLLEY_001": {
         "offer_id": "TROLLEY_001",
@@ -28,8 +28,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AG6fsPmdR8HoxO0kE6gb5Gu\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AitNlIGdftGSYtErtE1PX5d\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "SPICE_RACK_001": {
         "offer_id": "SPICE_RACK_001",
@@ -40,8 +40,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMFIRtxZ6gzq_paT-mfCheb\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Az8ZkH5qtYLGQR8AdWXDtpx\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "CONTAINER_001": {
         "offer_id": "CONTAINER_001",
@@ -52,8 +52,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A_mJcF_hpAJFR0ipLkCFvq3\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"ARjzwNEe_FwEtgZcmgD6t6Q\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "DRAWER_001": {
         "offer_id": "DRAWER_001",
@@ -64,8 +64,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMMYQAb24_rYBdJpg4odsRO\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AxSeLXaz2IuxMIFVgrT49UD\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "NODRILL_001": {
         "offer_id": "NODRILL_001",
@@ -76,8 +76,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A5CI7qYEDq0CtNn-sgTeTxI\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AudjfiP5_v3wEmb2O_LUOZ7\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       },
       "BATHROOM_SHELF_001": {
         "offer_id": "BATHROOM_SHELF_001",
@@ -88,11 +88,23 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AzxMpwcPd3qw5WJ-NkqtgSp\"}}",
-        "collected_at_utc": "2026-09-02T13:32:26.304588+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AY1_FMj9dYwRnzuFa-KPr8N\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
+      },
+      "BATHROOM_NODRILL_001": {
+        "offer_id": "BATHROOM_NODRILL_001",
+        "media_id": "18434112364179396",
+        "permalink": "https://www.instagram.com/p/DcywFPciVE3/",
+        "product_name": "House of VIPA 2-Tier Wall Mounted Bathroom Shelf with 4 Hooks, No-Drill Adhesive",
+        "posted_at": "2026-09-02T22:46+05:30",
+        "clicks": null,
+        "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
+        "collector_status": "FAILED",
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AAHOyzC6wYZSI0Xa4LmTqJq\"}}",
+        "collected_at_utc": "2026-09-02T17:48:31.624094+00:00"
       }
     },
-    "last_attempt_at_utc": "2026-09-02T13:32:26.304588+00:00",
+    "last_attempt_at_utc": "2026-09-02T17:48:31.624094+00:00",
     "graph_version": "v23.0"
   },
   "website": {
