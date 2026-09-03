@@ -1,8 +1,8 @@
 {
-  "offer_id": "BATHROOM_NODRILL_001",
+  "offer_id": "TROLLEY_001",
   "status": "READY_TO_POST",
-  "caption": "No-drill bathroom shelf with 4 hooks & 2 tiers — strong adhesive, rustproof, holds 5kg. Perfect for small spaces! ✅ Verified ✅ In stock ✅ Fast delivery",
-  "cta": "Tap link in bio to see full specs & prices",
+  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — 3-tier, slide-out, white plastic. Perfect for kitchens, bathrooms & laundry rooms. ✅ BPA-free ✅ Easy roll ✅ No drilling needed. Link in bio.",
+  "cta": "Link in bio → Shop Amazon",
   "compliance": {
     "disclosure_placed": true,
     "disclosure_text": "#affiliatelink",
@@ -12,11 +12,8 @@
     "tracking_ready": true,
     "platform_policy_compliant": true
   },
-  "internal_link_target": "https://rioaffiliate.in/products/bathroom-nodrill-shelf",
-  "posted_at_utc": null,
-  "media_id": "18434112364179396",
-  "permalink": "https://www.instagram.com/p/DcywFPciVE3/",
-  "product_name": "House of VIPA 2-Tier Wall Mounted Bathroom Shelf with 4 Hooks, No-Drill Adhesive",
-  "offer_state": "READY",
-  "last_validator_run": "2026-09-03T20:00+05:30"
+  "internal_link_target": "https://www.amazon.in/dp/B08L5QYJ2H",
+  "verified_at": "2026-09-03T22:37+05:30",
+  "verified_by": "bedrock-qwen",
+  "ready_to_post_since": "2026-09-03T22:37+05:30"
 }
