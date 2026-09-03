@@ -1,19 +1,19 @@
 {
-  "offer_id": "TROLLEY_001",
+  "offer_id": "SPICE_RACK_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — 3-tier, slide-out, white plastic. Perfect for kitchens, bathrooms & laundry rooms. ✅ BPA-free ✅ Easy roll ✅ No drilling needed. Link in bio.",
-  "cta": "Link in bio → Shop Amazon",
+  "caption": " Spice racks that actually fit your kitchen? 🍛\n\nThis Amazon Solimo Revolving Spice Rack (Set of 16) spins smoothly, holds everything, and slides right into tight corners.\n\n✅ BPA-free plastic\n✅ 360° rotation\n✅ Stackable & stack-ready\n\nTap link in bio → Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66",
+  "cta": "Tap link in bio",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliatelink",
+    "disclosure_text": "#affiliate",
     "merchant_terms_checked": true,
     "geography_compliant": true,
     "factual_claims_verified": true,
     "tracking_ready": true,
-    "platform_policy_compliant": true
+    "platform_policy_reviewed": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B08L5QYJ2H",
-  "verified_at": "2026-09-03T22:37+05:30",
+  "internal_link_target": "https://www.amazon.in/dp/B09XKZ9YQH",
+  "verified_at": "2026-09-03T23:29+05:30",
   "verified_by": "bedrock-qwen",
-  "ready_to_post_since": "2026-09-03T22:37+05:30"
+  "ready_to_post_since": "2026-09-03T04:32+05:30"
 }
