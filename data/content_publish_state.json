@@ -1,19 +1,18 @@
 {
-  "offer_id": "SPICE_RACK_001",
+  "offer_id": "UNDER_SINK_001",
   "status": "READY_TO_POST",
-  "caption": "Spice chaos? 🌶️ This 2-tier rotating rack holds 16 pieces & slides under cabinets. BPA-free, easy-clean plastic. ✅ Verified for Indian kitchens. Link in bio.",
-  "cta": "Shop verified Spice Rack →",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — space-saving, rustproof, easy install. Perfect for tight Indian kitchens! 🇮🇳\n\n✅ 2-tier steel mesh\n✅ No-drill adhesive\n✅ Holds 10+ kg\n✅ Amazon link below\n\n👉 Tap to see price & specs",
+  "cta": "Tap to see price & specs",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliate",
+    "disclosure_text": "#AmazonAffiliate",
     "merchant_terms_checked": true,
     "geography_targeted": "IN",
     "factual_claims_verified": true,
-    "tracking_enabled": true,
-    "platform_policy_compliant": true
+    "tracking_ready": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ7H",
-  "verified_at": "2026-09-03T04:50+05:30",
-  "verified_by": "RIO_VALIDATOR_V2",
-  "ready_to_post_since": "2026-09-02T18:32+05:30"
+  "internal_link_target": "https://www.amazon.in/dp/B09XKJH7Z2",
+  "posted_at_utc": null,
+  "media_id": "17877752013535173",
+  "last_validated_at": "2026-09-03T06:42+05:30"
 }
