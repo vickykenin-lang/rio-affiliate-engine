@@ -1,20 +1,22 @@
 {
-  "offer_id": "BATHROOM_SHELF_001",
+  "offer_id": "BATHROOM_NODRILL_001",
   "status": "READY_TO_POST",
-  "caption": "No-drill bathroom shelf that actually holds! 🛠️\n\nEUDELE 2-tier aluminium shelf (black) — rustproof, strong adhesive, no wall damage.\n\n✅ No tools needed\n✅ Holds 5kg per shelf\n✅ Perfect for soap, towels, toiletries\n\nTap to see specs & pricing →",
-  "cta": "Tap to see specs & pricing",
+  "caption": "No-drill bathroom shelf with 4 hooks & 2 tiers — strong adhesive, rustproof, holds 5kg. Perfect for small spaces! ✅ Verified ✅ In stock ✅ Fast delivery",
+  "cta": "Tap link in bio to see full specs & prices",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliate",
+    "disclosure_text": "#affiliatelink",
     "merchant_terms_checked": true,
     "geography_compliant": true,
     "factual_claims_verified": true,
     "tracking_ready": true,
     "platform_policy_compliant": true
   },
-  "internal_link_target": "https://rio-affiliate-engine.in/products/bathroom-shelf-001",
-  "media_id": "18114163570771311",
-  "permalink": "https://www.instagram.com/p/Dct2X62FOl_/",
-  "product_name": "EUDELE Aluminium Self-Adhesive Bathroom Shelf, No-Drill Wall Mount (Pack of 2, Black)",
-  "posted_at": "2026-09-01T01:04+05:30"
+  "internal_link_target": "https://rioaffiliate.in/products/bathroom-nodrill-shelf",
+  "posted_at_utc": null,
+  "media_id": "18434112364179396",
+  "permalink": "https://www.instagram.com/p/DcywFPciVE3/",
+  "product_name": "House of VIPA 2-Tier Wall Mounted Bathroom Shelf with 4 Hooks, No-Drill Adhesive",
+  "offer_state": "READY",
+  "last_validator_run": "2026-09-03T20:00+05:30"
 }
