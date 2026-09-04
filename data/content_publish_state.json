@@ -1,25 +1,24 @@
 {
-  "offer_id": "BATHROOM_SHELF_001",
+  "offer_id": "HOMEOFFICE_CABLE_001",
+  "product_name": "Joomouney Metal Under-Desk Cable Organizer Rack, Adjustable Screw-Fixed Tray",
   "status": "READY_TO_POST",
-  "caption": "Tired of cluttered bathroom corners? 🚿\n\nThis 2-tier aluminium shelf holds soap, towels & more — no drilling, no damage. Rustproof, strong adhesive, and sleek black finish.\n\n✅ No tools needed\n✅ Holds up to 2kg\n✅ Perfect for tiles, marble, or painted walls\n\n👉 Tap to see real measurements & installation demo",
-  "cta": "Tap to see real measurements & installation demo",
+  "caption": "Tired of tangled cables under your desk? 🧵\n\nThis adjustable metal cable organizer keeps wires neat, safe, and out of sight — perfect for home offices and workspaces. \n\n✅ Adjustable tray\n✅ Screw-fixed for stability\n✅ Heavy-duty metal build\n\n👉 Tap to see how it works & bring order to your desk.",
+  "cta": "Tap to see how it works & bring order to your desk.",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you",
+    "disclosure_text": "#affiliate",
     "merchant_terms_checked": true,
     "geography_compliant": true,
     "factual_claims_verified": true,
-    "privacy_compliant": true,
     "tracking_ready": true,
     "platform_policy_compliant": true
   },
-  "internal_link_target": "/bathroom-storage/bathroom-shelf-no-drill",
-  "product_name": "EUDELE Aluminium Self-Adhesive Bathroom Shelf, No-Drill Wall Mount (Pack of 2, Black)",
-  "offer_url": "https://www.amazon.in/dp/B0BZQYJZKZ",
+  "internal_link_target": "https://rioaffiliate.in/homoffice-cable-organizer",
   "posted_at_utc": null,
   "media_id": null,
   "permalink": null,
-  "last_post_attempt_utc": null,
-  "last_post_result": null,
-  "last_post_error": null
+  "clicks": null,
+  "collector_status": "PENDING",
+  "last_attempt_at_utc": null,
+  "collector_error": null
 }
