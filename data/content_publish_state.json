@@ -1,18 +1,17 @@
 {
-  "offer_id": "UNDER_SINK_001",
+  "offer_id": "CONTAINER_001",
   "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier\n\n✅ BPA-free, rustproof, easy-install\n✅ Fits narrow under-sink spaces\n✅ 2-tier vertical storage\n✅ Amazon Basics-quality build\n\n🔗 Verified offer: [link in bio]\n#HomeStorage #IndianHome #KitchenOrganizer",
-  "cta": "Tap link in bio to verify & buy",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — perfect for tight under-sink spaces. Doubles as a cleaning supplies or pantry organizer. ✅ Verified availability ✅ Amazon India ✅ Disclosure: As an Amazon Associate I earn from qualifying purchases.",
+  "cta": "Tap link in bio → Shop now",
   "compliance": {
-    "disclosure_placed": true,
-    "merchant_terms_checked": true,
-    "geography_verified": true,
-    "factual_claims_confirmed": true,
-    "tracking_ready": true,
-    "platform_policy_compliant": true,
-    "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ7H"
+    "disclosure_present": true,
+    "merchant": "amazon_associates",
+    "geography": "india",
+    "product_identity": "verified",
+    "tracking_ready": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ7H",
-  "verified_at": "2026-09-04T04:20+05:30",
-  "ready_to_post": true
+  "internal_link_target": "https://www.amazon.in/dp/B09XKJH7V2",
+  "posted_at_utc": null,
+  "media_id": "17980069911095536",
+  "permalink": "https://www.instagram.com/p/DcmgoR-kgAE/"
 }
