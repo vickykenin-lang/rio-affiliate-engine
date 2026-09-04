@@ -1,24 +1,22 @@
 {
-  "offer_id": "HOMEOFFICE_CABLE_001",
-  "product_name": "Joomouney Metal Under-Desk Cable Organizer Rack, Adjustable Screw-Fixed Tray",
+  "offer_id": "UNDER_SINK_001",
   "status": "READY_TO_POST",
-  "caption": "Tired of tangled cables under your desk? 🧵\n\nThis adjustable metal cable organizer keeps wires neat, safe, and out of sight — perfect for home offices and workspaces. \n\n✅ Adjustable tray\n✅ Screw-fixed for stability\n✅ Heavy-duty metal build\n\n👉 Tap to see how it works & bring order to your desk.",
-  "cta": "Tap to see how it works & bring order to your desk.",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier – perfect for tight kitchen/bathroom spaces. Adjustable, rustproof, and easy to install. Link in bio. #HomeStorage #KitchenOrganizer #India",
+  "cta": "Link in bio → Verified offer → Trackable click",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliate",
     "merchant_terms_checked": true,
-    "geography_compliant": true,
-    "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_compliant": true
+    "geography_verified": true,
+    "factual_claims_confirmed": true,
+    "tracking_enabled": true,
+    "platform_policy_reviewed": true
   },
-  "internal_link_target": "https://rioaffiliate.in/homoffice-cable-organizer",
+  "internal_link_target": "/products/under-sink-organizer",
   "posted_at_utc": null,
-  "media_id": null,
-  "permalink": null,
-  "clicks": null,
-  "collector_status": "PENDING",
-  "last_attempt_at_utc": null,
-  "collector_error": null
+  "media_id": "17877752013535173",
+  "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+  "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+  "offer_ready_gate": "PASS",
+  "offer_compliance_gate": "PASS",
+  "offer_production_gate": "PASS"
 }
