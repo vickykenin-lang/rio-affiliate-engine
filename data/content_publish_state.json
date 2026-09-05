@@ -1,23 +1,21 @@
 {
-  "offer_id": "BALCONY_BROOM_001",
+  "offer_id": "SPICE_RACK_001",
   "status": "READY_TO_POST",
-  "caption": "🧽 Tired of cluttered balconies? This 5-slot + 6-hook wall-mounted holder keeps brooms, mops & cleaning tools neatly stored — no drilling needed. Perfect for Indian homes & small utility spaces. 🏡\n\n✅ No-drill adhesive\n✅ Rustproof metal\n✅ 5 tool slots + 6 hooks\n✅ Space-saving vertical storage\n\nTap to see full specs & pricing →",
-  "cta": "Tap to see full specs & pricing →",
+  "caption": "🧼 Keep your kitchen counters clutter-free with this Amazon Solimo Plastic Revolving Spice Rack Set (16 pieces)! 🌶️\n\n✅ BPA-free & durable plastic\n✅ 360° rotation for easy access\n✅ Fits neatly in tight spaces\n✅ Set includes 2.5L + 1.2L + 500ml + 160ml containers\n\n👉 Tap to see full specs & pricing\n🔗 [Link in bio] | #KitchenStorage #IndianHome #AmazonFinds",
+  "cta": "Tap to see full specs & pricing",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "#affiliate — As an Amazon Associate I earn from qualifying purchases.",
-    "merchant_terms_ok": true,
-    "geography_ok": true,
-    "factual_claims_ok": true,
-    "privacy_ok": true,
-    "platform_policy_ok": true,
-    "tracking_ready": true
+    "disclosure_text": "As an Amazon Associate I earn from qualifying purchases.",
+    "merchant": "Amazon India",
+    "product_name": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66",
+    "offer_verified": true,
+    "x_to_x_passed": true,
+    "production_gate_passed": true
   },
-  "internal_link_target": "/products/balcony_broom_001",
-  "product_name": "Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)",
-  "media_id": "18119104907492559",
-  "permalink": "https://www.instagram.com/p/Dc6XIGNAfYs/",
-  "posted_at": "2026-09-05T21:41+05:30",
-  "ready_to_post_at": "2026-09-05T21:41+05:30",
-  "last_validated_at": "2026-09-05T23:05+05:30"
+  "internal_link_target": "https://www.amazon.in/dp/B09XKJZ7R6",
+  "posted_at_utc": null,
+  "media_id": "18109466515847072",
+  "permalink": "https://www.instagram.com/p/Dcj651KFo5h/",
+  "last_post_attempt_utc": null,
+  "next_task": "Run scripts/collect_instagram_metrics.py after posting; if token error, escalate to Founder with precise action request."
 }
