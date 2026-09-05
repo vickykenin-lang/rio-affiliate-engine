@@ -1,17 +1,21 @@
 {
-  "offer_id": "SPICE_RACK_001",
+  "offer_id": "TROLLEY_001",
   "status": "READY_TO_POST",
-  "caption": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66 — compact, stackable, and easy-clean. Perfect for Indian kitchens. Link in bio.",
-  "cta": "Link in bio",
+  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — 3-tier, slide-out, white plastic. Perfect for kitchens, bathrooms, or laundry rooms. ✅ Verified in India ✅ Ships fast ✅ No assembly needed. Tap to compare sizes/prices.",
+  "cta": "Compare sizes & prices →",
   "compliance": {
     "disclosure_placed": true,
+    "disclosure_text": "#ad — As an Amazon Associate I earn from qualifying purchases.",
     "merchant_terms_checked": true,
     "geography_verified": true,
     "factual_claims_confirmed": true,
-    "tracking_intact": true,
+    "tracking_ready": true,
     "platform_policy_reviewed": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ2F",
-  "verified_at": "2026-09-05T06:34+05:30",
-  "ready_to_post_since": "2026-09-05T06:34+05:30"
+  "internal_link_target": "https://www.rio-affiliate-engine.in/products/amazon-basics-slim-rolling-storage-rack-3-tier",
+  "media_id": "17886760158676549",
+  "permalink": "https://www.instagram.com/p/Dcbect_ILPL/",
+  "product_name": "Amazon Basics Slim Rolling Storage Rack, 3-Tiered Shelf Plastic Slide-Out Organizer, White",
+  "posted_at": "2026-08-24T21:49+05:30",
+  "last_posted_at_utc": "2026-09-05T11:07+05:30"
 }
