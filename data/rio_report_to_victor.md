@@ -198,3 +198,5 @@ Fetched `https://raw.githubusercontent.com/vickykenin-lang/rio-affiliate-engine/
 - 2026-09-02T22:46+05:30 IST — posted **House of VIPA 2-Tier Wall Mounted Bathroom Shelf with 4 Hooks, No-Drill Adhesive** (offer `BATHROOM_NODRILL_001`) to Instagram @riosallerior. Media ID `18434112364179396`. Permalink: https://www.instagram.com/p/DcywFPciVE3/
 
 - 2026-09-03T22:37+05:30 IST — posted **Joomouney Metal Under-Desk Cable Organizer Rack, Adjustable Screw-Fixed Tray** (offer `HOMEOFFICE_CABLE_001`) to Instagram @riosallerior. Media ID `18343524478283380`. Permalink: https://www.instagram.com/p/Dc1T5-vCtCI/
+
+- 2026-09-05T21:41+05:30 IST — posted **Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)** (offer `BALCONY_BROOM_001`) to Instagram @riosallerior. Media ID `18119104907492559`. Permalink: https://www.instagram.com/p/Dc6XIGNAfYs/
