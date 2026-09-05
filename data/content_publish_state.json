@@ -1,23 +1,21 @@
 {
-  "offer_id": "BATHROOM_SHELF_001",
+  "offer_id": "UNDER_SINK_001",
   "status": "READY_TO_POST",
-  "caption": "No-drill bathroom shelf that actually holds! 🛠️\n\nEUDELE 2-Tier Aluminium Shelf – Rustproof, No-Drill, Strong Adhesive\n✅ Holds 5kg per shelf\n✅ Black finish, modern look\n✅ Perfect for tiles, paint, laminate\n\n👉 Tap to see real measurements & installation demo\n\n#BathroomStorage #NoDrill #HomeHack #India",
+  "caption": "Compact storage for tight spaces ✅\n\nwolpin Under Sink Rectangle Organizer Storage Rack – 2-tier, BPA-free plastic, white.\n\n✔️ Fits under kitchen sink, bathroom vanity, or laundry unit\n✔️ Adjustable shelves hold heavy pots & cleaning supplies\n✔️ No drilling – strong adhesive backing\n✔️ 30-day return guarantee on Amazon\n\nTap to see real measurements & installation demo 👇",
   "cta": "Tap to see real measurements & installation demo",
   "compliance": {
-    "disclosure_placed": true,
-    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you",
+    "disclosure_applied": true,
+    "disclosure_text": "#ad — As an Amazon Associate I earn from qualifying purchases",
     "merchant_terms_checked": true,
-    "geography_compliant": true,
-    "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_compliant": true
+    "geography_verified": true,
+    "factual_claims_confirmed": true,
+    "tracking_ready": true
   },
-  "internal_link_target": "https://rio-affiliate-engine.in/products/bathroom-shelf-001",
+  "internal_link_target": "/products/under-sink-organizer",
   "posted_at_utc": null,
-  "media_id": "18114163570771311",
-  "permalink": "https://www.instagram.com/p/Dct2X62FOl_/",
-  "product_name": "EUDELE Aluminium Self-Adhesive Bathroom Shelf, No-Drill Wall Mount (Pack of 2, Black)",
-  "offer_state": "READY",
-  "last_validator_run": "2026-09-05T18:18+05:30",
-  "validator_status": "ALL_GATES_PASS"
+  "media_id": "17877752013535173",
+  "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+  "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+  "offer_status": "READY",
+  "last_validator_run": "2026-09-05T21:07+05:30"
 }
