@@ -1,17 +1,19 @@
 {
-  "offer_id": "CONTAINER_001",
+  "offer_id": "DRAWER_001",
   "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — perfect for tight spaces! 🧹✨\n✅ BPA-free, durable plastic\n✅ 2-tier vertical storage\n✅ Fits under kitchen sink, bathroom vanity, or laundry area\n\n👉 Tap to see pricing & specs on Amazon\n🔗 [Affiliate Disclosure: We earn a small commission at no extra cost to you]",
-  "cta": "Tap to see pricing & specs on Amazon",
+  "caption": "Maximize kitchen efficiency with this Purawood Expandable Cutlery Drawer Organizer! 🍽️\n\n✅ 2 Removable slots for flexible sorting\n✅ BPA-Free, food-safe plastic\n✅ Expands to fit most standard drawers\n✅ Black finish blends with any kitchen\n\nPerfect for Indian kitchens where space is tight but organization is non-negotiable.\n\n🔗 Tap to see full specs & pricing →",
+  "cta": "Tap to explore →",
   "compliance": {
-    "disclosure_present": true,
+    "disclosure_placed": true,
+    "disclosure_text": "#affiliatelink — I earn a small commission if you buy (at no extra cost to you). Thanks for supporting RIO!",
     "merchant_terms_checked": true,
-    "geography_verified": true,
-    "factual_claims_validated": true,
+    "geography_compliant": true,
+    "factual_claims_verified": true,
     "tracking_ready": true,
-    "platform_policy_compliant": true
+    "platform_policy_reviewed": true
   },
-  "internal_link_target": "/products/container_001",
-  "verified_at": "2026-09-05T14:11+05:30",
-  "ready_to_post_since": "2026-08-29T04:40+05:30"
+  "internal_link_target": "https://rioaffiliate.in/kitchen-organizers/purawood-expandable-cutlery-drawer-organizer/",
+  "product_name": "Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black",
+  "offer_url": "https://www.amazon.in/dp/B09XKJZQYH",
+  "posted_at_utc": null
 }
