@@ -1,18 +1,23 @@
 {
-  "offer_id": "NODRILL_001",
+  "offer_id": "BATHROOM_SHELF_001",
   "status": "READY_TO_POST",
-  "caption": "No-drill corner shelf that holds up to 5kg — perfect for small kitchens, bathrooms, or home offices. Rustproof, adhesive-backed, and easy to install. ✅ Verified for Indian buyers | #NoDrill #StorageHack #HomeOrganisation",
-  "cta": "Tap link in bio to see dimensions, weight limit & full specs.",
+  "caption": "No-drill bathroom shelf that actually holds! 🛠️\n\nEUDELE 2-Tier Aluminium Shelf – Rustproof, No-Drill, Strong Adhesive\n✅ Holds 5kg per shelf\n✅ Black finish, modern look\n✅ Perfect for tiles, paint, laminate\n\n👉 Tap to see real measurements & installation demo\n\n#BathroomStorage #NoDrill #HomeHack #India",
+  "cta": "Tap to see real measurements & installation demo",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you.",
+    "disclosure_text": "Affiliate link — may earn commission at no extra cost to you",
     "merchant_terms_checked": true,
-    "geography_verified": true,
-    "product_claims_verified": true
+    "geography_compliant": true,
+    "factual_claims_verified": true,
+    "tracking_ready": true,
+    "platform_policy_compliant": true
   },
-  "internal_link_target": "https://rio-affiliate-engine.in/products/nodrill_001",
+  "internal_link_target": "https://rio-affiliate-engine.in/products/bathroom-shelf-001",
   "posted_at_utc": null,
-  "media_id": "18101575730257542",
-  "permalink": "https://www.instagram.com/p/DcrEvWYmuU5/",
-  "product_name": "Nieifi KIMEE Set of 2 Metal Corner Shelf, Rustproof No-Drill Self-Adhesive Wall Mount (8 & 9 Inch)"
+  "media_id": "18114163570771311",
+  "permalink": "https://www.instagram.com/p/Dct2X62FOl_/",
+  "product_name": "EUDELE Aluminium Self-Adhesive Bathroom Shelf, No-Drill Wall Mount (Pack of 2, Black)",
+  "offer_state": "READY",
+  "last_validator_run": "2026-09-05T18:18+05:30",
+  "validator_status": "ALL_GATES_PASS"
 }
