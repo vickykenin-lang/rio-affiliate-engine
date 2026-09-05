@@ -1,21 +1,22 @@
 {
-  "offer_id": "SPICE_RACK_001",
+  "offer_id": "DRAWER_001",
   "status": "READY_TO_POST",
-  "caption": "🧼 Keep your kitchen counters clutter-free with this Amazon Solimo Plastic Revolving Spice Rack Set (16 pieces)! 🌶️\n\n✅ BPA-free & durable plastic\n✅ 360° rotation for easy access\n✅ Fits neatly in tight spaces\n✅ Set includes 2.5L + 1.2L + 500ml + 160ml containers\n\n👉 Tap to see full specs & pricing\n🔗 [Link in bio] | #KitchenStorage #IndianHome #AmazonFinds",
-  "cta": "Tap to see full specs & pricing",
+  "caption": "Maximize kitchen efficiency with this expandable cutlery drawer organizer! 🍽️\n\n✅ 2 Removable slots for flexible sorting\n✅ BPA-free & food-safe\n✅ Fits standard drawers\n✅ Easy installation, no tools needed\n\nPerfect for Indian kitchens where space is premium. Get yours today!",
+  "cta": "Shop Now →",
+  "internal_link_target": "/products/drawer_001",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "As an Amazon Associate I earn from qualifying purchases.",
-    "merchant": "Amazon India",
-    "product_name": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66",
-    "offer_verified": true,
-    "x_to_x_passed": true,
-    "production_gate_passed": true
+    "disclosure_text": "#affiliate — As an Amazon Associate I earn from qualifying purchases",
+    "merchant_terms_checked": true,
+    "geography_compliant": true,
+    "factual_claims_verified": true,
+    "tracking_enabled": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09XKJZ7R6",
   "posted_at_utc": null,
-  "media_id": "18109466515847072",
-  "permalink": "https://www.instagram.com/p/Dcj651KFo5h/",
-  "last_post_attempt_utc": null,
-  "next_task": "Run scripts/collect_instagram_metrics.py after posting; if token error, escalate to Founder with precise action request."
+  "media_id": "18112848191063932",
+  "permalink": "https://www.instagram.com/p/DcodW-8jfdD/",
+  "product_name": "Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black",
+  "offer_verified": true,
+  "x_to_x_integrity": "PASSED",
+  "production_gate": "PASSED"
 }
