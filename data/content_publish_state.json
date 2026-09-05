@@ -1,21 +1,17 @@
 {
-  "offer_id": "TROLLEY_001",
+  "offer_id": "CONTAINER_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — 3-tier, slide-out, white plastic. Perfect for kitchens, bathrooms, or laundry rooms. ✅ Verified in India ✅ Ships fast ✅ No assembly needed. Tap to compare sizes/prices.",
-  "cta": "Compare sizes & prices →",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — perfect for tight spaces! 🧹✨\n✅ BPA-free, durable plastic\n✅ 2-tier vertical storage\n✅ Fits under kitchen sink, bathroom vanity, or laundry area\n\n👉 Tap to see pricing & specs on Amazon\n🔗 [Affiliate Disclosure: We earn a small commission at no extra cost to you]",
+  "cta": "Tap to see pricing & specs on Amazon",
   "compliance": {
-    "disclosure_placed": true,
-    "disclosure_text": "#ad — As an Amazon Associate I earn from qualifying purchases.",
+    "disclosure_present": true,
     "merchant_terms_checked": true,
     "geography_verified": true,
-    "factual_claims_confirmed": true,
+    "factual_claims_validated": true,
     "tracking_ready": true,
-    "platform_policy_reviewed": true
+    "platform_policy_compliant": true
   },
-  "internal_link_target": "https://www.rio-affiliate-engine.in/products/amazon-basics-slim-rolling-storage-rack-3-tier",
-  "media_id": "17886760158676549",
-  "permalink": "https://www.instagram.com/p/Dcbect_ILPL/",
-  "product_name": "Amazon Basics Slim Rolling Storage Rack, 3-Tiered Shelf Plastic Slide-Out Organizer, White",
-  "posted_at": "2026-08-24T21:49+05:30",
-  "last_posted_at_utc": "2026-09-05T11:07+05:30"
+  "internal_link_target": "/products/container_001",
+  "verified_at": "2026-09-05T14:11+05:30",
+  "ready_to_post_since": "2026-08-29T04:40+05:30"
 }
