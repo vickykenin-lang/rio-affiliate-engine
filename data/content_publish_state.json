@@ -1,22 +1,17 @@
 {
-  "offer_id": "UNDER_SINK_001",
+  "offer_id": "SPICE_RACK_001",
   "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier – perfect for tight kitchen/bathroom spaces. Adjustable, rustproof, and easy to install. Link in bio. #HomeStorage #KitchenOrganizer #India",
-  "cta": "Link in bio → Verified offer → Trackable click",
+  "caption": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces SOKT66 — compact, stackable, and easy-clean. Perfect for Indian kitchens. Link in bio.",
+  "cta": "Link in bio",
   "compliance": {
     "disclosure_placed": true,
     "merchant_terms_checked": true,
     "geography_verified": true,
     "factual_claims_confirmed": true,
-    "tracking_enabled": true,
+    "tracking_intact": true,
     "platform_policy_reviewed": true
   },
-  "internal_link_target": "/products/under-sink-organizer",
-  "posted_at_utc": null,
-  "media_id": "17877752013535173",
-  "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
-  "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-  "offer_ready_gate": "PASS",
-  "offer_compliance_gate": "PASS",
-  "offer_production_gate": "PASS"
+  "internal_link_target": "https://www.amazon.in/dp/B09VQYKZ2F",
+  "verified_at": "2026-09-05T06:34+05:30",
+  "ready_to_post_since": "2026-09-05T06:34+05:30"
 }
