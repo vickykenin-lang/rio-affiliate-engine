@@ -1,18 +1,20 @@
 {
-  "offer_id": "UNDER_SINK_001",
+  "offer_id": "CONTAINER_001",
   "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — space-saving, BPA-free, white plastic. Perfect for tight Indian kitchens. Link in bio. #KitchenStorage #India #HomeHacks",
-  "cta": "Link in bio → Amazon",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — perfect for tight spaces! 🧹✨\n\n✅ BPA-free plastic\n✅ 2-tier vertical storage\n✅ Fits under most sinks\n✅ Amazon Basics quality\n\nTap to see full specs & pricing →",
+  "cta": "Tap to see full specs & pricing →",
   "compliance": {
     "disclosure_placed": true,
-    "disclosure_text": "Affiliate link — may earn commission",
-    "merchant_terms_approved": true,
-    "geography_approved": true,
+    "disclosure_text": "#affiliate",
+    "merchant_terms_checked": true,
+    "geography_compliant": true,
     "factual_claims_verified": true,
-    "tracking_enabled": true
+    "tracking_ready": true,
+    "platform_policy_compliant": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09XKJH7R6",
+  "internal_link_target": "https://www.rio-affiliate-engine.site/products/container_001",
   "posted_at_utc": null,
-  "media_id": "17877752013535173",
-  "last_validated_at": "2026-09-06T10:47+05:30"
+  "media_id": "17980069911095536",
+  "permalink": "https://www.instagram.com/p/DcmgoR-kgAE/",
+  "product_name": "Signoraware Family Fresh Tab BPA-Free Airtight Container Set (2.5L + 1.2L + 500ml + 160ml)"
 }
