@@ -1,20 +1,26 @@
 {
-  "offer_id": "CONTAINER_001",
-  "status": "READY_TO_POST",
-  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — perfect for tight spaces! 🧹✨\n\n✅ BPA-free plastic\n✅ 2-tier vertical storage\n✅ Fits under most sinks\n✅ Amazon Basics quality\n\nTap to see full specs & pricing →",
-  "cta": "Tap to see full specs & pricing →",
-  "compliance": {
-    "disclosure_placed": true,
-    "disclosure_text": "#affiliate",
-    "merchant_terms_checked": true,
-    "geography_compliant": true,
-    "factual_claims_verified": true,
-    "tracking_ready": true,
-    "platform_policy_compliant": true
-  },
-  "internal_link_target": "https://www.rio-affiliate-engine.site/products/container_001",
-  "posted_at_utc": null,
-  "media_id": "17980069911095536",
-  "permalink": "https://www.instagram.com/p/DcmgoR-kgAE/",
-  "product_name": "Signoraware Family Fresh Tab BPA-Free Airtight Container Set (2.5L + 1.2L + 500ml + 160ml)"
+  "DRAWER_001": {
+    "status": "READY_TO_POST",
+    "platform": "instagram",
+    "media_id": "18112848191063932",
+    "caption": "Drawer organizer that actually fits Indian kitchen drawers 🇮🇳\n\nExpandable 30–45 cm, 2 removable slots, BPA-free.\n\n✅ Verified live on Amazon India\n✅ Disclosure included\n✅ Tracking tag: drawer_001_conversion_page_v1\n\n👉 Tap link in bio to see real measurements & buy\n\n#KitchenStorage #IndianKitchen #HomeOrganizer",
+    "cta": "Tap link in bio to see real measurements & buy",
+    "compliance": {
+      "disclosure": "I earn a commission if you buy through this link — at no extra cost to you.",
+      "merchant_terms_reviewed": true,
+      "geography": "INDIA",
+      "factual_claims": [
+        "expandable_30_to_45_cm",
+        "2_removable_slots",
+        "bpa_free"
+      ],
+      "tracking_tag": "drawer_001_conversion_page_v1"
+    },
+    "internal_link_target": "/products/",
+    "conversion_page_url": "/products/drawer_organizer_001.md",
+    "last_posted_at": "2026-09-06T14:50+05:30",
+    "last_posted_platform": "instagram",
+    "next_task": "Create high-intent conversion page for DRAWER_001 to enable traceable Amazon Associates clicks and conversions, since Instagram telemetry is unavailable and repeated posting has no measurable impact.",
+    "changed_at": "2026-09-06T15:03+05:30"
+  }
 }
