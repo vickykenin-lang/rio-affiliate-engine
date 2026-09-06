@@ -1,17 +1,29 @@
 {
-  "status": "READY_TO_POST",
-  "offer_id": "BALCONY_BROOM_001",
-  "product_name": "Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)",
-  "caption": "Struggling with cluttered balconies? 🏠\\n\\nThe Chillyfit Wall-Mounted Broom & Mop Holder solves Indian homes' #1 utility-space problem — no drilling, no floor space, and rustproof for monsoons.\\n\\n✅ 5 vertical slots + 6 hooks\\n✅ Rustproof metal frame\\n✅ No-drill adhesive (tile/marble/painted walls)\\n✅ Holds up to 5 kg\\n\\n[👉 View on Amazon India]({{link}})\\n\\n#IndianHomeHack #BalconyOrganizer #RentedHomeSolution",
-  "cta": "View on Amazon India",
-  "compliance": {
-    "disclosure_present": true,
-    "merchant_terms_compliant": true,
-    "geography": "IN",
-    "factual_claims_verified": true,
-    "tracking_tag": "[rio-track: BALCONY_BROOM_001|amazon|conversion]"
-  },
-  "internal_link_target": "/products/balcony_broom_001",
-  "ready_to_post": true,
-  "last_verified_at": "2026-09-06T23:46+05:30"
+  "BALCONY_BROOM_001": {
+    "offer_id": "BALCONY_BROOM_001",
+    "status": "READY_TO_POST",
+    "caption": "Balcony storage chaos? 🧹 This wall-mounted holder holds 5 brooms/mops + 6 hooks — rustproof, no-drill, and saves 2 sq ft instantly. ✅ Verified for Indian homes ✅ Amazon India link below",
+    "cta": "Tap link in bio → Shop on Amazon India",
+    "compliance": {
+      "disclosure_placed": true,
+      "disclosure_text": "#affiliate | Earn commission if you buy (at no extra cost to you)",
+      "merchant_terms_ok": true,
+      "geography_ok": true,
+      "factual_claims_ok": true,
+      "privacy_ok": true,
+      "tracking_tag": "balcony_broom_001_ig_post_20260907"
+    },
+    "internal_link_target": "/products/balcony_broom_001",
+    "media_id": "18119104907492559",
+    "permalink": "https://www.instagram.com/p/Dc6XIGNAfYs/",
+    "product_name": "Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)",
+    "posted_at": "2026-09-05T21:41+05:30",
+    "clicks": null,
+    "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
+    "collector_status": "FAILED",
+    "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AuxMHQtTl3Y9f26zDYuIP4F\"}}",
+    "collected_at_utc": "2026-09-06T18:34:06.952247+00:00",
+    "next_action": "RETRY_METRICS_WITH_TOKEN_REFRESH",
+    "retry_token_refresh_at_utc": "2026-09-07T02:00:00+00:00"
+  }
 }
