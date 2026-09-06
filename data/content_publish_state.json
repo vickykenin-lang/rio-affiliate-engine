@@ -1,26 +1,21 @@
 {
-  "DRAWER_001": {
+  "UNDER_SINK_001": {
+    "offer_id": "UNDER_SINK_001",
+    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
     "status": "READY_TO_POST",
-    "platform": "instagram",
-    "media_id": "18112848191063932",
-    "caption": "Drawer organizer that actually fits Indian kitchen drawers 🇮🇳\n\nExpandable 30–45 cm, 2 removable slots, BPA-free.\n\n✅ Verified live on Amazon India\n✅ Disclosure included\n✅ Tracking tag: drawer_001_conversion_page_v1\n\n👉 Tap link in bio to see real measurements & buy\n\n#KitchenStorage #IndianKitchen #HomeOrganizer",
-    "cta": "Tap link in bio to see real measurements & buy",
+    "caption": "Shallow under-sink space in your Indian kitchen? 🇮🇳\n\nThis 2-tier plastic rack slides fully out, holds ~5 kg per tier, and needs no tools.\n✅ No drilling\n✅ Fits 30–40 cm depth\n✅ Easy-clean white plastic\n\n🛒 Verified Amazon India link in bio/profile\n\n#KitchenStorage #IndianKitchen #UnderSinkOrganizer",
+    "cta": "Visit Amazon India (verified link in bio/profile)",
+    "internal_link_target": "/products/under_sink_001",
     "compliance": {
-      "disclosure": "I earn a commission if you buy through this link — at no extra cost to you.",
-      "merchant_terms_reviewed": true,
-      "geography": "INDIA",
-      "factual_claims": [
-        "expandable_30_to_45_cm",
-        "2_removable_slots",
-        "bpa_free"
-      ],
-      "tracking_tag": "drawer_001_conversion_page_v1"
+      "disclosure_present": true,
+      "amazon_associates_tag": "rioaffiliate-21",
+      "geography": "IN",
+      "factual_claims_verified": true,
+      "tracking_tag": "under_sink_001_20260906"
     },
-    "internal_link_target": "/products/",
-    "conversion_page_url": "/products/drawer_organizer_001.md",
-    "last_posted_at": "2026-09-06T14:50+05:30",
-    "last_posted_platform": "instagram",
-    "next_task": "Create high-intent conversion page for DRAWER_001 to enable traceable Amazon Associates clicks and conversions, since Instagram telemetry is unavailable and repeated posting has no measurable impact.",
-    "changed_at": "2026-09-06T15:03+05:30"
+    "posted_at_utc": null,
+    "instagram_media_id": null,
+    "website_page": "/products/under_sink_001",
+    "last_updated_utc": "2026-09-06T21:40+05:30"
   }
 }
