@@ -1,17 +1,18 @@
 {
-  "offer_id": "TROLLEY_001",
+  "offer_id": "UNDER_SINK_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — perfect for kitchens, bathrooms & home offices. 3-tier plastic slide-out design fits tight corners. ✅ Verified price & availability ✅ Amazon India shipping ✅ Disclosure: As an Amazon Associate I earn from qualifying purchases. [Link in bio]",
-  "cta": "Tap link in bio → Shop Amazon",
+  "caption": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier — space-saving, BPA-free, white plastic. Perfect for tight Indian kitchens. Link in bio. #KitchenStorage #India #HomeHacks",
+  "cta": "Link in bio → Amazon",
   "compliance": {
-    "disclosure_present": true,
-    "merchant_terms_ok": true,
-    "geography_ok": true,
-    "factual_claims_ok": true,
-    "tracking_ready": true,
-    "platform_policy_ok": true
+    "disclosure_placed": true,
+    "disclosure_text": "Affiliate link — may earn commission",
+    "merchant_terms_approved": true,
+    "geography_approved": true,
+    "factual_claims_verified": true,
+    "tracking_enabled": true
   },
-  "internal_link_target": "https://www.amazon.in/dp/B09VTFPQ2H",
-  "verified_at": "2026-09-06T06:23+05:30",
-  "ready_to_post_since": "2026-08-24T21:49+05:30"
+  "internal_link_target": "https://www.amazon.in/dp/B09XKJH7R6",
+  "posted_at_utc": null,
+  "media_id": "17877752013535173",
+  "last_validated_at": "2026-09-06T10:47+05:30"
 }
