@@ -1,21 +1,17 @@
 {
-  "UNDER_SINK_001": {
-    "offer_id": "UNDER_SINK_001",
-    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-    "status": "READY_TO_POST",
-    "caption": "Shallow under-sink space in your Indian kitchen? 🇮🇳\n\nThis 2-tier plastic rack slides fully out, holds ~5 kg per tier, and needs no tools.\n✅ No drilling\n✅ Fits 30–40 cm depth\n✅ Easy-clean white plastic\n\n🛒 Verified Amazon India link in bio/profile\n\n#KitchenStorage #IndianKitchen #UnderSinkOrganizer",
-    "cta": "Visit Amazon India (verified link in bio/profile)",
-    "internal_link_target": "/products/under_sink_001",
-    "compliance": {
-      "disclosure_present": true,
-      "amazon_associates_tag": "rioaffiliate-21",
-      "geography": "IN",
-      "factual_claims_verified": true,
-      "tracking_tag": "under_sink_001_20260906"
-    },
-    "posted_at_utc": null,
-    "instagram_media_id": null,
-    "website_page": "/products/under_sink_001",
-    "last_updated_utc": "2026-09-06T21:40+05:30"
-  }
+  "status": "READY_TO_POST",
+  "offer_id": "BALCONY_BROOM_001",
+  "product_name": "Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)",
+  "caption": "Struggling with cluttered balconies? 🏠\\n\\nThe Chillyfit Wall-Mounted Broom & Mop Holder solves Indian homes' #1 utility-space problem — no drilling, no floor space, and rustproof for monsoons.\\n\\n✅ 5 vertical slots + 6 hooks\\n✅ Rustproof metal frame\\n✅ No-drill adhesive (tile/marble/painted walls)\\n✅ Holds up to 5 kg\\n\\n[👉 View on Amazon India]({{link}})\\n\\n#IndianHomeHack #BalconyOrganizer #RentedHomeSolution",
+  "cta": "View on Amazon India",
+  "compliance": {
+    "disclosure_present": true,
+    "merchant_terms_compliant": true,
+    "geography": "IN",
+    "factual_claims_verified": true,
+    "tracking_tag": "[rio-track: BALCONY_BROOM_001|amazon|conversion]"
+  },
+  "internal_link_target": "/products/balcony_broom_001",
+  "ready_to_post": true,
+  "last_verified_at": "2026-09-06T23:46+05:30"
 }
