@@ -1,29 +1,24 @@
 {
-  "BALCONY_BROOM_001": {
-    "offer_id": "BALCONY_BROOM_001",
-    "status": "READY_TO_POST",
-    "caption": "Balcony storage chaos? 🧹 This wall-mounted holder holds 5 brooms/mops + 6 hooks — rustproof, no-drill, and saves 2 sq ft instantly. ✅ Verified for Indian homes ✅ Amazon India link below",
-    "cta": "Tap link in bio → Shop on Amazon India",
+  "last_updated_utc": "2026-09-07T03:44+05:30",
+  "status": "READY_TO_POST",
+  "next_action": "DEPLOY_INSTAGRAM_PROMO",
+  "ready_to_post": {
+    "offer_id": "BABY_CORNERGUARD_001",
+    "caption": "Safe, pre-taped baby corner guards that fit standard 90° edges (6–12 mm). BPA-free, brown finish, 10 pcs per pack. Verified on Amazon India. 👇\n\n[✅ Check price & availability](https://www.amazon.in/dp/B09VQYJZ2K?tag=rioaffiliate-21)\n\n#BabySafety #IndianParents #HomeSafety #AmazonIndia",
+    "cta": "Check price & availability",
     "compliance": {
       "disclosure_placed": true,
-      "disclosure_text": "#affiliate | Earn commission if you buy (at no extra cost to you)",
-      "merchant_terms_ok": true,
-      "geography_ok": true,
-      "factual_claims_ok": true,
-      "privacy_ok": true,
-      "tracking_tag": "balcony_broom_001_ig_post_20260907"
+      "amazon_associates_tag": "rioaffiliate-21",
+      "geography": "IN",
+      "factual_claims_verified": true,
+      "tracking_tag": "BABY_CORNERGUARD_001",
+      "merchant_terms_compliant": true
     },
-    "internal_link_target": "/products/balcony_broom_001",
-    "media_id": "18119104907492559",
-    "permalink": "https://www.instagram.com/p/Dc6XIGNAfYs/",
-    "product_name": "Chillyfit Wall-Mounted Broom & Mop Holder for Balcony/Utility Areas (5 Slots + 6 Hooks)",
-    "posted_at": "2026-09-05T21:41+05:30",
-    "clicks": null,
-    "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
-    "collector_status": "FAILED",
-    "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AuxMHQtTl3Y9f26zDYuIP4F\"}}",
-    "collected_at_utc": "2026-09-06T18:34:06.952247+00:00",
-    "next_action": "RETRY_METRICS_WITH_TOKEN_REFRESH",
-    "retry_token_refresh_at_utc": "2026-09-07T02:00:00+00:00"
-  }
+    "internal_link_target": "/products/baby_cornerguard_001",
+    "verified_at_utc": "2026-09-07T03:44+05:30"
+  },
+  "last_posted": null,
+  "last_posted_at_utc": null,
+  "next_post_attempt_utc": null,
+  "retry_token_refresh_at_utc": null
 }
