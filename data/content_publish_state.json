@@ -1,22 +1,17 @@
 {
-  "offer_id": "DRAWER_001",
+  "offer_id": "TROLLEY_001",
   "status": "READY_TO_POST",
-  "caption": "Maximize kitchen efficiency with this expandable cutlery drawer organizer! 🍽️\n\n✅ 2 Removable slots for flexible sorting\n✅ BPA-free & food-safe\n✅ Fits standard drawers\n✅ Easy installation, no tools needed\n\nPerfect for Indian kitchens where space is premium. Get yours today!",
-  "cta": "Shop Now →",
-  "internal_link_target": "/products/drawer_001",
+  "caption": "Maximize narrow-space storage with this Amazon Basics Slim Rolling Storage Rack — perfect for kitchens, bathrooms & home offices. 3-tier plastic slide-out design fits tight corners. ✅ Verified price & availability ✅ Amazon India shipping ✅ Disclosure: As an Amazon Associate I earn from qualifying purchases. [Link in bio]",
+  "cta": "Tap link in bio → Shop Amazon",
   "compliance": {
-    "disclosure_placed": true,
-    "disclosure_text": "#affiliate — As an Amazon Associate I earn from qualifying purchases",
-    "merchant_terms_checked": true,
-    "geography_compliant": true,
-    "factual_claims_verified": true,
-    "tracking_enabled": true
+    "disclosure_present": true,
+    "merchant_terms_ok": true,
+    "geography_ok": true,
+    "factual_claims_ok": true,
+    "tracking_ready": true,
+    "platform_policy_ok": true
   },
-  "posted_at_utc": null,
-  "media_id": "18112848191063932",
-  "permalink": "https://www.instagram.com/p/DcodW-8jfdD/",
-  "product_name": "Purawood Expandable Cutlery Drawer Organizer, 2 Removable Slots, BPA-Free, Black",
-  "offer_verified": true,
-  "x_to_x_integrity": "PASSED",
-  "production_gate": "PASSED"
+  "internal_link_target": "https://www.amazon.in/dp/B09VTFPQ2H",
+  "verified_at": "2026-09-06T06:23+05:30",
+  "ready_to_post_since": "2026-08-24T21:49+05:30"
 }
