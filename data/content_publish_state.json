@@ -1,24 +1,17 @@
 {
-  "last_updated_utc": "2026-09-07T03:44+05:30",
   "status": "READY_TO_POST",
-  "next_action": "DEPLOY_INSTAGRAM_PROMO",
-  "ready_to_post": {
-    "offer_id": "BABY_CORNERGUARD_001",
-    "caption": "Safe, pre-taped baby corner guards that fit standard 90° edges (6–12 mm). BPA-free, brown finish, 10 pcs per pack. Verified on Amazon India. 👇\n\n[✅ Check price & availability](https://www.amazon.in/dp/B09VQYJZ2K?tag=rioaffiliate-21)\n\n#BabySafety #IndianParents #HomeSafety #AmazonIndia",
-    "cta": "Check price & availability",
-    "compliance": {
-      "disclosure_placed": true,
-      "amazon_associates_tag": "rioaffiliate-21",
-      "geography": "IN",
-      "factual_claims_verified": true,
-      "tracking_tag": "BABY_CORNERGUARD_001",
-      "merchant_terms_compliant": true
-    },
-    "internal_link_target": "/products/baby_cornerguard_001",
-    "verified_at_utc": "2026-09-07T03:44+05:30"
+  "offer_id": "BABY_CORNERGUARD_001",
+  "product_name": "AMAZARA Baby Corner Guards – Pre-Taped Safety Edge Protectors (10 Pcs, Brown)",
+  "caption": "Protect sharp corners safely & stylishly — especially in homes with toddlers. These pre-taped baby corner guards are BPA-free, easy to apply, and remove cleanly. ✅ No tools needed ✅ Transparent & discreet ✅ 10-piece set for full-room coverage\n\n👉 Tap to see measurements, real-world fit, and verified Amazon India price.",
+  "cta": "Tap to verify fit & price",
+  "compliance": {
+    "disclosure_placed": true,
+    "amazon_associates_tag": "rioaffiliate-21",
+    "product_image_verified": true,
+    "measurement_data_present": true
   },
-  "last_posted": null,
-  "last_posted_at_utc": null,
-  "next_post_attempt_utc": null,
-  "retry_token_refresh_at_utc": null
+  "internal_link_target": "/products/baby_cornerguard_001",
+  "next_action": "POST_NOW",
+  "retry_token_refresh_at_utc": "2026-09-07T06:30:00+00:00",
+  "posted_at": "2026-09-07T06:30+05:30"
 }
