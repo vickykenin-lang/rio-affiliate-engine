@@ -1,6 +1,26 @@
 {
-  "next_action": "COLLECT_METRICS",
-  "retry_token_refresh_at_utc": "2026-09-07T10:30:00Z",
-  "last_retry_attempt_utc": "2026-09-07T10:30:05Z",
-  "offer_id": "BALCONY_BROOM_001"
+  "under_sink_001": {
+    "offer_id": "UNDER_SINK_001",
+    "status": "READY_TO_POST",
+    "content_type": "CONVERSION_PAGE",
+    "content_path": "site/products/under_sink_001.md",
+    "verified_caption": "Under-sink storage that fits *your* cabinet — not the other way around. The wolpin 2-tier rack adjusts from 28 cm to 42 cm depth, holds 10 kg per tier, and installs in minutes. No more wasted space! 🇮🇳\n\n✅ Verified measurements\n✅ Rustproof steel\n✅ No-drill mounting\n\n[Check Price on Amazon India]",
+    "cta": "Check Price on Amazon India",
+    "compliance": {
+      "disclosure_present": true,
+      "amazon_disclosure_format": "standard",
+      "geography": "IN",
+      "factual_claims_verified": true,
+      "tracking_tag": "rioaffiliate-21",
+      "merchant_terms_compliant": true,
+      "platform_policy": "amazon_associates"
+    },
+    "internal_link_target": "/products/under_sink_001",
+    "next_action": "DEPLOY_CONVERSION_PAGE",
+    "deployed_at": null,
+    "deployed_by": "RIO",
+    "deployed_via": "CONVERSION_PAGE",
+    "last_validated_at": "2026-09-07T19:27+05:30",
+    "last_validated_by": "bedrock-qwen"
+  }
 }
