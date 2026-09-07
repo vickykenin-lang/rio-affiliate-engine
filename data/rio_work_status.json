@@ -2,10 +2,11 @@
   "soul_runtime": "VALID_HARD_GATE",
   "commercial_validation_policy": "RIO_COMMERCIAL_VALIDATION_V2",
   "status": "COMPLETED",
-  "last_completed": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001, since retry time (06:30 UTC) has elapsed and telemetry remains unavailable.",
-  "last_result": "PILLAR:6\n\ntask: Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001.\n\nwhy: Retry time (06:30 UTC) has elapsed; telemetry remains unavailable; zero revenue; Instagram promo is live and verified. Execution is the only safe next step to collect traceable clicks.\n\nchanges:\n- Executes `scripts/collect_instagram_metrics.py` with token-refresh logic.\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_METRICS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\"",
+  "last_completed": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001, since retry time (10:30 UTC) has elapsed and telemetry remains unavailable.",
+  "last_result": "PILLAR:6\n\ntask: Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001.\n\nwhy: Retry time (10:30 UTC) has elapsed; telemetry remains unavailable; zero revenue; Instagram promo is live and verified. Execution is the only safe next step to collect traceable clicks.\n\nchanges:\n- Executes `scripts/collect_instagram_metrics.py` with token-refresh logic.\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_METRICS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\"",
   "next_task": "If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\"",
   "changed_files": [
+    "data/content_publish_state.json",
     "data/autonomy_audit.jsonl"
   ],
   "recent_completed_task_keys": [],
@@ -32,33 +33,12 @@
   "forced_rotate_away_from": null,
   "recent_history": [],
   "recent_audit": [],
-  "current_task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001, since retry time (06:30 UTC) has elapsed and telemetry remains unavailable.",
+  "current_task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001, since retry time (10:30 UTC) has elapsed and telemetry remains unavailable.",
   "ai_engine": "bedrock-qwen",
   "validators": "PASS",
   "blocker": null,
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-09-06T21:40:31+05:30",
-      "status": "WORKING",
-      "task": "Choose a different highest-impact executable revenue action.",
-      "engine": "selecting",
-      "result": null
-    },
-    {
-      "at": "2026-09-06T21:40:45+05:30",
-      "status": "WORKING",
-      "task": "Create high-intent conversion page for UNDER_SINK_001 to enable traceable Amazon Associates clicks and conversions, since Instagram telemetry remains unavailable and repeated posting has no measurable impact.",
-      "engine": "bedrock-qwen",
-      "result": null
-    },
-    {
-      "at": "2026-09-06T21:40:45+05:30",
-      "status": "COMPLETED",
-      "task": "Create high-intent conversion page for UNDER_SINK_001 to enable traceable Amazon Associates clicks and conversions, since Instagram telemetry remains unavailable and repeated posting has no measurable impact.",
-      "engine": "bedrock-qwen",
-      "result": "PILLAR:1\n\ntask: Create high-intent conversion page for UNDER_SINK_001 to enable traceable Amazon Associates clicks and conversions, since Instagram telemetry remains unavailable and repeated posting has no measurable impact.\n\nwhy: Zero revenue, Instagram metrics collector failing with token error, and repeated posting without measurement → no safe decision to rotate or delay. Conversion page is the highest-impact executable step to create a traceable Amazon Associates click path.\n\nchanges:\n- Writes `site/products/under_sink_001.md` with verified measurements, disclosure, Amazon India link, and internal tracking tag.\n- Updates `data/content_publish_state.json` with `status: READY_TO_POST`, verified caption, CTA, compliance flags, and internal link target.\n- Audit trail appended.\n\nNEXT_TASK: After page is live, run `scripts/collect_amazon_clicks.py` or wait for Amazon Associates report to confirm traceable clicks. If Amazon report import fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\""
-    },
     {
       "at": "2026-09-06T21:54:02+05:30",
       "status": "WORKING",
@@ -177,8 +157,29 @@
       "task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001, since retry time (06:30 UTC) has elapsed and telemetry remains unavailable.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:6\n\ntask: Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001.\n\nwhy: Retry time (06:30 UTC) has elapsed; telemetry remains unavailable; zero revenue; Instagram promo is live and verified. Execution is the only safe next step to collect traceable clicks.\n\nchanges:\n- Executes `scripts/collect_instagram_metrics.py` with token-refresh logic.\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_METRICS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\""
+    },
+    {
+      "at": "2026-09-07T13:26:21+05:30",
+      "status": "WORKING",
+      "task": "If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\"",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-09-07T13:26:26+05:30",
+      "status": "WORKING",
+      "task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001, since retry time (10:30 UTC) has elapsed and telemetry remains unavailable.",
+      "engine": "bedrock-qwen",
+      "result": null
+    },
+    {
+      "at": "2026-09-07T13:26:26+05:30",
+      "status": "COMPLETED",
+      "task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001, since retry time (10:30 UTC) has elapsed and telemetry remains unavailable.",
+      "engine": "bedrock-qwen",
+      "result": "PILLAR:6\n\ntask: Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BALCONY_BROOM_001.\n\nwhy: Retry time (10:30 UTC) has elapsed; telemetry remains unavailable; zero revenue; Instagram promo is live and verified. Execution is the only safe next step to collect traceable clicks.\n\nchanges:\n- Executes `scripts/collect_instagram_metrics.py` with token-refresh logic.\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_METRICS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\""
     }
   ],
-  "updated_at": "2026-09-07T08:27:06+05:30",
-  "started_at": "2026-09-07T08:27:00+05:30"
+  "updated_at": "2026-09-07T13:26:26+05:30",
+  "started_at": "2026-09-07T13:26:21+05:30"
 }

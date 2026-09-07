@@ -1,17 +1,6 @@
 {
-  "status": "READY_TO_POST",
-  "offer_id": "BABY_CORNERGUARD_001",
-  "product_name": "AMAZARA Baby Corner Guards – Pre-Taped Safety Edge Protectors (10 Pcs, Brown)",
-  "caption": "Protect sharp corners safely & stylishly — especially in homes with toddlers. These pre-taped baby corner guards are BPA-free, easy to apply, and remove cleanly. ✅ No tools needed ✅ Transparent & discreet ✅ 10-piece set for full-room coverage\n\n👉 Tap to see measurements, real-world fit, and verified Amazon India price.",
-  "cta": "Tap to verify fit & price",
-  "compliance": {
-    "disclosure_placed": true,
-    "amazon_associates_tag": "rioaffiliate-21",
-    "product_image_verified": true,
-    "measurement_data_present": true
-  },
-  "internal_link_target": "/products/baby_cornerguard_001",
-  "next_action": "POST_NOW",
-  "retry_token_refresh_at_utc": "2026-09-07T06:30:00+00:00",
-  "posted_at": "2026-09-07T06:30+05:30"
+  "next_action": "COLLECT_METRICS",
+  "retry_token_refresh_at_utc": "2026-09-07T10:30:00Z",
+  "last_retry_attempt_utc": "2026-09-07T10:30:05Z",
+  "offer_id": "BALCONY_BROOM_001"
 }
