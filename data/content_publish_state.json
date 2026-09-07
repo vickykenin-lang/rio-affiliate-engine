@@ -1,26 +1,15 @@
 {
-  "UNDER_SINK_001": {
-    "offer_id": "UNDER_SINK_001",
-    "media_id": "17877752013535173",
-    "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
-    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-    "status": "READY_TO_POST",
-    "caption": "Under-sink storage that actually fits Indian kitchens 🇮🇳\n\nNo more bending, no more clutter — just clean, 2-tier steel racks that slide under most sinks.\n\n✅ Steel frame | ✅ Rust-resistant | ✅ 2-tier adjustable shelves\n\n👉 Tap to see measurements & real fit guide\n🔗 [Amazon India — wolpin Under Sink Rack]\n\n#KitchenStorage #IndianKitchen #UnderSinkOrganizer #HomeHack",
-    "cta": "Tap to see measurements & real fit guide",
-    "compliance": {
-      "disclosure_placed": true,
-      "disclosure_text": "Affiliate link — may earn commission at no extra cost to you",
-      "merchant_terms_ok": true,
-      "geography_ok": true,
-      "factual_claims_verified": true,
-      "privacy_ok": true,
-      "tracking_tag_ok": true,
-      "platform_policy_ok": true
-    },
-    "internal_link_target": "/products/under_sink_001",
-    "next_action": "DEPLOY_PROMO",
-    "deployed_at_utc": null,
-    "deployed_at_local": null,
-    "last_metrics_attempt_utc": null
-  }
+  "offer_id": "UNDER_SINK_001",
+  "status": "AWAITING_AMAZON_CLICKS",
+  "last_action": "POSTED_INSTAGRAM",
+  "next_action": "COLLECT_AMAZON_CLICKS",
+  "internal_link_target": "/products/under_sink_001",
+  "compliance": {
+    "disclosure": true,
+    "amazon_tracking_tag": true,
+    "verified_caption": true,
+    "cta": true
+  },
+  "last_posted_at": "2026-09-07T23:50+05:30",
+  "amazon_click_import_requested_at": "2026-09-08T00:06+05:30"
 }
