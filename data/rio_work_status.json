@@ -1,10 +1,10 @@
 {
   "soul_runtime": "VALID_HARD_GATE",
   "commercial_validation_policy": "RIO_COMMERCIAL_VALIDATION_V2",
-  "status": "COMPLETED",
+  "status": "WAITING",
   "last_completed": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
-  "last_result": "PILLAR:1\n\ntask: Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.\n\nwhy: Instagram telemetry remains unavailable (token error), conversion page is live, and zero revenue. Amazon report import is the only executable step to confirm traceable clicks and move toward verified commission.\n\nchanges:\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_AMAZON_CLICKS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If import succeeds, report exact clicks/conversions. If it fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\"",
-  "next_task": "If import succeeds, report exact clicks/conversions. If it fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\"",
+  "last_result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action.",
+  "next_task": "Choose a different highest-impact executable revenue action.",
   "changed_files": [
     "data/content_publish_state.json",
     "data/autonomy_audit.jsonl"
@@ -35,24 +35,10 @@
   "recent_audit": [],
   "current_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
   "ai_engine": "bedrock-qwen",
-  "validators": "PASS",
+  "validators": "NOT_RUN",
   "blocker": null,
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-09-07T08:27:06+05:30",
-      "status": "COMPLETED",
-      "task": "Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001, since retry time (06:30 UTC) has elapsed and telemetry remains unavailable.",
-      "engine": "bedrock-qwen",
-      "result": "PILLAR:6\n\ntask: Run `scripts/collect_instagram_metrics.py` to attempt token-refresh and collect metrics for BABY_CORNERGUARD_001.\n\nwhy: Retry time (06:30 UTC) has elapsed; telemetry remains unavailable; zero revenue; Instagram promo is live and verified. Execution is the only safe next step to collect traceable clicks.\n\nchanges:\n- Executes `scripts/collect_instagram_metrics.py` with token-refresh logic.\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_METRICS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\""
-    },
-    {
-      "at": "2026-09-07T13:26:21+05:30",
-      "status": "WORKING",
-      "task": "If metrics collection succeeds, report exact clicks/conversions. If it fails again, send Founder Telegram: \"Instagram metrics collection failed again with token error. Please refresh token in `scripts/.env`. RIO will resume after update.\"",
-      "engine": "selecting",
-      "result": null
-    },
     {
       "at": "2026-09-07T13:26:26+05:30",
       "status": "WORKING",
@@ -178,8 +164,22 @@
       "task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:1\n\ntask: Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.\n\nwhy: Instagram telemetry remains unavailable (token error), conversion page is live, and zero revenue. Amazon report import is the only executable step to confirm traceable clicks and move toward verified commission.\n\nchanges:\n- Updates `data/content_publish_state.json` with `next_action: COLLECT_AMAZON_CLICKS` and timestamp.\n- Audit trail appended.\n\nNEXT_TASK: If import succeeds, report exact clicks/conversions. If it fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\""
+    },
+    {
+      "at": "2026-09-08T05:17:24+05:30",
+      "status": "WORKING",
+      "task": "If import succeeds, report exact clicks/conversions. If it fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\"",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-09-08T05:17:29+05:30",
+      "status": "WAITING",
+      "task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
+      "engine": "bedrock-qwen",
+      "result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action."
     }
   ],
-  "updated_at": "2026-09-08T03:15:32+05:30",
-  "started_at": "2026-09-08T03:15:15+05:30"
+  "updated_at": "2026-09-08T05:17:29+05:30",
+  "started_at": "2026-09-08T05:17:24+05:30"
 }
