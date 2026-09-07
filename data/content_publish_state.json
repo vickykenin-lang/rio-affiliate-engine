@@ -1,15 +1,11 @@
 {
-  "offer_id": "UNDER_SINK_001",
-  "status": "AWAITING_AMAZON_CLICKS",
-  "last_action": "POSTED_INSTAGRAM",
+  "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
+  "last_task_at": "2026-09-08T03:15+05:30",
   "next_action": "COLLECT_AMAZON_CLICKS",
-  "internal_link_target": "/products/under_sink_001",
-  "compliance": {
-    "disclosure": true,
-    "amazon_tracking_tag": true,
-    "verified_caption": true,
-    "cta": true
-  },
-  "last_posted_at": "2026-09-07T23:50+05:30",
-  "amazon_click_import_requested_at": "2026-09-08T00:06+05:30"
+  "status": "AWAITING_CLICKS",
+  "offer_id": "UNDER_SINK_001",
+  "conversion_page_url": "https://rio-affiliate-engine.github.io/site/products/under_sink_001.html",
+  "instagram_post_permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+  "telemetry_status": "AWAITING_AMAZON_REPORT",
+  "last_click_import_attempt_utc": "2026-09-08T03:15:00+00:00"
 }
