@@ -1,323 +1,71 @@
 {
  "articles/10-storage-ideas-1bhk-without-renovation-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no specific product names or models",
-   "no actual measurements or dimensions",
-   "no real prices or price ranges",
-   "no material or quality specifics",
-   "no honest cons or limitations",
-   "no delivery/return/installation info",
-   "no user review excerpts or ratings",
-   "no comparison against alternatives"
-  ],
-  "biggest_weakness": "It's a vague listicle with zero concrete product details, just generic zone suggestions and links to other guides.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-airtight-containers-indian-pantry.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or capacity in litres for each container",
-   "no material specifics (e.g., PP, Tritan, glass) beyond 'BPA-Free'",
-   "no honest cons or limitations",
-   "no user experience or long-term durability feedback",
-   "no comparison with other brands or alternatives"
-  ],
-  "biggest_weakness": "It's a vague, generic framework with only one product mentioned and zero concrete measurements, pricing, or real-world testing details.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-baby-corner-guards-edge-protectors-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions/thickness of guards",
-   "no material specifics beyond 'nitrile foam'",
-   "no honest cons or adhesion failure caveats",
-   "no comparison vs other brands",
-   "no user review excerpts or ratings",
-   "no delivery/return info",
-   "no clarity on who it's not good for"
-  ],
-  "biggest_weakness": "It's a thin, generic product blurb with no measurements, user evidence, or price—reads like filler despite the verification claim.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-balcony-storage-solutions-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or load capacity",
-   "no material thickness/quality specifics",
-   "no pros/cons or honest limitations",
-   "no comparison vs alternatives",
-   "no user review or test data",
-   "no delivery/return/warranty info"
-  ],
-  "biggest_weakness": "It's a placeholder with no actual product verdict, measurements, or price—just a promise to verify later.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-bathroom-storage-organizers-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real user reviews or ratings",
-   "no comparison with other products",
-   "no honest cons or limitations",
-   "no delivery/return info",
-   "no material thickness or weight specs",
-   "no installation details for Indian tiles"
-  ],
-  "biggest_weakness": "Only one product is covered and it's presented as a snapshot with no independent testing or user feedback, so the ranking feels unsubstantiated.",
-  "score": 3
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-cabinet-drawer-safety-locks-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or adhesive strength specs",
-   "no honest cons or limitations",
-   "no comparison with other specific products",
-   "no user review excerpts or durability data",
-   "no clarity on who it's not good for"
-  ],
-  "biggest_weakness": "It only recommends one product with no concrete measurements, price, or independent verification of long-term adhesion claims.",
-  "score": 3
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-desk-cable-organizers-home-office-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no exact desk thickness compatibility range",
-   "no material gauge/thickness",
-   "no weight capacity",
-   "no honest cons or limitations",
-   "no mention of who it's not good for"
-  ],
-  "biggest_weakness": "Only one product is covered, so there's no real comparison or ranking despite the title promising 'best' plural.",
-  "score": 6
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-electric-socket-covers-childproofing-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no exact price or price range",
-   "no dimensions/size of covers",
-   "no material thickness or grade",
-   "no honest cons or limitations",
-   "no user review excerpts or ratings",
-   "no delivery/return info"
-  ],
-  "biggest_weakness": "Lacks any real-world durability test or user evidence to back the claim of 'real durability evidence' in its ranking framework.",
-  "score": 6
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-foldable-furniture-small-indian-apartments.html": {
-  "would_trust": true,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no exact dimensions",
-   "no material specifics (wood type, finish)",
-   "no price range or MRP",
-   "no honest cons or durability caveats",
-   "no delivery/return info",
-   "no comparison vs alternatives"
-  ],
-  "biggest_weakness": "Only one product featured with no real measurements or user-review excerpts, so it feels thin and not fully substantiated.",
-  "score": 5
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-kitchen-trolleys-small-spaces-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no real price or stock status",
-   "no user review or long-term durability data",
-   "no material thickness/weight capacity",
-   "no honest cons or who it's not for",
-   "no delivery/return specifics"
-  ],
-  "biggest_weakness": "Only one product with no price or user validation, so comparison is thin.",
-  "score": 6
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-no-drill-baby-safety-gates-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no actual price range",
-   "no exact dimensions/weight of gate",
-   "no material thickness or build quality specifics",
-   "no honest cons or failure scenarios",
-   "no user review summary or fit complaints data",
-   "no delivery/return/warranty claim process details",
-   "no comparison with other brands/models"
-  ],
-  "biggest_weakness": "It only names one product with vague specs and no real measurements or user evidence, so it reads like a thin affiliate placeholder rather than a genuine buying guide.",
-  "score": 3
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-spice-racks-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no user reviews or ratings mentioned",
-   "no honest cons or limitations",
-   "no delivery/return info",
-   "no comparison with alternatives"
-  ],
-  "biggest_weakness": "Lacks user feedback and honest drawbacks, making it feel like a single-product endorsement rather than a thorough guide.",
-  "score": 7
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-under-bed-storage-options-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no actual price or price range",
-   "no exact dimensions of the product",
-   "no material specifics beyond 'nylon'",
-   "no honest cons or limitations",
-   "no user review excerpts or ratings",
-   "no delivery/return/cod info",
-   "no comparison with alternatives"
-  ],
-  "biggest_weakness": "It only names one product with no concrete measurements, price, or user feedback, making the 'verification' claim feel hollow.",
-  "score": 4
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-under-sink-organizers-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no real price mentioned",
-   "no honest cons or limitations",
-   "no user review or durability feedback",
-   "no delivery/return info"
-  ],
-  "biggest_weakness": "It only verifies one product's listing without giving any comparative ranking or real-world testing data, so it feels more like a placeholder than a definitive guide.",
-  "score": 6
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/best-wardrobe-organizers-small-bedrooms-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or material specs",
-   "no honest cons or limitations",
-   "no user review evidence or ratings",
-   "no delivery/return info",
-   "no comparison with alternatives"
-  ],
-  "biggest_weakness": "It only features one product with no concrete measurements, price, or user feedback, making it feel like a placeholder rather than a genuine buying guide.",
-  "score": 3
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/compact-storage-work-from-home-corner-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "No exact dimensions of desk compatibility",
-   "No material thickness or weight capacity",
-   "No honest cons or durability caveats",
-   "No delivery/return or warranty info"
-  ],
-  "biggest_weakness": "Only one product reviewed, and no comparison against alternatives or user-testing evidence.",
-  "score": 7
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/kitchen-drawer-organizers-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "exact usable drawer dimensions not given",
-   "no comparison vs other brands/models",
-   "no mention of delivery/return policy",
-   "no user review or long-term durability data"
-  ],
-  "biggest_weakness": "Only one product is reviewed, so there's no basis for ranking or comparison despite the article's framework promising product-specific rankings.",
-  "score": 7
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/no-drill-bathroom-storage-rented-homes-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or capacity",
-   "no material details or finish",
-   "no user reviews or ratings",
-   "no honest cons or limitations",
-   "no comparison with alternatives",
-   "no removal/residue test results",
-   "no delivery or return info"
-  ],
-  "biggest_weakness": "It only describes one product without any concrete specs, measurements, or user feedback, so it feels like a placeholder rather than a real buying guide.",
-  "score": 3
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/no-drill-kitchen-organizers-renters-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no exact price or price range",
-   "no load capacity or weight limit",
-   "no adhesive type or surface compatibility details",
-   "no dimensions beyond shelf sizes",
-   "no honest cons or failure scenarios",
-   "no delivery/return info",
-   "no user review or real-world testing"
-  ],
-  "biggest_weakness": "It only verifies the listing exists but gives no concrete specs, load limits, or real user experience to justify a purchase.",
-  "score": 5
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/organize-small-kitchen-counter-without-cabinets-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions or gap size",
-   "no material quality details",
-   "no honest cons or limitations",
-   "no user experience or durability feedback",
-   "no delivery/return info",
-   "no comparison with alternatives"
-  ],
-  "biggest_weakness": "It's a vague, generic framework with no concrete measurements, price, or real product specifics—just a placeholder for a single Amazon link.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/small-kitchen-storage-ideas-india.html": {
-  "would_trust": true,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no specific product recommendations",
-   "no measurements or dimensions",
-   "no actual price or price range",
-   "no pros/cons or honest limitations",
-   "no delivery/return info",
-   "no clear who it's for vs not for"
-  ],
-  "biggest_weakness": "It's a placeholder with no actual product data or comparisons, so it offers no buying decision value yet.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/under-sink-storage-ideas-indian-kitchens.html": {
-  "would_trust": true,
-  "would_click_buy_link": true,
-  "missing_trust_signals": [
-   "no real price or dimensions",
-   "no material specifics",
-   "no honest cons",
-   "no delivery/return info"
-  ],
-  "biggest_weakness": "No actual measurements or price, only vague 'standard' sizing and a single product mention without specs.",
-  "score": 6
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  },
  "articles/weatherproof-balcony-storage-ideas-india.html": {
-  "would_trust": false,
-  "would_click_buy_link": false,
-  "missing_trust_signals": [
-   "no real price or price range",
-   "no exact dimensions/capacity specs",
-   "no material specifics (grade/type)",
-   "no honest cons or limitations",
-   "no user/test data or measurements",
-   "no comparison vs alternatives"
-  ],
-  "biggest_weakness": "It's a thin, generic framework with only one vague product mention and no concrete data to back any claim.",
-  "score": 2
+  "error": "HTTP 401 from DeepSeek: {\"error\":{\"message\":\"Authentication Fails, Your api key: ****22b7 is invalid\",\"type\":\"authentication_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
  }
 }
