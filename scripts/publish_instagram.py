@@ -11,14 +11,9 @@ Design constraints, on purpose:
 - stdlib only (urllib/json/csv) — matches heartbeat.py / generate_dashboard.py
   / content_review.py; no pip install step exists in rio.yml, so no new
   dependency gets silently required here.
-- Never fabricates a product photo. Amazon's robots.txt disallows scraping
-  product pages (confirmed 2026-08-18), and RIO has no Amazon Product
-  Advertising API credentials yet, so this script does NOT attempt to pull
-  a real product photo. Instead it uses a pre-rendered branded card image
-  (site/social/<offer_id>.png) built from the SAME verified product_name/
-  cluster data already in offer_identity_registry.csv — never invented
-  copy. If no card exists yet for an offer, that offer is skipped (logged),
-  not posted with a placeholder.
+- Uses the exact-product image URL already approved in
+  data/product_image_registry.json. The mapped ASIN and affiliate destination
+  must match the eligible offer; legacy branded cards are not primary creatives.
 - One post per run. Cadence is controlled entirely by the GitHub Actions
   schedule in .github/workflows/rio.yml (Vicky/Victor's choice), not by
   this script — this script just does "post the next eligible offer, once,
@@ -70,7 +65,7 @@ RUN_STATUS_JSON = os.path.join(ROOT, "data", "instagram_run_status.json")
 CONTROL_JSON = os.path.join(ROOT, "data", "control.json")
 STATUS_JSON = os.path.join(ROOT, "data", "status.json")
 REPORT_MD = os.path.join(ROOT, "data", "rio_report_to_victor.md")
-CARD_DIR = os.path.join(ROOT, "site", "social")
+IMAGE_REGISTRY_JSON = os.path.join(ROOT, "data", "product_image_registry.json")
 
 GRAPH_VERSION = "v22.0"
 # Instagram Login tokens (start with IGAA...) must use graph.instagram.com.
@@ -174,6 +169,11 @@ def load_csv(path):
         return list(csv.DictReader(f))
 
 
+def load_product_images():
+    images = jload(IMAGE_REGISTRY_JSON, {"images": []}).get("images", [])
+    return {item.get("asin"): item for item in images if item.get("asin")}
+
+
 def graph_call(path, params, method="POST"):
     url = f"{GRAPH_BASE}/{path}"
     data = urllib.parse.urlencode(params).encode()
@@ -203,7 +203,7 @@ def build_caption(offer):
     name = offer["creative_product_name"]
     cluster = CLUSTER_LABELS.get(offer["offer_id"], "Home Storage")
     landing_url = (
-        f"{PUBLIC_SITE_BASE}/?utm_source=instagram&utm_medium=organic"
+        f"{PUBLIC_SITE_BASE}/products/{offer['offer_id']}.html?utm_source=instagram&utm_medium=organic"
         f"&utm_campaign=rio_offer_{offer['offer_id'].casefold()}"
     )
     checked_at = offer.get("destination_checked_at", "").strip() or "an earlier date"
@@ -234,6 +234,11 @@ def main():
         save_run_status("BLOCKED_KILL_SWITCH", detail)
         print(f"[publish_instagram] {detail}")
         return 2
+    if control.get("instagram_auto_publish") is not True:
+        detail = "Instagram auto-publishing is paused by Founder control."
+        save_run_status("BLOCKED_FOUNDER_PAUSE", detail)
+        print(f"[publish_instagram] {detail}")
+        return 2
 
     status = jload(STATUS_JSON, {})
     if status.get("all_validators_pass") is not True:
@@ -246,6 +251,7 @@ def main():
     print(f"[publish_instagram] using API base: {GRAPH_BASE}")
 
     offers = load_csv(REG_CSV)
+    product_images = load_product_images()
     ready = [
         o for o in offers
         if o.get("publish_status") == "READY"
@@ -262,7 +268,7 @@ def main():
     autonomous_policy_approval = control.get("approval_mode") == "AUTONOMOUS_POLICY_VALIDATED"
 
     candidate = None
-    skipped_no_card = []
+    skipped_no_image = []
     skipped_stale = []
     for o in ready:
         oid = o["offer_id"]
@@ -274,9 +280,14 @@ def main():
         if age is None or age > STALENESS_DAYS:
             skipped_stale.append(f"{oid} ({'unparseable date' if age is None else f'{age}d old'})")
             continue
-        card_path = os.path.join(CARD_DIR, f"{oid}.png")
-        if not os.path.isfile(card_path):
-            skipped_no_card.append(oid)
+        image = product_images.get(o.get("merchant_product_id"))
+        if not image or f"/dp/{o.get('merchant_product_id')}" not in image.get("affiliate_url", "") or "tag=rioaffiliate-21" not in image.get("affiliate_url", ""):
+            skipped_no_image.append(oid)
+            continue
+        o["publish_image_url"] = image.get("image_url", "")
+        o["verified_affiliate_url"] = image.get("affiliate_url", "")
+        if not o["publish_image_url"].startswith("https://"):
+            skipped_no_image.append(oid)
             continue
         candidate = o
         break
@@ -284,19 +295,19 @@ def main():
     if skipped_stale:
         print(f"[publish_instagram] destination_checked_at older than {STALENESS_DAYS}d (or unparseable), "
               f"needs a human re-check on Amazon before it can post: {', '.join(skipped_stale)}")
-    if skipped_no_card:
-        print(f"[publish_instagram] no social card yet for: {', '.join(skipped_no_card)} — skipped, not posted.")
+    if skipped_no_image:
+        print(f"[publish_instagram] missing exact-product image/link mapping: {', '.join(skipped_no_image)} — skipped.")
 
     if candidate is None:
         pending_count = sum(1 for o in ready if o.get("offer_id") not in posted) if autonomous_policy_approval else sum(
             1 for oid, approval in approvals.items() if approval.get("status") in approved_states and oid not in posted
         )
-        if pending_count and (skipped_stale or skipped_no_card):
+        if pending_count and (skipped_stale or skipped_no_image):
             reasons = []
             if skipped_stale:
                 reasons.append("stale verification: " + ", ".join(skipped_stale))
-            if skipped_no_card:
-                reasons.append("missing social card: " + ", ".join(skipped_no_card))
+            if skipped_no_image:
+                reasons.append("missing exact-product image/link mapping: " + ", ".join(skipped_no_image))
             detail = "Approved post is blocked — " + "; ".join(reasons)
             save_run_status("BLOCKED_OFFER", detail, posted_count=len(posted), pending_count=pending_count)
             print(f"[publish_instagram] {detail}")
@@ -307,7 +318,7 @@ def main():
         return 0
 
     oid = candidate["offer_id"]
-    image_url = f"{PUBLIC_SITE_BASE}/social/{oid}.png"
+    image_url = candidate["publish_image_url"]
     try:
         req = urllib.request.Request(
             image_url,
@@ -317,12 +328,12 @@ def main():
             content_type = response.headers.get("Content-Type", "").casefold()
             if response.status not in (200, 206) or not content_type.startswith("image/"):
                 raise RuntimeError(
-                    f"public social card preflight failed: HTTP {response.status}, "
+                    f"exact-product image preflight failed: HTTP {response.status}, "
                     f"content-type {content_type or '(missing)'}"
                 )
     except Exception as exc:
         error = RuntimeError(
-            f"public social card is not reachable at {image_url}; "
+            f"exact-product image is not reachable at {image_url}; "
             f"Instagram cannot publish it: {exc}"
         )
         detail = str(error)

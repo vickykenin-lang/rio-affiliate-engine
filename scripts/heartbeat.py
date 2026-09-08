@@ -63,6 +63,8 @@ jsave('data/control.json',control);jsave('data/inbox.json',inbox)
 if control.get('kill_switch'):
  status=jload('data/status.json',{});status.update({'updated':now,'kill_switch':True,'note_en':f"Paused by kill switch. {control.get('kill_reason','')}"});jsave('data/status.json',status);sys.exit(0)
 
+storefront_ok,storefront_out=run_script('generate_product_storefront.py')
+public_ok,public_out=run_script('validate_public_content.py') if storefront_ok else (False,storefront_out)
 production_ok,production_out=run_script('check_production.py')
 if not production_ok:
  for attempt in range(1,4):
@@ -71,10 +73,12 @@ if not production_ok:
   production_ok,production_out=run_script('check_production.py')
   if production_ok:break
 dash_ok,dash_out=run_script('generate_dashboard.py')
-validator_scripts={'production_live':None,'offer_integrity':'validate_offer_integrity.py','product_candidates':'validate_product_candidates.py','dashboard':'validate_dashboard.py','production_offer_gate':'validate_production_offer_gate.py','commercial_plan':'validate_commercial_plan.py'}
+validator_scripts={'storefront_generation':'__storefront__','public_content':'__public__','production_live':None,'offer_integrity':'validate_offer_integrity.py','product_candidates':'validate_product_candidates.py','dashboard':'validate_dashboard.py','production_offer_gate':'validate_production_offer_gate.py','commercial_plan':'validate_commercial_plan.py'}
 validators={}
 for key,script in validator_scripts.items():
- ok,out=(production_ok,production_out) if script is None else run_script(script)
+ if script=='__storefront__':ok,out=storefront_ok,storefront_out
+ elif script=='__public__':ok,out=public_ok,public_out
+ else:ok,out=(production_ok,production_out) if script is None else run_script(script)
  validators[key]={'pass':ok,'detail':'\n'.join(out.splitlines()[-15:])};print(f"[heartbeat] {key}: {'PASS' if ok else 'FAIL'}")
 validators_pass=all(v['pass'] for v in validators.values()) and dash_ok
 snap=jload('data/dashboard_snapshot.json',{})

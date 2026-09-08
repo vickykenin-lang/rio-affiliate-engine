@@ -78,6 +78,10 @@ h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;le
 .deal-card .verified-pill{position:absolute;top:9px;left:9px;background:var(--verified-soft);color:var(--verified);font-size:.62rem;font-weight:800;padding:4px 8px;border-radius:20px}
 .deal-card .discount-pill{position:absolute;top:9px;right:9px;background:var(--pink);color:#fff;font-size:.62rem;font-weight:800;padding:4px 8px;border-radius:20px}
 .deal-card .body{padding:14px}
+.deal-card .body{display:flex;flex-direction:column;gap:9px}
+.deal-card .product-meta{font-size:.75rem;color:var(--muted);margin:0;line-height:1.45}
+.deal-card .product-cta{display:flex;justify-content:center;width:100%;margin-top:auto;padding:10px 12px}
+.deal-card .details-link{text-align:center;font-size:.74rem;font-weight:700;text-decoration:none}
 .deal-card h3{font-size:.88rem;font-weight:600;font-family:Inter,sans-serif;margin:0 0 8px;line-height:1.35}
 .deal-card .price-row{display:flex;justify-content:space-between;align-items:center}
 .deal-card .price{font-weight:800;font-size:1rem;color:var(--ink)}
@@ -164,3 +168,10 @@ article > p, article ul{color:#4A4038}
 .product-image-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .card-head>.product-image-link{width:76px;height:76px;border-radius:10px;flex-shrink:0}
 .card-head>.product-image-link .thumb{width:100%;height:100%;display:block}
+.product-page{padding-top:42px}
+.product-detail{max-width:1000px;display:grid;grid-template-columns:minmax(280px,1fr) 1fr;gap:42px;align-items:center;margin:28px 0}
+.product-detail .product-image-link{border:1px solid var(--line);border-radius:16px;background:#fff}
+.product-hero-image{width:100%;aspect-ratio:1;object-fit:contain;display:block;border-radius:16px}
+.product-copy h1{font-size:clamp(1.8rem,4vw,3rem)}
+.verified-label{display:inline-block;background:var(--verified-soft);color:var(--verified);padding:6px 11px;border-radius:20px;font-size:.72rem;font-weight:800;text-transform:uppercase}
+@media(max-width:720px){.product-detail{grid-template-columns:1fr;gap:24px}}
