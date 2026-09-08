@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-09-07T23:50+05:30",
- "status": "INSTAGRAM_POSTED",
- "offer_id": "BABY_SAFETYGATE_001",
- "detail": "Successfully posted to Instagram as Meta media 18087267062468859.",
+ "updated_at": "2026-09-08T22:52+05:30",
+ "status": "BLOCKED_OFFER",
+ "offer_id": null,
+ "detail": "Approved post is blocked — stale verification: BABY_CABINETLOCK_001 (22d old), BABY_SOCKETCOVER_001 (22d old), WARDROBE_DRAWERORG_001 (22d old), UNDERBED_STORAGEBAG_001 (22d old), FOLDABLE_LAPDESK_001 (22d old)",
  "posted_count": 12,
- "pending_count": 0
+ "pending_count": 5
 }
