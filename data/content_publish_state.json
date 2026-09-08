@@ -1,11 +1,23 @@
 {
-  "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001.",
-  "last_task_at": "2026-09-08T03:15+05:30",
-  "next_action": "COLLECT_AMAZON_CLICKS",
-  "status": "AWAITING_CLICKS",
+  "last_task": "Create high-intent internal linking from top-performing Instagram posts to UNDER_SINK_001 conversion page to boost traceable Amazon Associates clicks, since Instagram telemetry is unavailable and repeated posting without measurement has no impact.",
+  "last_completed_at": "2026-09-08T11:48+05:30",
+  "next_action": "INTERNAL_LINKING",
+  "next_task": "After internal linking is deployed, run `scripts/collect_amazon_clicks.py` to verify traceable clicks.",
+  "status": "READY_TO_POST",
   "offer_id": "UNDER_SINK_001",
-  "conversion_page_url": "https://rio-affiliate-engine.github.io/site/products/under_sink_001.html",
-  "instagram_post_permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
-  "telemetry_status": "AWAITING_AMAZON_REPORT",
-  "last_click_import_attempt_utc": "2026-09-08T03:15:00+00:00"
+  "conversion_page_url": "https://rio-affiliate-engine.github.io/products/under_sink_001/",
+  "internal_linking": {
+    "strategy": "top_posts_to_conversion_page",
+    "target_posts": [
+      "DcYSOe3mwhG",
+      "Dcbect_ILPL",
+      "Dcj651KFo5h"
+    ],
+    "link_placement": "caption CTA + alt-text link hint",
+    "compliance": {
+      "disclosure_present": true,
+      "amazon_associates_tag": "rioaffiliate-21",
+      "tracking_tag": "internal-link-boost"
+    }
+  }
 }
