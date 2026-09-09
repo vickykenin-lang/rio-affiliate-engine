@@ -19,7 +19,7 @@ on:
         description: 'Manual override only'
         type: choice
         default: heartbeat
-        options: [heartbeat, content-review, discover-products, instagram-publish, telegram-test, telegram-direct, all]
+        options: [heartbeat, content-review, discover-products, generate-creative, instagram-publish, telegram-test, telegram-direct, all]
       command_id: {description: 'Webhook command id', required: false, type: string}
       chat_id: {description: 'Telegram chat id', required: false, type: string}
       command_text: {description: 'Founder command', required: false, type: string}
@@ -139,6 +139,22 @@ jobs:
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add data/product_candidates.csv product_candidates.csv
           (git diff --cached --quiet || git commit -m "discovery: DeepSeek search-query suggestions") && git pull --rebase --autostash && git push
+  generate-creative:
+    needs: production-state
+    permissions: {contents: write}
+    if: needs.production-state.outputs.active == 'true' && (github.event.schedule == '30 5 * * *' || (github.event_name == 'workflow_dispatch' && (inputs.job == 'generate-creative' || inputs.job == 'all')))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.x"}
+      - env: {DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"}
+        run: python scripts/generate_creative.py
+        continue-on-error: true
+      - run: |
+          git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
+          git add data/creative_approval_queue.json site/creatives
+          (git diff --cached --quiet || git commit -m "creative: draft pending offers for dashboard approval") && git pull --rebase --autostash && git push
   instagram-publish:
     needs: production-state
     permissions: {contents: write}
