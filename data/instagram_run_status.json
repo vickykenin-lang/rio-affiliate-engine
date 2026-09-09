@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-09-08T22:52+05:30",
+ "updated_at": "2026-09-09T22:44+05:30",
  "status": "BLOCKED_OFFER",
  "offer_id": null,
- "detail": "Approved post is blocked — stale verification: BABY_CABINETLOCK_001 (22d old), BABY_SOCKETCOVER_001 (22d old), WARDROBE_DRAWERORG_001 (22d old), UNDERBED_STORAGEBAG_001 (22d old), FOLDABLE_LAPDESK_001 (22d old)",
+ "detail": "Approved post is blocked — stale verification: BABY_CABINETLOCK_001 (23d old), BABY_SOCKETCOVER_001 (23d old), WARDROBE_DRAWERORG_001 (23d old), UNDERBED_STORAGEBAG_001 (23d old), FOLDABLE_LAPDESK_001 (23d old)",
  "posted_count": 12,
  "pending_count": 5
 }
