@@ -42,3 +42,11 @@ def record_actual(ledger:dict,request_id:str,actual:float,at:str|None=None)->dic
     result['reserved']=round(float(result['reserved'])-float(reservation['estimated_cost']),6); result['actual_spend']=round(float(result['actual_spend'])+actual,6)
     result['entries'].append({'campaign_id':reservation['campaign_id'],'request_id':request_id,'kind':'ACTUAL','estimated_cost':reservation['estimated_cost'],'actual_cost':actual,'at':at or datetime.now(timezone.utc).isoformat(timespec='seconds')})
     return result
+
+def release_reservation(ledger:dict,request_id:str,reason:str,at:str|None=None)->dict:
+    result=copy.deepcopy(ledger); reservation=next((e for e in result['entries'] if e['request_id']==request_id and e['kind']=='RESERVATION'),None)
+    if not reservation: return result
+    if any(e['request_id']==request_id and e['kind'] in {'ACTUAL','RELEASE'} for e in result['entries']): return result
+    result['reserved']=round(float(result['reserved'])-float(reservation['estimated_cost']),6)
+    result['entries'].append({'campaign_id':reservation['campaign_id'],'request_id':request_id,'kind':'RELEASE','estimated_cost':reservation['estimated_cost'],'actual_cost':0.0,'reason':reason,'at':at or datetime.now(timezone.utc).isoformat(timespec='seconds')})
+    return result

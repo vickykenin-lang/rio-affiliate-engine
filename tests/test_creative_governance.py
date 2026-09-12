@@ -1,6 +1,6 @@
 import json, unittest
 from pathlib import Path
-from scripts.creative_governance import record_actual,reserve_cost,validate_package,validate_prompt
+from scripts.creative_governance import record_actual,release_reservation,reserve_cost,validate_package,validate_prompt
 from scripts.creative_provider import NovaCanvasProvider
 
 class CreativeGovernanceTests(unittest.TestCase):
@@ -17,4 +17,7 @@ class CreativeGovernanceTests(unittest.TestCase):
   ledger={'approved_budget':1,'reserved':0,'actual_spend':0,'entries':[]}
   a=reserve_cost(ledger,'CMP_X','req-1',0.1,at='t1'); self.assertEqual(reserve_cost(a,'CMP_X','req-1',0.1),a)
   b=record_actual(a,'req-1',0.08,at='t2'); self.assertEqual(record_actual(b,'req-1',0.08),b); self.assertEqual(b['actual_spend'],0.08)
+ def test_failed_request_releases_reservation_once(self):
+  ledger={'approved_budget':1,'reserved':0,'actual_spend':0,'entries':[]};a=reserve_cost(ledger,'CMP_X','req-2',0.1)
+  b=release_reservation(a,'req-2','ProviderError');self.assertEqual(b['reserved'],0);self.assertEqual(release_reservation(b,'req-2','Again'),b)
 if __name__=='__main__': unittest.main()
