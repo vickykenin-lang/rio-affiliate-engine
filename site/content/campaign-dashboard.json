@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "selection_limit": 3,
+  "candidates": [
+    {
+      "candidate_id": "CAND_CO_001",
+      "title": "Signoraware Family Fresh Tab BPA Free Plastic Containers Set | Microwave & Freezer safe | Airtight & Leakproof | Best for Kitchen & Outdoor Use (MultiColour | Setof4 | 2.5Ltr +1.2Ltr +500ml +160ml)",
+      "asin": "B0753ZQDR7",
+      "score": 95.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_UB_001",
+      "title": "Storite 2 Pack Moisture Proof Nylon Underbed Storage Bag For Clothes Large (54 x 46 x 28 cm) - BlackRed, Rectangular",
+      "asin": "B07B8K3RQK",
+      "score": 94.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED"
+      ]
+    },
+    {
+      "candidate_id": "CAND_SC_001",
+      "title": "PROTOWARE 12 Piece Baby Safety Child Proofing Electric Socket Plug Guards Switch Board Cover with Removal Pin (White)",
+      "asin": "B0829RL6Z5",
+      "score": 92.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED"
+      ]
+    },
+    {
+      "candidate_id": "CAND_CG_001",
+      "title": "AMAZARA Baby Corner Guards – Pre-Taped Safety Edge Protectors for Furniture | Childproof Foam Cushions with Strong 3M Adhesive | 10 Pcs, Brown | Baby Proofing",
+      "asin": "B07NSQFTLH",
+      "score": 91.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_BA_001",
+      "title": "EUDELE Aluminium Pack of 2, Self Adhesive Bathroom Shelf for Wall Shelf Organizer Wall Mounted Bathroom Shelves Rack Holder Stand for Bathroom Accessories Organiser Without Drill Black",
+      "asin": "B0GYYRR5JB",
+      "score": 90.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_CL_001",
+      "title": "KidDough Furniture Safety Locks for Kids, Child Safety Locks for Drawers, Cabinets, Fridge, Cupboard Lock, Baby Proofing Product, Strong and Adhesive Safety Locks (Brown, 10 Brown Locks)",
+      "asin": "B0CC36YVXH",
+      "score": 90.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED"
+      ]
+    },
+    {
+      "candidate_id": "CAND_FF_001",
+      "title": "Tarkan Stud Foldable Wooden Mini Lapdesk for Couch, Sofa Bed, Study Tray Table Stand for Writing (Walnut)",
+      "asin": "B07JMWTDBH",
+      "score": 90.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED"
+      ]
+    },
+    {
+      "candidate_id": "CAND_SG_001",
+      "title": "Safe-O-Kid® Adjustable 1-Year Warranty Baby Safety Gate (75-95 cm) Durable Metal Child Gate for Kids, Dog Gate, Baby Gate with 2-Way Auto-Close, Secret Lock, No Drill Required",
+      "asin": "B0BHJDRK1G",
+      "score": 90.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_BA_002",
+      "title": "House of VIPA Wall Mounted Bathroom Shelf Organizer | 2 Tier Plastic Bathroom Rack with 4 Hooks | No Drill Adhesive Bathroom Accessories for Shampoo, Soap & Toiletries",
+      "asin": "B0C85CTXTC",
+      "score": 88.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_SR_001",
+      "title": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces, Standard Size, Light Brown (SOKT66)",
+      "asin": "B07P5Z9SQN",
+      "score": 86.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_TR_001",
+      "title": "Amazon Basics Slim Rolling Storage Rack – 3-Tiered Shelf Plastic Slide-Out Organizer | Space-Saving, Multipurpose | for Kitchen, Bathroom, Laundry, Pantry & Utility Storage | Floor Standing | White",
+      "asin": "B08BVJYLZ3",
+      "score": 84.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_BL_001",
+      "title": "Chillyfit Broom Holder Wall Mounted, Mop and Broomstick Stand, Storage Organizer with 5 Slots and 6 Hanger Hooks - Gray, Polypropylene",
+      "asin": "B0CSBD2WYQ",
+      "score": 83.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_HO_001",
+      "title": "Joomouney Under Desk Cable Organizer Rack, Metal Under Table Cable Tray, Wire Management Holder for Power Extension, Power Cord, Network Cable Screw-Fixed Adjustable",
+      "asin": "B0FPB73FPZ",
+      "score": 83.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_WD_001",
+      "title": "XMART INDIA Drawer Organizers for Underwear, Socks, Bras, Ties, Undergarments, and Scarves - Closet Storage Dividers for Household Use Wardrobe Storage Box Set of 4 (Multicolor), Plastic",
+      "asin": "B0DBVV3FYQ",
+      "score": 83.0,
+      "verification_age_days": 26,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED"
+      ]
+    },
+    {
+      "candidate_id": "CAND_DR_001",
+      "title": "Purawood Expandable Cutlery Drawer Organizer for Kitchen, Large Adjustable Flatware & Utensil Tray with 2 Removable Slots, Spoon Fork Knife Storage Divider, BPA-Free Kitchen Drawer Organiser, Black",
+      "asin": "B0H9MM6BPD",
+      "score": 79.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_US_001",
+      "title": "wolpin Under Sink Rectangle Organizer Storage Rack, 2-Tier Plastic Holder With Hooks & Cup Holder (40 x 21 x 39 cm)",
+      "asin": "B0C1KNTF2Y",
+      "score": 79.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    },
+    {
+      "candidate_id": "CAND_ND_001",
+      "title": "Nieifi KIMEE Set of 2 Metal Bathroom Corner Shelf | Rustproof No-Drill Self Adhesive Wall Mounted Storage Rack for Bathroom and Kitchen | Heavy Duty Shower Caddy Organizer, 8 and 9 Inch, Black",
+      "asin": "B0H2Q3875J",
+      "score": 73.0,
+      "verification_age_days": 27,
+      "eligible": false,
+      "blockers": [
+        "FRESH_OFFER_VERIFICATION_REQUIRED",
+        "CAMPAIGN_ALREADY_EXISTS"
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "campaign_id": "CMP_CONTAINER_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_CO_001",
+      "title": "Signoraware Family Fresh Tab BPA Free Plastic Containers Set | Microwave & Freezer safe | Airtight & Leakproof | Best for Kitchen & Outdoor Use (MultiColour | Setof4 | 2.5Ltr +1.2Ltr +500ml +160ml)",
+      "asin": "B0753ZQDR7",
+      "score": 95.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "260e6c90-f26f-52d2-a7d2-cc9f76516eaa",
+          "campaign_id": "CMP_CONTAINER_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-29T04:40+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_BABY_CORNERGUARD_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_CG_001",
+      "title": "AMAZARA Baby Corner Guards – Pre-Taped Safety Edge Protectors for Furniture | Childproof Foam Cushions with Strong 3M Adhesive | 10 Pcs, Brown | Baby Proofing",
+      "asin": "B07NSQFTLH",
+      "score": 91.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-17",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "13f5f556-4b1c-5cab-a0a4-c592c8b76641",
+          "campaign_id": "CMP_BABY_CORNERGUARD_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-06T21:54+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_BABY_SAFETYGATE_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_SG_001",
+      "title": "Safe-O-Kid® Adjustable 1-Year Warranty Baby Safety Gate (75-95 cm) Durable Metal Child Gate for Kids, Dog Gate, Baby Gate with 2-Way Auto-Close, Secret Lock, No Drill Required",
+      "asin": "B0BHJDRK1G",
+      "score": 90.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-17",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "063c661b-55dc-5d2e-a9c8-54ca0ba8746f",
+          "campaign_id": "CMP_BABY_SAFETYGATE_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-07T23:50+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_BATHROOM_SHELF_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_BA_001",
+      "title": "EUDELE Aluminium Pack of 2, Self Adhesive Bathroom Shelf for Wall Shelf Organizer Wall Mounted Bathroom Shelves Rack Holder Stand for Bathroom Accessories Organiser Without Drill Black",
+      "asin": "B0GYYRR5JB",
+      "score": 90.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "767e2da2-cb01-5834-9c83-f20e5da32004",
+          "campaign_id": "CMP_BATHROOM_SHELF_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-01T01:04+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_BATHROOM_NODRILL_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_BA_002",
+      "title": "House of VIPA Wall Mounted Bathroom Shelf Organizer | 2 Tier Plastic Bathroom Rack with 4 Hooks | No Drill Adhesive Bathroom Accessories for Shampoo, Soap & Toiletries",
+      "asin": "B0C85CTXTC",
+      "score": 88.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "864e477e-1f0e-5bee-920b-5f55c91d6f4c",
+          "campaign_id": "CMP_BATHROOM_NODRILL_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-02T22:46+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_SPICE_RACK_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_SR_001",
+      "title": "Amazon Solimo Plastic Revolving Spice Rack Set of 16 Pieces, Standard Size, Light Brown (SOKT66)",
+      "asin": "B07P5Z9SQN",
+      "score": 86.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "a3352086-ffb5-56cf-bbc6-0b11f4c306da",
+          "campaign_id": "CMP_SPICE_RACK_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-28T04:32+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_TROLLEY_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_TR_001",
+      "title": "Amazon Basics Slim Rolling Storage Rack – 3-Tiered Shelf Plastic Slide-Out Organizer | Space-Saving, Multipurpose | for Kitchen, Bathroom, Laundry, Pantry & Utility Storage | Floor Standing | White",
+      "asin": "B08BVJYLZ3",
+      "score": 84.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "ad6d174f-e5d3-515f-914a-dd002137a649",
+          "campaign_id": "CMP_TROLLEY_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-24T21:49+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_BALCONY_BROOM_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_BL_001",
+      "title": "Chillyfit Broom Holder Wall Mounted, Mop and Broomstick Stand, Storage Organizer with 5 Slots and 6 Hanger Hooks - Gray, Polypropylene",
+      "asin": "B0CSBD2WYQ",
+      "score": 83.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "ae1f4ddf-459c-5080-acfa-2437644fa82b",
+          "campaign_id": "CMP_BALCONY_BROOM_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-05T21:41+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_HOMEOFFICE_CABLE_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_HO_001",
+      "title": "Joomouney Under Desk Cable Organizer Rack, Metal Under Table Cable Tray, Wire Management Holder for Power Extension, Power Cord, Network Cable Screw-Fixed Adjustable",
+      "asin": "B0FPB73FPZ",
+      "score": 83.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "da31d46e-e23b-5eef-a7cd-54328937171b",
+          "campaign_id": "CMP_HOMEOFFICE_CABLE_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-09-03T22:37+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_DRAWER_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_DR_001",
+      "title": "Purawood Expandable Cutlery Drawer Organizer for Kitchen, Large Adjustable Flatware & Utensil Tray with 2 Removable Slots, Spoon Fork Knife Storage Divider, BPA-Free Kitchen Drawer Organiser, Black",
+      "asin": "B0H9MM6BPD",
+      "score": 79.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "593fc884-79e1-5e94-b1c2-0da101a5c7d8",
+          "campaign_id": "CMP_DRAWER_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-29T22:50+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_UNDER_SINK_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_US_001",
+      "title": "wolpin Under Sink Rectangle Organizer Storage Rack, 2-Tier Plastic Holder With Hooks & Cup Holder (40 x 21 x 39 cm)",
+      "asin": "B0C1KNTF2Y",
+      "score": 79.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "b4628c28-dab1-5dfb-b9e8-c262d7127b7e",
+          "campaign_id": "CMP_UNDER_SINK_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-23T16:04+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    },
+    {
+      "campaign_id": "CMP_NODRILL_001",
+      "state": "INSTAGRAM_POSTED",
+      "revision": 0,
+      "candidate_id": "CAND_ND_001",
+      "title": "Nieifi KIMEE Set of 2 Metal Bathroom Corner Shelf | Rustproof No-Drill Self Adhesive Wall Mounted Storage Rack for Bathroom and Kitchen | Heavy Duty Shower Caddy Organizer, 8 and 9 Inch, Black",
+      "asin": "B0H2Q3875J",
+      "score": 73.0,
+      "availability": "IN_STOCK",
+      "offer_verified_at": "2026-08-16",
+      "legacy": true,
+      "creative_approved": false,
+      "publish_approved": false,
+      "allowed_actions": [],
+      "history": [
+        {
+          "event_id": "98043399-cdbe-583f-96c6-ce1b1af216bd",
+          "campaign_id": "CMP_NODRILL_001",
+          "revision": 0,
+          "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+          "actor": {
+            "id": "step-3-migration",
+            "role": "MIGRATION"
+          },
+          "at": "2026-08-30T23:12+05:30",
+          "from_state": null,
+          "to_state": "INSTAGRAM_POSTED",
+          "details": {
+            "source": "data/ig_published.json",
+            "approval_model": "PRE_STEP_2_LEGACY",
+            "approvals_fabricated": false
+          }
+        }
+      ]
+    }
+  ]
+}
