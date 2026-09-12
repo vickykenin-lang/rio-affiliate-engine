@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "campaign_id": "CMP_NODRILL_001",
+  "state": "INSTAGRAM_POSTED",
+  "revision": 0,
+  "identity": {
+    "candidate_id": "CAND_ND_001",
+    "offer_id": "NODRILL_001",
+    "merchant": "amazon.in",
+    "asin": "B0H2Q3875J",
+    "product_title": "Nieifi KIMEE Set of 2 Metal Bathroom Corner Shelf | Rustproof No-Drill Self Adhesive Wall Mounted Storage Rack for Bathroom and Kitchen | Heavy Duty Shower Caddy Organizer, 8 and 9 Inch, Black",
+    "variant": "Black; Set of 2; 8 and 9 Inch",
+    "canonical_url": "https://www.amazon.in/dp/B0H2Q3875J",
+    "affiliate_url": "https://www.amazon.in/dp/B0H2Q3875J?tag=rioaffiliate-21",
+    "landing_page_url": "",
+    "candidate_score": 73.0,
+    "candidate_status": "READY",
+    "selected_at": "2026-08-30T23:12+05:30",
+    "offer_verified_at": "2026-08-16",
+    "availability": "IN_STOCK",
+    "evidence_refs": [
+      "data/ig_published.json",
+      "data/offer_identity_registry.csv",
+      "data/product_candidates.csv"
+    ]
+  },
+  "creative": null,
+  "approvals": {
+    "creative": null,
+    "publish": null
+  },
+  "publish": {
+    "attempts": 1,
+    "idempotency_key": "legacy:18101575730257542",
+    "precheck": null,
+    "media_id": "18101575730257542",
+    "permalink": "https://www.instagram.com/p/DcrEvWYmuU5/",
+    "error": null
+  },
+  "governance": {
+    "approval_model": "PRE_STEP_2_LEGACY",
+    "legacy_import": true,
+    "previous_state": null
+  },
+  "created_at": "2026-08-30T23:12+05:30",
+  "updated_at": "2026-08-30T23:12+05:30",
+  "history": [
+    {
+      "event_id": "98043399-cdbe-583f-96c6-ce1b1af216bd",
+      "campaign_id": "CMP_NODRILL_001",
+      "revision": 0,
+      "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+      "actor": {
+        "id": "step-3-migration",
+        "role": "MIGRATION"
+      },
+      "at": "2026-08-30T23:12+05:30",
+      "from_state": null,
+      "to_state": "INSTAGRAM_POSTED",
+      "details": {
+        "source": "data/ig_published.json",
+        "approval_model": "PRE_STEP_2_LEGACY",
+        "approvals_fabricated": false
+      }
+    }
+  ]
+}

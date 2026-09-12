@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rio.example/schemas/campaign.schema.json",
+  "title": "RIO governed creative campaign",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "campaign_id", "state", "revision", "identity", "creative",
+    "approvals", "publish", "governance", "created_at", "updated_at", "history"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "campaign_id": {"type": "string", "pattern": "^[A-Z0-9_:-]+$"},
+    "state": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 0},
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id", "offer_id", "merchant", "asin", "product_title", "variant",
+        "canonical_url", "affiliate_url", "landing_page_url", "candidate_score",
+        "candidate_status", "selected_at", "offer_verified_at", "availability", "evidence_refs"
+      ],
+      "properties": {
+        "candidate_id": {"type": "string", "minLength": 1},
+        "offer_id": {"type": "string", "minLength": 1},
+        "merchant": {"type": "string", "minLength": 1},
+        "asin": {"type": "string", "minLength": 1},
+        "product_title": {"type": "string", "minLength": 1},
+        "variant": {"type": "string"},
+        "canonical_url": {"type": "string", "minLength": 1},
+        "affiliate_url": {"type": "string", "minLength": 1},
+        "landing_page_url": {"type": "string"},
+        "candidate_score": {"type": ["number", "null"]},
+        "candidate_status": {"type": "string", "minLength": 1},
+        "selected_at": {"type": "string", "format": "date-time"},
+        "offer_verified_at": {"type": ["string", "null"]},
+        "availability": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "creative": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "version", "asset_path", "creative_sha256", "caption_version", "caption_text",
+        "caption_sha256", "landing_page_sha256", "source_policy", "provider", "model",
+        "request_id", "generated_at", "attempt"
+      ],
+      "properties": {
+        "version": {"type": "integer", "minimum": 1},
+        "asset_path": {"type": "string", "minLength": 1},
+        "creative_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "caption_version": {"type": "integer", "minimum": 1},
+        "caption_text": {"type": "string"},
+        "caption_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "landing_page_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "source_policy": {"enum": ["ORIGINAL_CONTEXTUAL", "PERMITTED_EXACT_ASSET"]},
+        "provider": {"type": "string", "minLength": 1},
+        "model": {"type": "string", "minLength": 1},
+        "request_id": {"type": "string"},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "attempt": {"type": "integer", "minimum": 1},
+        "estimated_cost": {"type": ["number", "null"], "minimum": 0},
+        "actual_cost": {"type": ["number", "null"], "minimum": 0}
+      }
+    },
+    "approvals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["creative", "publish"],
+      "properties": {
+        "creative": {"$ref": "#/$defs/approval"},
+        "publish": {"$ref": "#/$defs/approval"}
+      }
+    },
+    "publish": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["attempts", "idempotency_key", "precheck", "media_id", "permalink", "error"],
+      "properties": {
+        "attempts": {"type": "integer", "minimum": 0},
+        "idempotency_key": {"type": ["string", "null"]},
+        "precheck": {"type": ["object", "null"]},
+        "media_id": {"type": ["string", "null"]},
+        "permalink": {"type": ["string", "null"]},
+        "error": {"type": ["object", "null"]}
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approval_model", "legacy_import", "previous_state"],
+      "properties": {
+        "approval_model": {"enum": ["STEP_2_TWO_STAGE", "PRE_STEP_2_LEGACY"]},
+        "legacy_import": {"type": "boolean"},
+        "previous_state": {"type": ["string", "null"]}
+      }
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "history": {"type": "array", "items": {"$ref": "campaign_event.schema.json"}}
+  },
+  "$defs": {
+    "approval": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["actor", "at", "bound_hash", "invalidated_at", "invalidation_reason"],
+      "properties": {
+        "actor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "role"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "role": {"const": "FOUNDER"}
+          }
+        },
+        "at": {"type": "string", "format": "date-time"},
+        "bound_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "invalidated_at": {"type": ["string", "null"]},
+        "invalidation_reason": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

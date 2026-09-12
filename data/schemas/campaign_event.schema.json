@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rio.example/schemas/campaign_event.schema.json",
+  "title": "RIO campaign event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "campaign_id", "revision", "action", "actor", "at", "from_state", "to_state", "details"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "campaign_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 0},
+    "action": {"type": "string", "minLength": 1},
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "role": {"enum": ["FOUNDER", "SYSTEM", "MIGRATION"]}
+      }
+    },
+    "at": {"type": "string", "format": "date-time"},
+    "from_state": {"type": ["string", "null"]},
+    "to_state": {"type": "string", "minLength": 1},
+    "details": {"type": "object"}
+  }
+}

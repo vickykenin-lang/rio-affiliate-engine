@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "campaign_id": "CMP_DRAWER_001",
+  "state": "INSTAGRAM_POSTED",
+  "revision": 0,
+  "identity": {
+    "candidate_id": "CAND_DR_001",
+    "offer_id": "DRAWER_001",
+    "merchant": "amazon.in",
+    "asin": "B0H9MM6BPD",
+    "product_title": "Purawood Expandable Cutlery Drawer Organizer for Kitchen, Large Adjustable Flatware & Utensil Tray with 2 Removable Slots, Spoon Fork Knife Storage Divider, BPA-Free Kitchen Drawer Organiser, Black",
+    "variant": "Black; Large, Adjustable; 2 Removable Slots",
+    "canonical_url": "https://www.amazon.in/dp/B0H9MM6BPD",
+    "affiliate_url": "https://www.amazon.in/dp/B0H9MM6BPD?tag=rioaffiliate-21",
+    "landing_page_url": "",
+    "candidate_score": 79.0,
+    "candidate_status": "READY",
+    "selected_at": "2026-08-29T22:50+05:30",
+    "offer_verified_at": "2026-08-16",
+    "availability": "IN_STOCK",
+    "evidence_refs": [
+      "data/ig_published.json",
+      "data/offer_identity_registry.csv",
+      "data/product_candidates.csv"
+    ]
+  },
+  "creative": null,
+  "approvals": {
+    "creative": null,
+    "publish": null
+  },
+  "publish": {
+    "attempts": 1,
+    "idempotency_key": "legacy:18112848191063932",
+    "precheck": null,
+    "media_id": "18112848191063932",
+    "permalink": "https://www.instagram.com/p/DcodW-8jfdD/",
+    "error": null
+  },
+  "governance": {
+    "approval_model": "PRE_STEP_2_LEGACY",
+    "legacy_import": true,
+    "previous_state": null
+  },
+  "created_at": "2026-08-29T22:50+05:30",
+  "updated_at": "2026-08-29T22:50+05:30",
+  "history": [
+    {
+      "event_id": "593fc884-79e1-5e94-b1c2-0da101a5c7d8",
+      "campaign_id": "CMP_DRAWER_001",
+      "revision": 0,
+      "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+      "actor": {
+        "id": "step-3-migration",
+        "role": "MIGRATION"
+      },
+      "at": "2026-08-29T22:50+05:30",
+      "from_state": null,
+      "to_state": "INSTAGRAM_POSTED",
+      "details": {
+        "source": "data/ig_published.json",
+        "approval_model": "PRE_STEP_2_LEGACY",
+        "approvals_fabricated": false
+      }
+    }
+  ]
+}
