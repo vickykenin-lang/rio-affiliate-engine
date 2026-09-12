@@ -1,5 +1,5 @@
 from pathlib import Path
-import csv, json, re, sys
+import csv, json, re, subprocess, sys
 root=Path(__file__).resolve().parents[1]
 site=root/'site'
 errors=[]
@@ -19,6 +19,16 @@ for o in offers.get('offers',[]):
 with (root/'data/content_queue.csv').open(newline='',encoding='utf-8') as f:
     rows=list(csv.DictReader(f))
     if len(rows)<10: errors.append('content queue has fewer than 10 items')
+campaign_validation = subprocess.run(
+    [sys.executable, str(root / 'scripts' / 'validate_campaigns.py')],
+    cwd=root,
+    capture_output=True,
+    text=True,
+    timeout=30,
+)
+if campaign_validation.returncode != 0:
+    detail = (campaign_validation.stderr or campaign_validation.stdout).strip()
+    errors.append(f'campaign validation failed: {detail}')
 print(f'RIO validation: {len(list(site.rglob("*.html")))} HTML pages, {len(rows)} queue items')
 if errors:
     print('\n'.join('ERROR: '+e for e in errors)); sys.exit(1)

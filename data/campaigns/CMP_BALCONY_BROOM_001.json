@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "campaign_id": "CMP_BALCONY_BROOM_001",
+  "state": "INSTAGRAM_POSTED",
+  "revision": 0,
+  "identity": {
+    "candidate_id": "CAND_BL_001",
+    "offer_id": "BALCONY_BROOM_001",
+    "merchant": "amazon.in",
+    "asin": "B0CSBD2WYQ",
+    "product_title": "Chillyfit Broom Holder Wall Mounted, Mop and Broomstick Stand, Storage Organizer with 5 Slots and 6 Hanger Hooks - Gray, Polypropylene",
+    "variant": "Gray; Polypropylene; 5 Slots + 6 Hanger Hooks; Wall Mounted",
+    "canonical_url": "https://www.amazon.in/dp/B0CSBD2WYQ",
+    "affiliate_url": "https://www.amazon.in/dp/B0CSBD2WYQ?tag=rioaffiliate-21",
+    "landing_page_url": "",
+    "candidate_score": 83.0,
+    "candidate_status": "READY",
+    "selected_at": "2026-09-05T21:41+05:30",
+    "offer_verified_at": "2026-08-16",
+    "availability": "IN_STOCK",
+    "evidence_refs": [
+      "data/ig_published.json",
+      "data/offer_identity_registry.csv",
+      "data/product_candidates.csv"
+    ]
+  },
+  "creative": null,
+  "approvals": {
+    "creative": null,
+    "publish": null
+  },
+  "publish": {
+    "attempts": 1,
+    "idempotency_key": "legacy:18119104907492559",
+    "precheck": null,
+    "media_id": "18119104907492559",
+    "permalink": "https://www.instagram.com/p/Dc6XIGNAfYs/",
+    "error": null
+  },
+  "governance": {
+    "approval_model": "PRE_STEP_2_LEGACY",
+    "legacy_import": true,
+    "previous_state": null
+  },
+  "created_at": "2026-09-05T21:41+05:30",
+  "updated_at": "2026-09-05T21:41+05:30",
+  "history": [
+    {
+      "event_id": "ae1f4ddf-459c-5080-acfa-2437644fa82b",
+      "campaign_id": "CMP_BALCONY_BROOM_001",
+      "revision": 0,
+      "action": "LEGACY_INSTAGRAM_POST_IMPORTED",
+      "actor": {
+        "id": "step-3-migration",
+        "role": "MIGRATION"
+      },
+      "at": "2026-09-05T21:41+05:30",
+      "from_state": null,
+      "to_state": "INSTAGRAM_POSTED",
+      "details": {
+        "source": "data/ig_published.json",
+        "approval_model": "PRE_STEP_2_LEGACY",
+        "approvals_fabricated": false
+      }
+    }
+  ]
+}
