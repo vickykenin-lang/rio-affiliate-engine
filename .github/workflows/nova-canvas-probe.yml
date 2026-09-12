@@ -1,0 +1,32 @@
+name: Nova Canvas access probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nova-canvas-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check boto3
+      - name: Probe model metadata without generation
+        continue-on-error: true
+        env:
+          AWS_BEARER_TOKEN_BEDROCK: ${{ secrets.AWS_BEDROCK_API_KEY }}
+          AWS_REGION: us-east-1
+        run: python scripts/probe_nova_canvas.py
+      - name: Persist truthful probe result
+        run: |
+          python scripts/validate_creative_governance.py
+          git config user.name "RIO Nova Probe"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/nova_canvas_access.json
+          git commit -m "nova: record access probe" || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "provider": "amazon-bedrock",
+  "model_id": "amazon.nova-canvas-v1:0",
+  "region": "us-east-1",
+  "checked_at": null,
+  "paid_generation_performed": false,
+  "status": "NOT_RUN",
+  "error": null
+}
