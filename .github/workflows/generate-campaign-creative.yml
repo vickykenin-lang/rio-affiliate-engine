@@ -1,0 +1,48 @@
+name: Generate approved campaign creative
+on:
+  workflow_dispatch:
+    inputs:
+      campaign_id: {description: Campaign ID, required: true, type: string}
+      expected_revision: {description: Current campaign revision, required: true, type: string}
+      prompt: {description: Original contextual creative prompt, required: true, type: string}
+      caption: {description: Caption including #ad, required: true, type: string}
+      estimated_cost_usd: {description: Maximum reservation for this request, required: true, type: string}
+      paid_confirmation: {description: Type APPROVE PAID NOVA GENERATION, required: true, type: string}
+permissions: {contents: write}
+concurrency: {group: governed-creative-generation, cancel-in-progress: false}
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check boto3
+      - name: Authorize Founder and explicit paid boundary
+        env: {ACTOR: '${{ github.actor }}', CONFIRMATION: '${{ inputs.paid_confirmation }}'}
+        run: test "$ACTOR" = "vickykenin-lang" && test "$CONFIRMATION" = "APPROVE PAID NOVA GENERATION"
+      - name: Generate one governed creative
+        env:
+          AWS_BEARER_TOKEN_BEDROCK: '${{ secrets.AWS_BEDROCK_API_KEY }}'
+          AWS_REGION: us-east-1
+          RIO_PAID_GENERATION_APPROVED: YES
+          CAMPAIGN_ID: '${{ inputs.campaign_id }}'
+          REVISION: '${{ inputs.expected_revision }}'
+          PROMPT: '${{ inputs.prompt }}'
+          CAPTION: '${{ inputs.caption }}'
+          ESTIMATE: '${{ inputs.estimated_cost_usd }}'
+          REQUEST_ID: 'github-run:${{ github.run_id }}:${{ github.run_attempt }}'
+        run: python scripts/generate_campaign_creative.py "$CAMPAIGN_ID" --expected-revision "$REVISION" --prompt "$PROMPT" --caption "$CAPTION" --estimated-cost "$ESTIMATE" --request-id "$REQUEST_ID"
+      - name: Validate and commit
+        env: {CAMPAIGN_ID: '${{ inputs.campaign_id }}'}
+        run: |
+          python scripts/validate_creative_governance.py
+          python scripts/validate_campaigns.py
+          python scripts/generate_campaign_dashboard.py
+          git config user.name "RIO Creative Worker"
+          git config user.email "actions@users.noreply.github.com"
+          git add "data/campaigns/${CAMPAIGN_ID}.json" data/creative_cost_ledger.json site/creatives site/content/campaign-dashboard.json
+          git commit -m "creative: generate approved ${CAMPAIGN_ID}"
+          git pull --rebase origin main
+          git push origin HEAD:main
