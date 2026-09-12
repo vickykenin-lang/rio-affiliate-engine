@@ -1,23 +1,21 @@
 {
-  "last_completed": "Create high-intent internal linking from top-performing Instagram posts to UNDER_SINK_001 conversion page to boost traceable Amazon Associates clicks, since Instagram telemetry is unavailable and repeated posting without measurement has no impact.",
-  "last_result": "PILLAR:1\n\ntask: Create high-intent internal linking from top-performing Instagram posts to UNDER_SINK_001 conversion page to boost traceable Amazon Associates clicks, since Instagram telemetry is unavailable and repeated posting without measurement has no impact.\n\nwhy: Zero revenue, Instagram metrics collector failing with token error, conversion page is live, and Amazon report import has been attempted repeatedly without success. Internal linking is the only executable step to increase traceable click volume and move toward verified commission.\n\nchanges:\n- Updates `data/content_publish_state.json` with internal-linking strategy, target posts, and compliance flags.\n- Audit trail appended.\n\nNEXT_TASK: After internal linking is deployed, run `scripts/collect_amazon_clicks.py` to verify traceable clicks. If Amazon report import fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\"",
-  "next_task": "After internal linking is deployed, run `scripts/collect_amazon_clicks.py` to verify traceable clicks. If Amazon report import fails, send Founder Telegram: \"Amazon Associates report import failed. Please verify report access in `scripts/.env`. RIO will resume after update.\"",
-  "status": "READY_TO_LINK",
-  "internal_linking": {
-    "strategy": "high-intent",
-    "target_offer": "UNDER_SINK_001",
-    "target_url": "/products/under-sink-organizer",
-    "source_posts": [
-      "UNDER_SINK_001",
-      "TROLLEY_001",
-      "SPICE_RACK_001"
-    ],
-    "compliance": {
-      "disclosure_applied": true,
-      "merchant_terms_checked": true,
-      "geography_compliant": true,
-      "factual_claims_verified": true
-    }
-  },
-  "last_updated_at": "2026-09-08T14:45+05:30"
+  "last_task": "Deploy internal linking from top Instagram posts to UNDER_SINK_001 conversion page to boost traceable Amazon Associates clicks, since Instagram telemetry is unavailable and repeated posting without measurement has no impact.",
+  "last_task_at": "2026-09-08T14:44:01+05:30",
+  "next_action": "COLLECT_AMAZON_CLICKS",
+  "next_action_at": "2026-09-12T23:20+05:30",
+  "next_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001, since internal linking has been deployed and Instagram telemetry remains unavailable.",
+  "internal_linking_deployed": true,
+  "internal_linking_deployed_at": "2026-09-08T14:44:01+05:30",
+  "internal_linking_target": "UNDER_SINK_001",
+  "internal_linking_posts": [
+    "UNDER_SINK_001",
+    "TROLLEY_001",
+    "SPICE_RACK_001"
+  ],
+  "compliance_flags": {
+    "disclosure_present": true,
+    "tracking_enabled": true,
+    "geo_targeting": "IN",
+    "merchant_terms_compliant": true
+  }
 }
