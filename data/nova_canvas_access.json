@@ -3,8 +3,13 @@
   "provider": "amazon-bedrock",
   "model_id": "amazon.nova-canvas-v1:0",
   "region": "us-east-1",
-  "checked_at": null,
+  "checked_at": "2026-09-12T17:54:43+00:00",
   "paid_generation_performed": false,
-  "status": "NOT_RUN",
+  "status": "READY",
+  "model_name": "Nova Canvas",
+  "output_modalities": [
+    "IMAGE"
+  ],
+  "response_streaming_supported": false,
   "error": null
 }
