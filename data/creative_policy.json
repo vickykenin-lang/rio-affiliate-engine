@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "allowed_source_policies": ["ORIGINAL_CONTEXTUAL", "ABSTRACT_PRODUCT_CATEGORY"],
+  "forbidden_prompt_terms": ["amazon logo", "official amazon", "exact replica", "copy the product photo", "customer review"],
+  "required_disclosures": ["#ad"],
+  "max_generation_attempts_per_campaign": 3,
+  "max_images_per_request": 1,
+  "allowed_dimensions": [[1080, 1080], [1080, 1350]],
+  "paid_generation_default": "DENY",
+  "price_claims_allowed": false
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "approved_budget": 0.0,
+  "reserved": 0.0,
+  "actual_spend": 0.0,
+  "entries": []
+}

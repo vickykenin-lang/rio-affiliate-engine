@@ -29,6 +29,13 @@ campaign_validation = subprocess.run(
 if campaign_validation.returncode != 0:
     detail = (campaign_validation.stderr or campaign_validation.stdout).strip()
     errors.append(f'campaign validation failed: {detail}')
+creative_validation = subprocess.run(
+    [sys.executable, str(root / 'scripts' / 'validate_creative_governance.py')],
+    cwd=root, capture_output=True, text=True, timeout=30,
+)
+if creative_validation.returncode != 0:
+    detail = (creative_validation.stderr or creative_validation.stdout).strip()
+    errors.append(f'creative governance failed: {detail}')
 print(f'RIO validation: {len(list(site.rglob("*.html")))} HTML pages, {len(rows)} queue items')
 if errors:
     print('\n'.join('ERROR: '+e for e in errors)); sys.exit(1)
