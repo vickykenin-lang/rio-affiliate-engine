@@ -25,7 +25,7 @@ def main():
             age=(today-date.fromisoformat(row['observed_at'])).days; blockers=[]
             if age>FRESH_DAYS: blockers.append('FRESH_OFFER_VERIFICATION_REQUIRED')
             if row['merchant_product_id'] in existing: blockers.append('CAMPAIGN_ALREADY_EXISTS')
-            candidates.append({'candidate_id':row['candidate_id'],'title':row['product_title'],'asin':row['merchant_product_id'],
+            candidates.append({'candidate_id':row['candidate_id'],'title':row['product_title'],'asin':row['merchant_product_id'],'canonical_url':row['canonical_url'],
               'score':float(row['commercial_score']),'verification_age_days':age,'eligible':not blockers,'blockers':blockers})
     candidates.sort(key=lambda x:(-x['score'],x['candidate_id'])); records.sort(key=lambda x:(x['legacy'],-(x['score'] or 0),x['campaign_id']))
     OUT.parent.mkdir(parents=True,exist_ok=True); OUT.write_text(json.dumps({'schema_version':1,'selection_limit':3,'candidates':candidates,'campaigns':records},indent=2,ensure_ascii=False)+'\n',encoding='utf-8',newline='\n')
