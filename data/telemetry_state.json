@@ -16,8 +16,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOj2_WXs-Zw8HEcNmNq3Q5C\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A42WReV76aORnXU_79dHFLo\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "TROLLEY_001": {
         "offer_id": "TROLLEY_001",
@@ -28,8 +28,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AP6ljxTloRp7ab_3AOrD_SY\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"ACzraTcRND60DXHVDQM6mxe\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "SPICE_RACK_001": {
         "offer_id": "SPICE_RACK_001",
@@ -40,8 +40,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"ABl4n8imEktB_efDYWxhKQY\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"APfZy3o_nnneL_MydYUo6HV\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "CONTAINER_001": {
         "offer_id": "CONTAINER_001",
@@ -52,8 +52,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AA03xHxCE1nJn9TLP_tfnJV\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A7Hq4zLuOZb-_wq07IN4ZRC\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "DRAWER_001": {
         "offer_id": "DRAWER_001",
@@ -64,8 +64,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ah2VHY6s-hGsPMZSfaSrNnj\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"ArFw-8yUW8qcrpRFn0dAaxW\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "NODRILL_001": {
         "offer_id": "NODRILL_001",
@@ -76,8 +76,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AqwUs3sYWIBSRW9-1uzq6w_\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"At3NyB9_ZxO1v4BxM8S_kHI\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "BATHROOM_SHELF_001": {
         "offer_id": "BATHROOM_SHELF_001",
@@ -88,8 +88,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJjMGH35Jemy0llbctp6uwG\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A4LGMlwXPr-nN702u9SM-uj\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "BATHROOM_NODRILL_001": {
         "offer_id": "BATHROOM_NODRILL_001",
@@ -100,8 +100,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AVXHZuXhkijK5XkOZvpT3E6\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AOpVZqp74K0jgRfJBZ753Vu\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "HOMEOFFICE_CABLE_001": {
         "offer_id": "HOMEOFFICE_CABLE_001",
@@ -112,8 +112,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ah35TAcHWcqgpK8W2Ylj2AA\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A7OCIpZg-tvZyYOr_rGkRQu\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "BALCONY_BROOM_001": {
         "offer_id": "BALCONY_BROOM_001",
@@ -124,8 +124,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AF21Y1Pjc2IUi7YbfQOSsDD\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AstdjE2Bp_rYQQEDv6l1Vyg\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "BABY_CORNERGUARD_001": {
         "offer_id": "BABY_CORNERGUARD_001",
@@ -136,8 +136,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A7MNuLlURFSWOzlUdP_EAtd\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AeoyGEfsEL3aOL0Mc4e0mJa\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       },
       "BABY_SAFETYGATE_001": {
         "offer_id": "BABY_SAFETYGATE_001",
@@ -148,11 +148,11 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AspsWY2pcsCnoSJJfAhNLff\"}}",
-        "collected_at_utc": "2026-09-14T06:57:11.756618+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Av1-zV3p-f_0yEu4Q9aDamR\"}}",
+        "collected_at_utc": "2026-09-14T13:52:45.560647+00:00"
       }
     },
-    "last_attempt_at_utc": "2026-09-14T06:57:11.756618+00:00",
+    "last_attempt_at_utc": "2026-09-14T13:52:45.560647+00:00",
     "graph_version": "v23.0"
   },
   "website": {
