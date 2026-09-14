@@ -1,10 +1,11 @@
 {
   "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001",
   "last_result": "PENDING_EXECUTION",
-  "next_task": "Verify traceable Amazon Associates clicks for UNDER_SINK_001 after report import",
-  "pillar": 6,
+  "next_task": "After Amazon report import, verify traceable clicks for UNDER_SINK_001 and update `data/affiliates/amazon_clicks.json` if successful.",
   "changed_files": [
     "data/content_publish_state.json",
     "data/autonomy_audit.jsonl"
-  ]
+  ],
+  "pillar": 1,
+  "timestamp_utc": "2026-09-15T01:58+05:30"
 }
