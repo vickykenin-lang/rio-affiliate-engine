@@ -1,11 +1,11 @@
 {
-  "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001, since internal linking has been deployed and Instagram telemetry remains unavailable.",
-  "last_completed_at": "2026-09-16T06:15+05:30",
+  "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001",
+  "last_completed_at": "2026-09-17T12:13+05:30",
   "last_result": "PENDING_EXECUTION",
-  "next_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001, since internal linking has been deployed and Instagram telemetry remains unavailable.",
-  "pillar": 6,
-  "changed_files": [
-    "data/content_publish_state.json",
-    "data/autonomy_audit.jsonl"
-  ]
+  "last_pillar": 6,
+  "last_offer_id": "UNDER_SINK_001",
+  "last_internal_linking_deployed": true,
+  "last_instagram_telemetry_status": "UNAVAILABLE",
+  "next_task": "After Amazon report import, verify traceable clicks for UNDER_SINK_001 and update `data/autonomy_audit.jsonl` with result.",
+  "anti_repeat_guard_triggered": false
 }
