@@ -1,8 +1,35 @@
 {
-  "last_published_at": "2026-09-18T19:25:40+05:30",
-  "last_published_url": "site/blog/under-sink-organizer-guide.html",
-  "next_action": "collect_amazon_clicks",
-  "next_action_target": "UNDER_SINK_001",
-  "instagram_collector_status": "FAILED_OAUTH",
-  "amazon_attribution_ready": true
+  "last_completed": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001 — internal linking deployed, Instagram telemetry unavailable, Amazon remains the only verified attribution source.",
+  "last_result": "PILLAR:1\nTASK: Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001 — internal linking deployed, Instagram telemetry unavailable, Amazon remains the only verified attribution source.\nWHY: Instagram telemetry is unavailable due to invalid OAuth token (VICKY ACTION REQUIRED). Amazon remains the only verified attribution source. Publishing the article was completed; now collecting Amazon Associates report is the next executable revenue action.\nCHANGES: Update `data/content_publish_state.json` to reflect next action and persist audit trail.\nNEXT_TASK: After running script, verify traceable clicks and commissions for UNDER_SINK_001; if no clicks/orders found, prepare to test alternative attribution paths or high-intent offer page improvements.",
+  "next_task": "After running script, verify traceable clicks and commissions for UNDER_SINK_001; if no clicks/orders found, prepare to test alternative attribution paths or high-intent offer page improvements.",
+  "changed_files": [
+    "data/content_publish_state.json",
+    "data/autonomy_audit.jsonl"
+  ],
+  "recent_completed_task_keys": [
+    "run `scripts/collect_amazon_clicks.py` to import amazon associates report and verify traceable clicks for under_sink_001 — internal linking deployed, instagram telemetry unavailable, amazon remains the only verified attribution source.",
+    "deploy internal linking from blog to under_sink_001 offer page to enable amazon attribution path."
+  ],
+  "recent_pillars": [
+    1,
+    4,
+    6
+  ],
+  "pillar_counts_recent": {
+    "1": 1,
+    "4": 1,
+    "6": 1
+  },
+  "rotation_priority_pillars": [
+    1,
+    4,
+    6
+  ],
+  "zero_revenue_ready_offer_focus": true,
+  "eligible_pillars_this_cycle": [
+    1,
+    4,
+    6
+  ],
+  "forced_rotate_away_from": null
 }
