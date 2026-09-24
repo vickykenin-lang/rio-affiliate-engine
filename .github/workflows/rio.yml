@@ -7,7 +7,7 @@ on:
       - 'data/instagram_approval.json'
       - 'data/production_control.json'
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
     - cron: '0 5 * * *'
     - cron: '30 5 * * *'
     - cron: '30 13 * * *'
