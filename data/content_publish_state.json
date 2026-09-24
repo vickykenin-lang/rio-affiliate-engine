@@ -1,14 +1,8 @@
 {
-  "last_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks for UNDER_SINK_001",
-  "last_completed_at": "2026-09-17T15:40+05:30",
-  "last_result": "PENDING_EXECUTION",
-  "next_task": "Verify Amazon report import for UNDER_SINK_001 click attribution",
-  "blocker": null,
-  "founder_action_required": false,
-  "pillar": 6,
-  "internal_linking_deployed": true,
-  "instagram_telemetry_status": "UNAVAILABLE_OAUTH_ERROR",
-  "amazon_report_import_pending": true,
-  "offer_focus": "UNDER_SINK_001",
-  "revenue_action_priority": "HIGH"
+  "last_published_at": "2026-09-18T19:25:40+05:30",
+  "last_published_url": "site/blog/under-sink-organizer-guide.html",
+  "next_action": "collect_amazon_clicks",
+  "next_action_target": "UNDER_SINK_001",
+  "instagram_collector_status": "FAILED_OAUTH",
+  "amazon_attribution_ready": true
 }
