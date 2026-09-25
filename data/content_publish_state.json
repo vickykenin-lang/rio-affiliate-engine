@@ -1,13 +1,10 @@
 {
-  "last_completed": "PILLAR:4 — Create and publish a high-intent product-led article for UNDER_SINK_001 (wolpin Under Sink Organizer) to drive Amazon affiliate clicks and commissions.",
-  "last_result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action.",
-  "next_task": "Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks/commissions for UNDER_SINK_001 — internal linking deployed, Instagram telemetry unavailable (VICKY ACTION REQUIRED), Amazon remains the only verified attribution source.",
-  "changed_files": [
-    "site/blog/under-sink-organizer-guide.html"
-  ],
-  "blocked_by_founder_action": false,
-  "founder_action_required": "",
-  "founder_action_reason": "",
-  "last_heartbeat_at": "2026-09-24T23:25+05:30",
-  "status": "WORKING"
+  "last_cycle": "2026-09-25T05:32+05:30",
+  "current_task": "PILLAR:1 — Run `scripts/collect_amazon_clicks.py` to import Amazon Associates report and verify traceable clicks/commissions for UNDER_SINK_001 — internal linking deployed, Instagram telemetry unavailable (VICKY ACTION REQUIRED), Amazon remains the only verified attribution source.",
+  "task_status": "WORKING",
+  "next_task": "After running script, verify traceable clicks and commissions for UNDER_SINK_001; if no clicks/orders found, prepare to test alternative attribution paths or high-intent offer page improvements.",
+  "blocker": null,
+  "pillar": 1,
+  "revenue_focus": true,
+  "telemetry_source": "amazon_associates_report"
 }
