@@ -1,0 +1,54 @@
+name: RIO Revenue M0 Live Funnel
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/revenue_m0_probe.py'
+      - '.github/workflows/revenue-m0-live-funnel.yml'
+      - 'site/products/SPICE_RACK_001.html'
+      - 'site/products/UNDER_SINK_001.html'
+      - 'site/products/TROLLEY_001.html'
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rio-revenue-m0-live-funnel
+  cancel-in-progress: false
+
+jobs:
+  verify-and-persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.x'
+      - name: Verify live three-offer revenue path
+        run: python scripts/revenue_m0_probe.py
+      - name: Persist fresh M0 evidence
+        run: |
+          set -euo pipefail
+          git config user.name 'RIO Revenue Evidence'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/revenue_m0_live_probe.json
+          if git diff --cached --quiet; then
+            echo 'NO_M0_EVIDENCE_CHANGE'
+            exit 0
+          fi
+          git commit -m 'revenue: persist fresh M0 live funnel evidence'
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort || true; sleep $((attempt*2)); continue; }
+            git push origin HEAD:main && exit 0
+            sleep $((attempt*2))
+          done
+          exit 1
