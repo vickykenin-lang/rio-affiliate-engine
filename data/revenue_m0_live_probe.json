@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
-  "checked_at_utc": "2026-09-26T03:51:08+00:00",
-  "milestone": "M0",
-  "status": "M0_THREE_OFFER_LIVE_FUNNEL_VERIFIED",
-  "scope": "LIVE_BUYER_INTENT_PAGE_TO_DISCLOSED_TAGGED_MERCHANT_DESTINATION",
+  "schema_version": 2,
+  "checked_at_utc": "2026-09-26T03:52:18+00:00",
+  "milestone": "M0B",
+  "status": "M0B_CLICK_COLLECTION_PATH_VERIFIED",
+  "scope": "LIVE_BUYER_INTENT_PAGE_TO_DISCLOSED_TAGGED_MERCHANT_DESTINATION_WITH_OUTBOUND_CLICK_COLLECTION",
   "funnels": [
     {
       "offer_id": "SPICE_RACK_001",
@@ -14,6 +14,7 @@
       "tagged_amazon_destination_present": true,
       "exact_asin_destination_present": true,
       "sponsored_rel_present": true,
+      "click_telemetry_script_present": true,
       "verified": true
     },
     {
@@ -25,6 +26,7 @@
       "tagged_amazon_destination_present": true,
       "exact_asin_destination_present": true,
       "sponsored_rel_present": true,
+      "click_telemetry_script_present": true,
       "verified": true
     },
     {
@@ -36,11 +38,20 @@
       "tagged_amazon_destination_present": true,
       "exact_asin_destination_present": true,
       "sponsored_rel_present": true,
+      "click_telemetry_script_present": true,
       "verified": true
     }
   ],
-  "outbound_click_event_collection_verified": false,
+  "click_collector": {
+    "health_http_200": true,
+    "health_ready": true,
+    "synthetic_acceptance_http_202": true,
+    "synthetic_not_persisted": true,
+    "verified": true
+  },
+  "outbound_click_event_collection_verified": true,
+  "real_outbound_click_observed": false,
   "merchant_report_ingestion_verified": false,
   "revenue_claimed": false,
-  "truth_rule": "This probe verifies the live conversion path only. It does not prove a visitor click, order, commission, or payment."
+  "truth_rule": "M0B proves that live affiliate links are instrumented and the privacy-minimal collector accepts valid browser events. It does not claim a real visitor click, merchant order, commission, or payment until independent evidence exists."
 }
