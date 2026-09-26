@@ -11,8 +11,8 @@ BASE = "https://vickykenin-lang.github.io/rio-affiliate-engine"
 TRACKING_TAG = "rioaffiliate-21"
 FUNNELS = [
     {"offer_id": "SPICE_RACK_001", "path": "/products/SPICE_RACK_001.html", "asin": "B07P5Z9SQN"},
-    {"offer_id": "UNDER_SINK_001", "path": "/products/UNDER_SINK_001.html", "asin": "B0BZQYJZ6R"},
-    {"offer_id": "TROLLEY_001", "path": "/products/TROLLEY_001.html", "asin": "B09XJZ7Y2M"},
+    {"offer_id": "UNDER_SINK_001", "path": "/products/UNDER_SINK_001.html", "asin": "B0C1KNTF2Y"},
+    {"offer_id": "TROLLEY_001", "path": "/products/TROLLEY_001.html", "asin": "B08BVJYLZ3"},
 ]
 OUT = Path("data/revenue_m0_live_probe.json")
 
