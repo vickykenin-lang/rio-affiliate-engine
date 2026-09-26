@@ -69,6 +69,10 @@ def check_collector() -> dict[str, object]:
         "health_ready": False,
         "synthetic_acceptance_http_202": False,
         "synthetic_not_persisted": False,
+        "summary_http_200": False,
+        "retained_click_events": 0,
+        "by_offer": {},
+        "real_outbound_click_observed": False,
         "verified": False,
     }
     try:
@@ -97,6 +101,15 @@ def check_collector() -> dict[str, object]:
             accepted = json.loads(response.read().decode("utf-8", errors="replace"))
             result["synthetic_acceptance_http_202"] = int(response.status) == 202
             result["synthetic_not_persisted"] = accepted.get("synthetic") is True and accepted.get("persisted") is False
+
+        summary_status, summary_body = fetch(CLICK_COLLECTOR + "/summary")
+        summary = json.loads(summary_body)
+        result["summary_http_200"] = summary_status == 200 and summary.get("status") == "LIVE"
+        retained = int(summary.get("retained_click_events") or 0)
+        result["retained_click_events"] = retained
+        result["by_offer"] = summary.get("by_offer") if isinstance(summary.get("by_offer"), dict) else {}
+        result["real_outbound_click_observed"] = retained > 0
+
         result["verified"] = all(
             result[key]
             for key in (
@@ -104,6 +117,7 @@ def check_collector() -> dict[str, object]:
                 "health_ready",
                 "synthetic_acceptance_http_202",
                 "synthetic_not_persisted",
+                "summary_http_200",
             )
         )
     except Exception as exc:
@@ -117,8 +131,12 @@ def main() -> int:
     live_funnel_verified = all(x["verified"] for x in funnels)
     instrumentation_verified = all(x["click_telemetry_script_present"] for x in funnels)
     outbound_collection_verified = bool(collector["verified"] and instrumentation_verified)
+    real_click_observed = bool(collector["real_outbound_click_observed"])
 
-    if live_funnel_verified and outbound_collection_verified:
+    if live_funnel_verified and outbound_collection_verified and real_click_observed:
+        milestone = "M0C"
+        status = "M0C_REAL_OUTBOUND_CLICK_OBSERVED"
+    elif live_funnel_verified and outbound_collection_verified:
         milestone = "M0B"
         status = "M0B_CLICK_COLLECTION_PATH_VERIFIED"
     elif live_funnel_verified:
@@ -129,7 +147,7 @@ def main() -> int:
         status = "M0_NOT_VERIFIED"
 
     result = {
-        "schema_version": 2,
+        "schema_version": 3,
         "checked_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "milestone": milestone,
         "status": status,
@@ -137,14 +155,14 @@ def main() -> int:
         "funnels": funnels,
         "click_collector": collector,
         "outbound_click_event_collection_verified": outbound_collection_verified,
-        "real_outbound_click_observed": False,
+        "real_outbound_click_observed": real_click_observed,
         "merchant_report_ingestion_verified": False,
         "revenue_claimed": False,
-        "truth_rule": "M0B proves that live affiliate links are instrumented and the privacy-minimal collector accepts valid browser events. It does not claim a real visitor click, merchant order, commission, or payment until independent evidence exists.",
+        "truth_rule": "M0C is granted only when the production collector contains at least one non-synthetic retained click event. Click evidence still does not prove a merchant order, approved commission, or payment.",
     }
     OUT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result, indent=2))
-    return 0 if status in {"M0_THREE_OFFER_LIVE_FUNNEL_VERIFIED", "M0B_CLICK_COLLECTION_PATH_VERIFIED"} else 1
+    return 0 if status in {"M0_THREE_OFFER_LIVE_FUNNEL_VERIFIED", "M0B_CLICK_COLLECTION_PATH_VERIFIED", "M0C_REAL_OUTBOUND_CLICK_OBSERVED"} else 1
 
 
 if __name__ == "__main__":
