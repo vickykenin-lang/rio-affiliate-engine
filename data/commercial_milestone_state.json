@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-26T04:56:11+00:00",
+  "status": "M0B_CLICK_COLLECTION_PATH_VERIFIED",
+  "evidence": {
+    "m0_probe_present": true,
+    "outbound_click_event_collection_verified": true,
+    "real_outbound_click_observed": false,
+    "affiliate_source_imported": false,
+    "orders": null,
+    "commission_inr": null,
+    "settled_revenue_inr": 0,
+    "source": null,
+    "source_reference": null,
+    "evidence_sha256": null
+  },
+  "gates": {
+    "M0B": true,
+    "M0C": false,
+    "M1": false,
+    "M2": false,
+    "M3": false
+  },
+  "revenue_claim_allowed": false,
+  "truth_rule": "Click collection is not revenue. M1/M2/M3 require imported traceable merchant or affiliate-source evidence; missing or null evidence remains UNKNOWN."
+}
