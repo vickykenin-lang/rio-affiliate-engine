@@ -16,8 +16,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AAZdrItEswg3hIJSkLJbOtt\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '17877752013535173' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Alo9voKjVrRyYRqP6HYZYvq\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "TROLLEY_001": {
         "offer_id": "TROLLEY_001",
@@ -28,8 +28,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A1pIUmTnWnf0vKoRMXHoZ65\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '17886760158676549' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Aqfqki5m08UNkmFm2cRP0X2\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "SPICE_RACK_001": {
         "offer_id": "SPICE_RACK_001",
@@ -40,8 +40,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AxNU9kbjyCE7s3_zvVcWATK\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18109466515847072' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"A29uk08j3TivKofAHo_s5qQ\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "CONTAINER_001": {
         "offer_id": "CONTAINER_001",
@@ -52,8 +52,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AaHN6NMcV7SBXnu8td2hpxK\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '17980069911095536' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Av6ywLd8V4cyFXHZluIhBED\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "DRAWER_001": {
         "offer_id": "DRAWER_001",
@@ -64,8 +64,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AjMIknDUZwxD--rumr20Zl-\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18112848191063932' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"AyyhCPqpotu-pHO7ujS8Avh\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "NODRILL_001": {
         "offer_id": "NODRILL_001",
@@ -76,8 +76,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AewFkPUCuDbXqwo8XHk1Y2Y\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18101575730257542' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"AGkjLveWwcRYKiCfWLcnTIO\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "BATHROOM_SHELF_001": {
         "offer_id": "BATHROOM_SHELF_001",
@@ -88,8 +88,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMcWAL5d5BiKKTBBMdcqKtw\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18114163570771311' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"AZuBB1BU2eOeRLyLMbPKw6I\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "BATHROOM_NODRILL_001": {
         "offer_id": "BATHROOM_NODRILL_001",
@@ -100,8 +100,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AiX5Jfz9yn1vAzzxYvQr05F\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18434112364179396' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Af_kxz4H21gFBTPkEX5c_EO\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "HOMEOFFICE_CABLE_001": {
         "offer_id": "HOMEOFFICE_CABLE_001",
@@ -112,8 +112,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AoMVDvODDPHtgSf-OlvFSeL\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18343524478283380' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"A2H1fKCYmPmr8rhupteGfIE\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "BALCONY_BROOM_001": {
         "offer_id": "BALCONY_BROOM_001",
@@ -124,8 +124,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ag1XPAsYuif65VKFooexY4h\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18119104907492559' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"AWfa0LgeMQo_9mv5mFQor-F\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "BABY_CORNERGUARD_001": {
         "offer_id": "BABY_CORNERGUARD_001",
@@ -136,8 +136,8 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJM1N4FjVdskr6FZl7uAiso\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '17930672214393949' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Aq4vRTeV3kJtRv3lEZ6DRoA\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       },
       "BABY_SAFETYGATE_001": {
         "offer_id": "BABY_SAFETYGATE_001",
@@ -148,11 +148,11 @@
         "clicks": null,
         "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
         "collector_status": "FAILED",
-        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AX2dB-NuBe6LHQjmwdxRE5h\"}}",
-        "collected_at_utc": "2026-09-26T05:20:47.745241+00:00"
+        "collector_error": "HTTP_400: {\"error\":{\"message\":\"Unsupported get request. Object with ID '18087267062468859' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\",\"code\":100,\"type\":\"GraphMethodException\",\"error_subcode\":33,\"fbtrace_id\":\"Af05NNadIsdH6V45CDd78LG\"}}",
+        "collected_at_utc": "2026-09-26T10:07:41.816787+00:00"
       }
     },
-    "last_attempt_at_utc": "2026-09-26T05:20:47.745241+00:00",
+    "last_attempt_at_utc": "2026-09-26T10:07:41.816787+00:00",
     "graph_version": "v23.0"
   },
   "website": {
