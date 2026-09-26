@@ -2,7 +2,7 @@
   "soul_runtime": "VALID_HARD_GATE",
   "commercial_validation_policy": "RIO_COMMERCIAL_VALIDATION_V2",
   "status": "COMPLETED",
-  "last_completed": "Execute PILLAR:1 — Import and validate Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state.",
+  "last_completed": "Execute PILLAR:1 — Import and validate latest Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Amazon remains the only verified attribution source; Instagram telemetry remains blocked pending Founder OAuth token fix.",
   "last_result": "PILLAR:1 — Importing and validating Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Instagram telemetry remains blocked pending Founder OAuth token fix. Amazon remains the only verified attribution source. Next: validate report import and update revenue telemetry state.",
   "next_task": "Choose the next highest-impact action from evidence and revenue signals.",
   "changed_files": [
@@ -33,33 +33,12 @@
   "forced_rotate_away_from": null,
   "recent_history": [],
   "recent_audit": [],
-  "current_task": "Execute PILLAR:1 — Import and validate Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state.",
+  "current_task": "Execute PILLAR:1 — Import and validate latest Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Amazon remains the only verified attribution source; Instagram telemetry remains blocked pending Founder OAuth token fix.",
   "ai_engine": "bedrock-qwen",
   "validators": "PASS",
   "blocker": null,
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-09-25T15:50:42+05:30",
-      "status": "WORKING",
-      "task": "Choose a different highest-impact executable revenue action.",
-      "engine": "selecting",
-      "result": null
-    },
-    {
-      "at": "2026-09-25T15:51:00+05:30",
-      "status": "WAITING",
-      "task": "Execute PILLAR:1 — Run Amazon Associates attribution collection for UNDER_SINK_001 to verify traceable clicks/commissions. This is the only verified attribution source available; Instagram telemetry is blocked pending Founder OAuth token fix.",
-      "engine": "bedrock-qwen",
-      "result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action."
-    },
-    {
-      "at": "2026-09-25T20:51:02+05:30",
-      "status": "WORKING",
-      "task": "Choose a different highest-impact executable revenue action.",
-      "engine": "selecting",
-      "result": null
-    },
     {
       "at": "2026-09-25T20:52:14+05:30",
       "status": "WAITING",
@@ -178,8 +157,29 @@
       "task": "Execute PILLAR:1 — Import and validate Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:1 — Importing and validating Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Instagram telemetry remains blocked pending Founder OAuth token fix. Amazon remains the only verified attribution source. Next: validate report import and update revenue telemetry state."
+    },
+    {
+      "at": "2026-09-26T22:51:37+05:30",
+      "status": "WORKING",
+      "task": "Choose the next highest-impact action from evidence and revenue signals.",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-09-26T22:51:46+05:30",
+      "status": "WORKING",
+      "task": "Execute PILLAR:1 — Import and validate latest Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Amazon remains the only verified attribution source; Instagram telemetry remains blocked pending Founder OAuth token fix.",
+      "engine": "bedrock-qwen",
+      "result": null
+    },
+    {
+      "at": "2026-09-26T22:51:46+05:30",
+      "status": "COMPLETED",
+      "task": "Execute PILLAR:1 — Import and validate latest Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Amazon remains the only verified attribution source; Instagram telemetry remains blocked pending Founder OAuth token fix.",
+      "engine": "bedrock-qwen",
+      "result": "PILLAR:1 — Importing and validating Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Instagram telemetry remains blocked pending Founder OAuth token fix. Amazon remains the only verified attribution source. Next: validate report import and update revenue telemetry state."
     }
   ],
-  "updated_at": "2026-09-26T22:38:56+05:30",
-  "started_at": "2026-09-26T22:38:53+05:30"
+  "updated_at": "2026-09-26T22:51:46+05:30",
+  "started_at": "2026-09-26T22:51:37+05:30"
 }
