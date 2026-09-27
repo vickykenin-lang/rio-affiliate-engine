@@ -1,0 +1,1 @@
+RIO primary provider migration: Bedrock Qwen is required primary. DeepSeek is optional legacy fallback and must not degrade runtime health when Bedrock is healthy.
