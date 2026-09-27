@@ -1,13 +1,12 @@
 {
-  "last_submitted": "UNDER_SINK_001",
-  "submission_status": "PENDING_GOOGLE_INDEXING",
-  "indexing_submitted_at": "2026-09-27T17:18:36+05:30",
-  "internal_linking_improvement_submitted_at": "2026-09-27T17:33+05:30",
-  "next_task": "Monitor indexing status daily; if no progress after 48h, escalate via sitemap ping + internal linking boost.",
-  "blocked_by_founder_action": false,
-  "blocker_details": null,
-  "telemetry_status": "LIVE_OR_PARTIAL",
-  "affiliate_attribution_status": "AWAITING_SOURCE_REPORT",
-  "ready_offers": 17,
-  "content_items": 28
+  "last_task": "Create Instagram content for UNDER_SINK_001 to drive qualified traffic and conversion readiness.",
+  "last_result": "PILLAR:6 — Created Instagram content for UNDER_SINK_001 using verified product details and Founder-approved policy. Changes: site/content/instagram/UNDER_SINK_001_post.md (new). NEXT_TASK: Submit for publishing queue and monitor engagement metrics.",
+  "last_completed_at": "2026-09-27T18:46+05:30",
+  "next_task": "Submit for publishing queue and monitor engagement metrics.",
+  "changed_files": [
+    "site/content/instagram/UNDER_SINK_001_post.md"
+  ],
+  "pillar": 6,
+  "offer_id": "UNDER_SINK_001",
+  "status": "CONTENT_PREPARED_FOR_PUBLISHING_QUEUE"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at_utc": "2026-09-27T12:03:53.891801+00:00",
+  "checked_at_utc": "2026-09-27T13:16:53.321189+00:00",
   "primary_provider": "bedrock-qwen",
   "overall_provider_health": "HEALTHY",
   "providers": [
