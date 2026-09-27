@@ -1,25 +1,31 @@
 {
-  "assets": [
-    {
-      "key": "under-sink-organizers",
-      "type": "comparison",
-      "status": "QUEUED_FOR_PUBLISHING",
-      "path": "site/content/comparisons/under-sink-organizers.md",
-      "queued_at": "2026-09-27T22:07:13+05:30",
-      "sitemap_submitted": true,
-      "sitemap_submitted_at": "2026-09-27T22:09:00+05:30"
-    },
-    {
-      "key": "under-sink-organizer-buying-guide",
-      "type": "blog",
-      "status": "QUEUED_FOR_PUBLISHING",
-      "path": "site/content/blogs/under-sink-organizer-buying-guide.md",
-      "queued_at": "2026-09-27T22:07:13+05:30",
-      "sitemap_submitted": true,
-      "sitemap_submitted_at": "2026-09-27T22:09:00+05:30"
-    }
-  ],
-  "sitemap_update_requested": true,
-  "sitemap_update_requested_at": "2026-09-27T22:09:00+05:30",
-  "next_indexing_check_at": "2026-09-28T22:09:00+05:30"
+  "UNDER_SINK_001": {
+    "offer_id": "UNDER_SINK_001",
+    "content_type": "instagram_post",
+    "status": "QUEUED_FOR_PUBLISHING",
+    "platform": "instagram",
+    "media_id": "17877752013535173",
+    "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+    "disclosure_compliant": true,
+    "affiliate_disclosure": "As an Amazon Associate I earn from qualifying purchases.",
+    "posting_queue_position": 1,
+    "queued_at": "2026-09-27T22:10:00+05:30",
+    "next_check_at": "2026-09-27T22:15:00+05:30",
+    "publish_workflow": "founder_authorized",
+    "founder_approval_required": false,
+    "founder_approval_status": "ALREADY_GRANTED",
+    "founder_approval_at": "2026-08-23T10:30:00+05:30",
+    "internal_linking_ready": true,
+    "internal_linking_target": "site/content/comparisons/under-sink-organizers.md",
+    "sitemap_submitted": true,
+    "sitemap_submitted_at": "2026-09-27T22:09:00+05:30",
+    "telemetry_ready": true,
+    "telemetry_collector": "cloudflare:rio-click-telemetry",
+    "click_tracking_enabled": true,
+    "affiliate_attribution_ready": false,
+    "affiliate_attribution_blocker": "AWAITING_CLICKS_TO_MATCH_WITH_SOURCE_REPORT",
+    "next_task": "Monitor Instagram post performance via collector; if no clicks after 72h, escalate to internal linking boost + content refinement."
+  },
+  "last_updated_at": "2026-09-27T22:10:00+05:30"
 }
