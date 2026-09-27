@@ -47,7 +47,7 @@ jobs:
   heartbeat:
     needs: production-state
     permissions: {contents: write, issues: write}
-    if: github.event_name == 'issues' || github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && (inputs.job == 'heartbeat' || inputs.job == 'all'))
+    if: (github.event_name == 'issues' && github.event.issue.user.login == github.repository_owner) || github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && (inputs.job == 'heartbeat' || inputs.job == 'all'))
     runs-on: ubuntu-latest
     timeout-minutes: 12
     concurrency: {group: rio-heartbeat, cancel-in-progress: false}
@@ -73,7 +73,6 @@ jobs:
           TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
           AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/heartbeat.py
           python scripts/provider_health.py || true
@@ -84,7 +83,6 @@ jobs:
           TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
           AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/autonomous_business_cycle_guarded.py
       - name: Mark heartbeat runner success
         if: success()
@@ -112,6 +110,7 @@ jobs:
           TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
         run: python scripts/telegram_notify.py "🔴 RIO HEARTBEAT RUNNER FAILED. Health/Soul/autonomous cycle did not complete. Existing safety gates remain in force."
+
   content-review:
     needs: production-state
     permissions: {contents: write}
@@ -122,13 +121,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
       - env:
-          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
           AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
         run: python scripts/content_review.py
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add data/content_review_report.json data/status.json
           (git diff --cached --quiet || git commit -m "content review: governed AI pass over live articles") && git pull --rebase --autostash && git push
+
   discover-products:
     needs: production-state
     permissions: {contents: write}
@@ -139,13 +138,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
       - env:
-          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
           AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
         run: python scripts/discover_products.py
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add data/product_candidates.csv product_candidates.csv
           (git diff --cached --quiet || git commit -m "discovery: governed AI search-query suggestions") && git pull --rebase --autostash && git push
+
   generate-creative:
     needs: production-state
     permissions: {contents: write}
@@ -156,16 +155,17 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
       - env:
-          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
           AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
-        run: python scripts/generate_creative.py
+          RIO_ALLOW_DEEPSEEK_FALLBACK: "0"
+        run: python scripts/generate_creative_bedrock.py
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           paths=()
           [ -f data/creative_approval_queue.json ] && paths+=(data/creative_approval_queue.json)
           [ -d site/creatives ] && paths+=(site/creatives)
           if [ ${#paths[@]} -gt 0 ]; then git add -- "${paths[@]}"; fi
-          (git diff --cached --quiet || git commit -m "creative: draft pending offers for dashboard approval") && git pull --rebase --autostash && git push
+          (git diff --cached --quiet || git commit -m "creative: governed Bedrock draft generation") && git pull --rebase --autostash && git push
+
   instagram-publish:
     needs: production-state
     permissions: {contents: write}
@@ -187,6 +187,7 @@ jobs:
           (git diff --cached --quiet || git commit -m "instagram: publish run") && git pull --rebase --autostash && git push
       - if: steps.publish.outcome == 'failure'
         run: exit 1
+
   telegram-test:
     permissions: {contents: read}
     if: github.event_name == 'workflow_dispatch' && (inputs.job == 'telegram-test' || inputs.job == 'all')
@@ -197,6 +198,7 @@ jobs:
         with: {python-version: "3.x"}
       - env: {TELEGRAM_BOT_TOKEN_RIO: "${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}", TELEGRAM_CHAT_ID_RIO: "${{ secrets.TELEGRAM_CHAT_ID_RIO }}"}
         run: python scripts/telegram_notify.py --test
+
   telegram-direct:
     permissions: {contents: write}
     if: github.event_name == 'workflow_dispatch' && inputs.job == 'telegram-direct'
@@ -212,7 +214,6 @@ jobs:
           TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
           AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           RIO_CALLBACK_TOKEN: ${{ secrets.RIO_CALLBACK_TOKEN }}
           RIO_COMMAND_ID: ${{ inputs.command_id }}
           RIO_COMMAND_CHAT_ID: ${{ inputs.chat_id }}
