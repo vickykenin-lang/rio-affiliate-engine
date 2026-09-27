@@ -1,21 +1,24 @@
 {
+  "UNDER_SINK_001_COMPARISON": {
+    "offer_id": "UNDER_SINK_001",
+    "type": "comparison",
+    "title": "Under Sink Organizers Comparison",
+    "path": "site/content/comparisons/under-sink-organizers.md",
+    "status": "QUEUED_FOR_PUBLISHING",
+    "queued_at": "2026-09-27T22:03:12+05:30",
+    "priority": "HIGH",
+    "reason": "Direct conversion readiness for highest-priority offer; internal linking ready.",
+    "next_action": "Publish to site; monitor clicks via website telemetry; if no clicks after 72h, escalate to sitemap ping + internal linking boost."
+  },
   "UNDER_SINK_001_BUYING_GUIDE": {
     "offer_id": "UNDER_SINK_001",
-    "content_type": "BLOG_POST",
-    "title": "Under Sink Organizer Buying Guide for Indian Homes (2026)",
-    "file_path": "site/content/blogs/under-sink-organizer-buying-guide.md",
-    "status": "READY_FOR_PUBLISHING",
-    "last_checked_at": "2026-09-27T22:05:00+05:30",
-    "internal_links": [
-      {
-        "target": "comparisons/under-sink-organizers.md",
-        "anchor_text": "comparison page",
-        "purpose": "drill-down conversion path"
-      }
-    ],
-    "affiliate_disclosure_linked": true,
-    "verification_status": "LIVE_CHECKED",
-    "publisher": "RIO",
-    "pillar": 4
+    "type": "blog",
+    "title": "Under Sink Organizer Buying Guide",
+    "path": "site/content/blogs/under-sink-organizer-buying-guide.md",
+    "status": "QUEUED_FOR_PUBLISHING",
+    "queued_at": "2026-09-27T22:05:41+05:30",
+    "priority": "HIGH",
+    "reason": "Product-led organic traffic and conversion readiness; supports comparison page.",
+    "next_action": "Publish to site; monitor clicks via website telemetry; if no clicks after 72h, escalate to sitemap ping + internal linking boost."
   }
 }
