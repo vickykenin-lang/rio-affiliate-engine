@@ -161,7 +161,10 @@ jobs:
         run: python scripts/generate_creative.py
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
-          git add -A -- data/creative_approval_queue.json site/creatives || true
+          paths=()
+          [ -f data/creative_approval_queue.json ] && paths+=(data/creative_approval_queue.json)
+          [ -d site/creatives ] && paths+=(site/creatives)
+          if [ ${#paths[@]} -gt 0 ]; then git add -- "${paths[@]}"; fi
           (git diff --cached --quiet || git commit -m "creative: draft pending offers for dashboard approval") && git pull --rebase --autostash && git push
   instagram-publish:
     needs: production-state
