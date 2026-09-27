@@ -18,25 +18,33 @@ Full definition: `data/RIO_3.0_DEFINITION.md`
 
 ## Evidence-backed status
 
-The repository currently contains:
+Current repository/runtime truth:
 
 - 27 content items
-- 35 product candidates: 17 READY, others in discovery/rejected
+- 56 product candidates
 - 17 Amazon.in offers marked READY with tracking ID `rioaffiliate-21`
-- A heartbeat with real production reachability plus validators
-- Daily content QA and product-discovery suggestions
-- Founder-approved Instagram publishing (currently blocked on token)
+- AWS Bedrock Qwen is the required primary AI runtime; active configured fallback is Bedrock GLM
+- DeepSeek is not enabled in production workflow execution
+- Heartbeat cadence is 15 minutes with production reachability, validators and SOUL hard gate
+- Instagram publishing has 12 confirmed posted media records
+- Instagram token is live-verified and media/insights telemetry is `LIVE_OR_PARTIAL`
+- Website affiliate-click telemetry is live through the Cloudflare `rio-click-telemetry` collector
+- Affiliate clicks/orders/commission remain source-evidence governed; missing merchant reports are UNKNOWN, never assumed zero
+- Settled affiliate revenue remains ₹0 until a real affiliate-network report proves approved commission
 
-Do not call the system earning from local validators alone. Current truth is stored in:
+Canonical truth sources:
 
 - `data/status.json` — heartbeat and validator state
+- `data/provider_health.json` — live AI provider health
+- `data/runtime_health.json` — combined runtime health
 - `data/production_status.json` — real HTTP checks
 - `data/dashboard_snapshot.json` — pipeline counts
-- `data/content_review_report.json` — content trust assessment
+- `data/telemetry_state.json` — Instagram and website telemetry
+- `data/affiliate_attribution_state.json` — clicks/orders/commission source-evidence state
 - `data/ig_published.json` — confirmed Instagram media IDs only
-- `data/instagram_approval.json` — Founder approval and per-offer publish state
+- `data/instagram_approval.json` — per-offer publishing state
 - `data/instagram_run_status.json` — latest real publish outcome or blocker
-- `data/RIO_3.0_DEFINITION.md` — Version 3.0 objective and initial workflow
+- `data/RIO_3.0_DEFINITION.md` — Version 3.0 objective and governance definition
 
 ## Validate locally
 
@@ -56,11 +64,18 @@ python3 scripts/check_production.py
 
 Set `RIO_PUBLIC_SITE_BASE` when a different public deployment URL is selected.
 
+## Runtime and control-plane security
+
+- AWS Bedrock is the production AI path.
+- GitHub issue control commands are accepted only from the repository owner/Founder identity.
+- Untrusted public issues must not activate kill-switch, resume, or persistent RIO-message commands.
+- No raw secrets are committed or logged.
+- Production actions remain subject to validators, evidence receipts, post-action verification, legal/compliance controls and cost controls.
+
 ## Security and compliance
 
 - Never commit passwords, API keys, tokens, payment data, government IDs or private customer/order data.
 - Amazon links must carry the approved tracking ID.
-- Customer review text and star ratings must not be published without an approved Amazon Product Advertising API source and its license requirements.
-- Revenue remains ₹0 until a real Associates report proves approved commission.
-- Paid promotion requires explicit Founder budget approval.
-- No Founder name or professional claim goes public without explicit review and sign-off.
+- Customer review text and star ratings must not be published without an approved Amazon Product Advertising/Creators source and applicable licence compliance.
+- Revenue remains ₹0 until a real affiliate report proves approved commission.
+- No Founder name or professional claim goes public without applicable governance review.
