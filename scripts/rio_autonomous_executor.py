@@ -69,7 +69,7 @@ def validate():
   if code!=0:return False,results
  return True,results
 
-def execute(plan,request_summary='',engine='deepseek'):
+def execute(plan,request_summary='',engine='bedrock-qwen'):
  ts=datetime.now(IST).isoformat(timespec='seconds');risk=str(plan.get('risk') or 'high').lower();ops=plan.get('operations') or []
  record={'timestamp':ts,'request':request_summary[:500],'engine':engine,'risk':risk,'operations':[],'result':None,'changed_paths':[],'validators':[]}
  soul_ok,_=_soul_preflight()
