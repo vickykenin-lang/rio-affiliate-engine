@@ -67,12 +67,17 @@ jobs:
           d.update({'started_at_utc':datetime.now(timezone.utc).isoformat(timespec='seconds'),'event':'${{ github.event_name }}','schedule':'${{ github.event.schedule }}','run_id':'${{ github.run_id }}','state':'RUNNING'})
           with open(p,'w',encoding='utf-8') as f:json.dump(d,f,indent=2);f.write('\n')
           PY
-      - name: Refresh health and validators
+      - name: Refresh validator and provider health
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN_RIO: ${{ secrets.TELEGRAM_BOT_TOKEN_RIO }}
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
-        run: python scripts/heartbeat.py
+          AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python scripts/heartbeat.py
+          python scripts/provider_health.py || true
+          python scripts/runtime_health.py || true
       - name: Continue Phase-2 objective from persistent memory
         if: needs.production-state.outputs.active == 'true'
         env:
@@ -80,7 +85,7 @@ jobs:
           TELEGRAM_CHAT_ID_RIO: ${{ secrets.TELEGRAM_CHAT_ID_RIO }}
           AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python scripts/autonomous_business_cycle.py
+        run: python scripts/autonomous_business_cycle_guarded.py
       - name: Mark heartbeat runner success
         if: success()
         run: |
@@ -99,7 +104,7 @@ jobs:
         run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           python scripts/stage_autonomous_changes.py
-          git add data/inbox.json data/soul_runtime_status.json
+          git add data/inbox.json data/soul_runtime_status.json data/provider_health.json data/runtime_health.json data/affiliate_attribution_state.json
           (git diff --cached --quiet || git commit -m "heartbeat: governed health state") && git pull --rebase --autostash && git push
       - name: Notify heartbeat failure
         if: failure()
@@ -116,13 +121,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
-      - env: {DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"}
+      - env:
+          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
+          AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
         run: python scripts/content_review.py
-        continue-on-error: true
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add data/content_review_report.json data/status.json
-          (git diff --cached --quiet || git commit -m "content review: DeepSeek pass over live articles") && git pull --rebase --autostash && git push
+          (git diff --cached --quiet || git commit -m "content review: governed AI pass over live articles") && git pull --rebase --autostash && git push
   discover-products:
     needs: production-state
     permissions: {contents: write}
@@ -132,13 +138,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
-      - env: {DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"}
+      - env:
+          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
+          AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
         run: python scripts/discover_products.py
-        continue-on-error: true
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
           git add data/product_candidates.csv product_candidates.csv
-          (git diff --cached --quiet || git commit -m "discovery: DeepSeek search-query suggestions") && git pull --rebase --autostash && git push
+          (git diff --cached --quiet || git commit -m "discovery: governed AI search-query suggestions") && git pull --rebase --autostash && git push
   generate-creative:
     needs: production-state
     permissions: {contents: write}
@@ -148,12 +155,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.x"}
-      - env: {DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"}
+      - env:
+          DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"
+          AWS_BEDROCK_API_KEY: "${{ secrets.AWS_BEDROCK_API_KEY }}"
         run: python scripts/generate_creative.py
-        continue-on-error: true
       - run: |
           git config user.name "RIO" && git config user.email "rio@rio-affiliate.bot"
-          git add data/creative_approval_queue.json site/creatives
+          git add -A -- data/creative_approval_queue.json site/creatives || true
           (git diff --cached --quiet || git commit -m "creative: draft pending offers for dashboard approval") && git pull --rebase --autostash && git push
   instagram-publish:
     needs: production-state
