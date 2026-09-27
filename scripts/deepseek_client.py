@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""RIO shared OpenAI-compatible AI client for legacy DeepSeek callers.
+"""RIO shared OpenAI-compatible AI client for legacy callers.
 
-DeepSeek remains the preferred provider for these legacy content/discovery paths,
-but a bad/missing DeepSeek credential must not take the business pipeline down.
-When DeepSeek is unavailable or returns an auth/network failure, the client falls
-back to the already-governed Bedrock Qwen endpoint when AWS_BEDROCK_API_KEY is
-available. Callers still receive plain text / JSON and do not fabricate success.
+Bedrock Qwen is the required primary provider. DeepSeek is optional and disabled
+unless RIO_ALLOW_DEEPSEEK_FALLBACK=1. Legacy module name is preserved to avoid
+breaking existing imports while provider routing is migrated safely.
 """
 import json, os, urllib.error, urllib.request
 
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 DEEPSEEK_BASE = os.environ.get("DEEPSEEK_API_BASE", "https://api.deepseek.com/v1").rstrip("/")
 DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
+ALLOW_DEEPSEEK = os.environ.get("RIO_ALLOW_DEEPSEEK_FALLBACK", "0").strip().lower() in {"1","true","yes"}
 BEDROCK_KEY = os.environ.get("AWS_BEDROCK_API_KEY", "").strip()
 BEDROCK_REGION = os.environ.get("AWS_BEDROCK_REGION", "us-east-1").strip() or "us-east-1"
 BEDROCK_URL = f"https://bedrock-mantle.{BEDROCK_REGION}.api.aws/v1/chat/completions"
@@ -20,7 +19,7 @@ LAST_PROVIDER = None
 
 
 def available():
-    return bool(DEEPSEEK_KEY or BEDROCK_KEY)
+    return bool(BEDROCK_KEY or (ALLOW_DEEPSEEK and DEEPSEEK_KEY))
 
 
 def _call(url, key, model, prompt, timeout):
@@ -44,26 +43,11 @@ def _call(url, key, model, prompt, timeout):
 def ask(prompt, timeout=45):
     global LAST_PROVIDER
     errors = []
-    if DEEPSEEK_KEY:
-        try:
-            text = _call(f"{DEEPSEEK_BASE}/chat/completions", DEEPSEEK_KEY, DEEPSEEK_MODEL, prompt, timeout)
-            LAST_PROVIDER = "deepseek"
-            return text
-        except urllib.error.HTTPError as e:
-            try: detail = e.read().decode(errors="replace")[:300]
-            except Exception: detail = "(could not read error body)"
-            errors.append(f"deepseek HTTP {e.code}: {detail}")
-        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as e:
-            errors.append(f"deepseek network: {e}")
-        except Exception as e:
-            errors.append(f"deepseek: {e}")
-    else:
-        errors.append("deepseek credential missing")
 
     if BEDROCK_KEY:
         try:
             text = _call(BEDROCK_URL, BEDROCK_KEY, BEDROCK_MODEL, prompt, timeout)
-            LAST_PROVIDER = "bedrock-qwen-fallback"
+            LAST_PROVIDER = "bedrock-qwen"
             return text
         except urllib.error.HTTPError as e:
             try: detail = e.read().decode(errors="replace")[:300]
@@ -76,12 +60,25 @@ def ask(prompt, timeout=45):
     else:
         errors.append("bedrock credential missing")
 
+    if ALLOW_DEEPSEEK and DEEPSEEK_KEY:
+        try:
+            text = _call(f"{DEEPSEEK_BASE}/chat/completions", DEEPSEEK_KEY, DEEPSEEK_MODEL, prompt, timeout)
+            LAST_PROVIDER = "deepseek-optional-fallback"
+            return text
+        except urllib.error.HTTPError as e:
+            try: detail = e.read().decode(errors="replace")[:300]
+            except Exception: detail = "(could not read error body)"
+            errors.append(f"deepseek HTTP {e.code}: {detail}")
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as e:
+            errors.append(f"deepseek network: {e}")
+        except Exception as e:
+            errors.append(f"deepseek: {e}")
+
     LAST_PROVIDER = None
     raise RuntimeError("AI providers unavailable: " + " | ".join(errors))
 
 
 def ask_json(prompt, timeout=45):
-    """Call governed provider chain, strip markdown fences, and parse JSON."""
     txt = ask(prompt, timeout).strip()
     if txt.startswith("```"):
         txt = txt.strip("`")
