@@ -1,14 +1,11 @@
 {
   "soul_runtime": "VALID_HARD_GATE",
   "commercial_validation_policy": "RIO_COMMERCIAL_VALIDATION_V2",
-  "status": "COMPLETED",
+  "status": "WAITING_EXTERNAL",
   "last_completed": "Submit UNDER_SINK_001 comparison content for indexing to drive qualified organic traffic and conversion readiness.",
-  "last_result": "PILLAR:1 — Submitting UNDER_SINK_001 comparison content for indexing to drive qualified organic traffic and conversion readiness. Changes: data/content_publish_state.json updated with submission timestamp and indexing status PENDING_GOOGLE_INDEXING. Next: Monitor indexing status daily; if no progress after 48h, escalate via internal linking + sitemap ping. Instagram telemetry remains blocked pending Founder OAuth token fix.",
+  "last_result": "PILLAR:1 — Improving internal linking architecture for UNDER_SINK_001 to boost organic conversion readiness and support future attribution tracking. Changes: data/content_publish_state.json updated with internal linking improvement timestamp. NEXT_TASK: Monitor indexing status daily; if no progress after 48h, escalate via sitemap ping + internal linking boost. Affiliate attribution telemetry remains AWAITING_SOURCE_REPORT; Amazon report import not executable until verified report exists.",
   "next_task": "Choose the next highest-impact action from evidence and revenue signals.",
-  "changed_files": [
-    "data/content_publish_state.json",
-    "data/autonomy_audit.jsonl"
-  ],
+  "changed_files": [],
   "recent_completed_task_keys": [],
   "recent_pillars": [],
   "pillar_counts_recent": {
@@ -33,33 +30,12 @@
   "forced_rotate_away_from": null,
   "recent_history": [],
   "recent_audit": [],
-  "current_task": "Submit UNDER_SINK_001 comparison content for indexing to drive qualified organic traffic and conversion readiness.",
+  "current_task": "Execute PILLAR:1 — Improve internal linking architecture for UNDER_SINK_001 to boost organic conversion readiness and support future attribution tracking.",
   "ai_engine": "bedrock-qwen",
-  "validators": "PASS",
-  "blocker": null,
+  "validators": "FAIL",
+  "blocker": "AFFILIATE_SOURCE_NOT_AVAILABLE: no traceable affiliate report has been imported; task cannot be marked completed.",
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-09-27T05:26:43+05:30",
-      "status": "WORKING",
-      "task": "Choose a different highest-impact executable revenue action.",
-      "engine": "selecting",
-      "result": null
-    },
-    {
-      "at": "2026-09-27T05:26:46+05:30",
-      "status": "WAITING",
-      "task": "Execute PILLAR:1 — Import and validate latest Amazon Associates report for UNDER_SINK_001 to verify traceable clicks/commissions and update revenue telemetry state. Amazon remains the only verified attribution source; Instagram telemetry remains blocked pending Founder OAuth token fix.",
-      "engine": "bedrock-qwen",
-      "result": "ANTI_REPEAT_GUARD: repeated task suppressed; next cycle must choose a different executable revenue action."
-    },
-    {
-      "at": "2026-09-27T10:38:35+05:30",
-      "status": "WORKING",
-      "task": "Choose a different highest-impact executable revenue action.",
-      "engine": "selecting",
-      "result": null
-    },
     {
       "at": "2026-09-27T10:38:43+05:30",
       "status": "WORKING",
@@ -178,8 +154,29 @@
       "task": "Submit UNDER_SINK_001 comparison content for indexing to drive qualified organic traffic and conversion readiness.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:1 — Submitting UNDER_SINK_001 comparison content for indexing to drive qualified organic traffic and conversion readiness. Changes: data/content_publish_state.json updated with submission timestamp and indexing status PENDING_GOOGLE_INDEXING. Next: Monitor indexing status daily; if no progress after 48h, escalate via internal linking + sitemap ping. Instagram telemetry remains blocked pending Founder OAuth token fix."
+    },
+    {
+      "at": "2026-09-27T17:33:54+05:30",
+      "status": "WORKING",
+      "task": "Choose the next highest-impact action from evidence and revenue signals.",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-09-27T17:33:59+05:30",
+      "status": "WORKING",
+      "task": "Execute PILLAR:1 — Improve internal linking architecture for UNDER_SINK_001 to boost organic conversion readiness and support future attribution tracking.",
+      "engine": "bedrock-qwen",
+      "result": null
+    },
+    {
+      "at": "2026-09-27T17:33:59+05:30",
+      "status": "WAITING_EXTERNAL",
+      "task": "Execute PILLAR:1 — Improve internal linking architecture for UNDER_SINK_001 to boost organic conversion readiness and support future attribution tracking.",
+      "engine": "bedrock-qwen",
+      "result": "PILLAR:1 — Improving internal linking architecture for UNDER_SINK_001 to boost organic conversion readiness and support future attribution tracking. Changes: data/content_publish_state.json updated with internal linking improvement timestamp. NEXT_TASK: Monitor indexing status daily; if no progress after 48h, escalate via sitemap ping + internal linking boost. Affiliate attribution telemetry remains AWAITING_SOURCE_REPORT; Amazon report import not executable until verified report exists."
     }
   ],
-  "updated_at": "2026-09-27T17:18:36+05:30",
-  "started_at": "2026-09-27T17:18:32+05:30"
+  "updated_at": "2026-09-27T17:33:59+05:30",
+  "started_at": "2026-09-27T17:33:54+05:30"
 }

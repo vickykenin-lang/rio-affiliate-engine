@@ -1,13 +1,13 @@
 {
-  "last_submitted_for_indexing_at_utc": "2026-09-27T17:18+05:30",
-  "submitted_urls": [
-    "https://rioaffiliate.in/content/comparisons/under-sink-organizers-india-2026"
-  ],
-  "indexing_status": "PENDING_GOOGLE_INDEXING",
-  "next_check_utc": "2026-09-28T17:18+05:30",
-  "offer_id": "UNDER_SINK_001",
-  "content_type": "comparison",
-  "pillar": 1,
-  "internal_links_added": true,
-  "offer_integrity_validated": true
+  "last_submitted": "UNDER_SINK_001",
+  "submission_status": "PENDING_GOOGLE_INDEXING",
+  "indexing_submitted_at": "2026-09-27T17:18:36+05:30",
+  "internal_linking_improvement_submitted_at": "2026-09-27T17:33+05:30",
+  "next_task": "Monitor indexing status daily; if no progress after 48h, escalate via sitemap ping + internal linking boost.",
+  "blocked_by_founder_action": false,
+  "blocker_details": null,
+  "telemetry_status": "LIVE_OR_PARTIAL",
+  "affiliate_attribution_status": "AWAITING_SOURCE_REPORT",
+  "ready_offers": 17,
+  "content_items": 28
 }
