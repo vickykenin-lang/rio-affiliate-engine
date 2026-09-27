@@ -1,17 +1,14 @@
 {
-  "instagram_queue": [
-    {
-      "offer_id": "UNDER_SINK_001",
-      "content_path": "site/content/instagram/UNDER_SINK_001_post.md",
-      "media_id": "17877752013535173",
-      "status": "QUEUED_FOR_PUBLISHING",
-      "queued_at": "2026-09-27T20:49+05:30",
-      "priority": "HIGH_INTENT",
-      "telemetry_ready": true,
-      "internal_links_added": true,
-      "disclosure_compliant": true
-    }
-  ],
-  "last_published_at": "2026-09-27T18:47+05:30",
-  "next_review_at": "2026-09-28T08:00+05:30"
+  "last_submitted": "UNDER_SINK_001",
+  "platform": "instagram",
+  "status": "QUEUED_FOR_PUBLISHING",
+  "queued_at": "2026-09-27T20:50:08+05:30",
+  "offer_id": "UNDER_SINK_001",
+  "media_id": "17877752013535173",
+  "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+  "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+  "content_file": "site/content/instagram/UNDER_SINK_001_post.md",
+  "next_action": "Monitor publishing queue; post will publish via Founder-authorized Instagram workflow.",
+  "telemetry_status": "CLICKS_UNKNOWN_UNTIL_PUBLISHED",
+  "affiliate_attribution_status": "AWAITING_SOURCE_REPORT"
 }
