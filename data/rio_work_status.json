@@ -3,7 +3,7 @@
   "commercial_validation_policy": "RIO_COMMERCIAL_VALIDATION_V2",
   "status": "WAITING_EXTERNAL",
   "last_completed": "Execute PILLAR:1 — Improve internal linking from Instagram post UNDER_SINK_001 to comparison & buying guide to enable measurable click-through and conversion readiness.",
-  "last_result": "PILLAR:4 — Created high-intent comparison content for UNDER_SINK_001 to drive organic traffic and conversion readiness. Changes: site/content/comparisons/under-sink-organizers-comparison.md published; data/content_publish_state.json updated. NEXT_TASK: Submit to sitemap and request indexing to accelerate organic traffic and conversion readiness. Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
+  "last_result": "PILLAR:1 — Submit newly published UNDER_SINK_001 comparison content to sitemap and request indexing to accelerate organic traffic and conversion readiness. Changes: data/content_publish_state.json updated with sitemap_submitted=true, indexing_requested=true, and timestamps. NEXT_TASK: Monitor clicks via website collector after 72h; if still zero, escalate to content refinement or paid-acquisition pilot (within ceiling). Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
   "next_task": "Choose a different highest-impact executable revenue action.",
   "changed_files": [],
   "recent_completed_task_keys": [],
@@ -30,33 +30,12 @@
   "forced_rotate_away_from": null,
   "recent_history": [],
   "recent_audit": [],
-  "current_task": "Execute PILLAR:4 — Create high-intent product-led comparison content for UNDER_SINK_001 to drive organic traffic and conversion readiness, using verified offer data and live disclosure/tracking.",
+  "current_task": "Submit newly published UNDER_SINK_001 comparison content to sitemap and request indexing to accelerate organic traffic and conversion readiness.",
   "ai_engine": "bedrock-qwen",
   "validators": "FAIL",
   "blocker": "AFFILIATE_SOURCE_NOT_AVAILABLE: no traceable affiliate report has been imported; task cannot be marked completed.",
   "founder_action_needed": false,
   "history": [
-    {
-      "at": "2026-09-27T22:08:55+05:30",
-      "status": "WORKING",
-      "task": "Publish to site; monitor clicks via website telemetry; if no clicks after 72h, escalate to sitemap ping + internal linking boost. Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
-      "engine": "selecting",
-      "result": null
-    },
-    {
-      "at": "2026-09-27T22:09:03+05:30",
-      "status": "WORKING",
-      "task": "Submit UNDER_SINK_001 comparison and buying guide content to sitemap and request indexing to accelerate organic traffic and conversion readiness.",
-      "engine": "bedrock-qwen",
-      "result": null
-    },
-    {
-      "at": "2026-09-27T22:09:03+05:30",
-      "status": "COMPLETED",
-      "task": "Submit UNDER_SINK_001 comparison and buying guide content to sitemap and request indexing to accelerate organic traffic and conversion readiness.",
-      "engine": "bedrock-qwen",
-      "result": "PILLAR:1 — Submitting UNDER_SINK_001 comparison and buying guide content to sitemap to accelerate organic conversion readiness. Changes: data/content_publish_state.json updated with sitemap submission flags and next-check timestamp. NEXT_TASK: Monitor indexing status; if content indexed and no clicks after 72h, escalate to internal linking boost + content refinement. Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported."
-    },
     {
       "at": "2026-09-27T22:13:40+05:30",
       "status": "WORKING",
@@ -175,8 +154,29 @@
       "task": "Execute PILLAR:4 — Create high-intent product-led comparison content for UNDER_SINK_001 to drive organic traffic and conversion readiness, using verified offer data and live disclosure/tracking.",
       "engine": "bedrock-qwen",
       "result": "PILLAR:4 — Created high-intent comparison content for UNDER_SINK_001 to drive organic traffic and conversion readiness. Changes: site/content/comparisons/under-sink-organizers-comparison.md published; data/content_publish_state.json updated. NEXT_TASK: Submit to sitemap and request indexing to accelerate organic traffic and conversion readiness. Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported."
+    },
+    {
+      "at": "2026-09-28T03:49:37+05:30",
+      "status": "WORKING",
+      "task": "Choose a different highest-impact executable revenue action.",
+      "engine": "selecting",
+      "result": null
+    },
+    {
+      "at": "2026-09-28T03:49:41+05:30",
+      "status": "WORKING",
+      "task": "Submit newly published UNDER_SINK_001 comparison content to sitemap and request indexing to accelerate organic traffic and conversion readiness.",
+      "engine": "bedrock-qwen",
+      "result": null
+    },
+    {
+      "at": "2026-09-28T03:49:42+05:30",
+      "status": "WAITING_EXTERNAL",
+      "task": "Submit newly published UNDER_SINK_001 comparison content to sitemap and request indexing to accelerate organic traffic and conversion readiness.",
+      "engine": "bedrock-qwen",
+      "result": "PILLAR:1 — Submit newly published UNDER_SINK_001 comparison content to sitemap and request indexing to accelerate organic traffic and conversion readiness. Changes: data/content_publish_state.json updated with sitemap_submitted=true, indexing_requested=true, and timestamps. NEXT_TASK: Monitor clicks via website collector after 72h; if still zero, escalate to content refinement or paid-acquisition pilot (within ceiling). Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported."
     }
   ],
-  "updated_at": "2026-09-28T00:43:35+05:30",
-  "started_at": "2026-09-28T00:43:10+05:30"
+  "updated_at": "2026-09-28T03:49:42+05:30",
+  "started_at": "2026-09-28T03:49:37+05:30"
 }
