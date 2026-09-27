@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import hashlib, json
+import hashlib, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -19,10 +19,30 @@ def number_or_none(v):
     if v < 0:raise ValueError('negative metric prohibited')
     return v
 
+def write_waiting_state(reason):
+    current=load(OUT,{})
+    state={
+      'schema_version':1,
+      'status':'WAITING_EXTERNAL',
+      'policy':'NO_PURCHASE_OR_REVENUE_WITHOUT_SOURCE_EVIDENCE',
+      'clicks':current.get('clicks'),
+      'orders':current.get('orders'),
+      'commission_inr':current.get('commission_inr'),
+      'settled_revenue_inr':current.get('settled_revenue_inr',0),
+      'source':current.get('source'),
+      'last_import_at_utc':current.get('last_import_at_utc'),
+      'blocker':'AFFILIATE_SOURCE_NOT_AVAILABLE',
+      'blocker_reason':reason,
+      'accepted_sources':sorted(ALLOWED),
+      'decision_guard':'Missing report means UNKNOWN, never zero conversions. Revenue success requires traceable report evidence.'
+    }
+    OUT.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
 def main():
     if not INBOX.exists():
-        print('No affiliate report present; attribution remains UNKNOWN.')
-        return 0
+        write_waiting_state('No affiliate report present in data/affiliate_reports/latest.json')
+        print('WAITING_EXTERNAL: affiliate source report is not available; attribution remains UNKNOWN.', file=sys.stderr)
+        return 20
     raw=INBOX.read_bytes();report=json.loads(raw.decode('utf-8'))
     source=str(report.get('source') or '')
     if source not in ALLOWED:raise SystemExit('Unsupported affiliate report source')
@@ -44,6 +64,7 @@ def main():
       'source_observed_at_utc':observed,
       'last_import_at_utc':datetime.now(timezone.utc).isoformat(),
       'evidence_sha256':hashlib.sha256(raw).hexdigest(),
+      'blocker':None,
       'accepted_sources':sorted(ALLOWED),
       'decision_guard':'Null remains UNKNOWN. Revenue success requires this traceable report evidence; activity/content cannot substitute.'
     }
