@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-27T13:16:53.359322+00:00",
+  "checked_at_utc": "2026-09-27T15:19:59.727637+00:00",
   "overall_runtime_health": "DEGRADED",
   "validator_health": "PASS",
   "provider_health": "HEALTHY",
-  "affiliate_attribution_status": "AWAITING_AFFILIATE_SOURCE",
+  "affiliate_attribution_status": "WAITING_EXTERNAL",
   "truth_rule": "all_validators_pass describes validator coverage only and must not be interpreted as full runtime health."
 }
