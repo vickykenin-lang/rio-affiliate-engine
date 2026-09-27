@@ -8,7 +8,8 @@ PUBLISHED=ROOT/'data/ig_published.json'
 OUT=ROOT/'data/telemetry_state.json'
 TOKEN=(os.environ.get('IG_ACCESS_TOKEN_RIO') or '').strip()
 VERSION=(os.environ.get('IG_GRAPH_VERSION') or 'v23.0').strip()
-BASE=f'https://graph.facebook.com/{VERSION}'
+GRAPH_HOST='graph.instagram.com' if TOKEN.upper().startswith('IGAA') else 'graph.facebook.com'
+BASE=f'https://{GRAPH_HOST}/{VERSION}'
 
 def load(path, default):
     try:return json.loads(path.read_text(encoding='utf-8'))
@@ -16,7 +17,7 @@ def load(path, default):
 
 def get(path, params):
     q=urllib.parse.urlencode(params)
-    req=urllib.request.Request(f'{BASE}/{path}?{q}',headers={'User-Agent':'RIO-Telemetry/1.1'})
+    req=urllib.request.Request(f'{BASE}/{path}?{q}',headers={'User-Agent':'RIO-Telemetry/1.2'})
     try:
         with urllib.request.urlopen(req,timeout=25) as r:return json.load(r)
     except urllib.error.HTTPError as e:
@@ -43,7 +44,7 @@ def main():
     state.setdefault('decision_guard',{})
     state['decision_guard'].update({'allow_no_click_decision':False,'rule':'Only measured clicks from a named collector may support a no-click decision. Null/unknown is never zero.'})
     insta=state.setdefault('instagram',{})
-    insta.update({'collector':'scripts/collect_instagram_metrics.py','graph_version':VERSION,'posts':insta.get('posts') or {}})
+    insta.update({'collector':'scripts/collect_instagram_metrics.py','graph_version':VERSION,'graph_host':GRAPH_HOST,'posts':insta.get('posts') or {}})
     now=datetime.now(timezone.utc).isoformat()
     if not TOKEN:
         insta.update({'status':'BLOCKED_MISSING_IG_ACCESS_TOKEN','last_attempt_at_utc':now})
@@ -56,14 +57,11 @@ def main():
         if not media_id:continue
         rec={'offer_id':offer,'media_id':media_id,'permalink':meta.get('permalink'),'product_name':meta.get('product_name'),'posted_at':meta.get('posted_at'),'clicks':None,'click_source':'UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS'}
         try:
-            # Keep the core media request deliberately small. Optional/deprecated fields must not blind the whole collector.
             fields=get(media_id,{'fields':'id,media_type,permalink,timestamp,like_count,comments_count','access_token':TOKEN})
             rec.update({k:fields.get(k) for k in ['media_type','permalink','timestamp','like_count','comments_count'] if k in fields})
             rec['collector_status']='MEDIA_OK'
             successes+=1
-
             metric_errors={}
-            # Query metrics independently: one unsupported/deprecated metric must not invalidate all available telemetry.
             for metric in ('views','reach','saved','shares','total_interactions'):
                 try:
                     value=collect_metric(media_id,metric)
@@ -73,7 +71,6 @@ def main():
                     key='saves' if metric=='saved' else metric
                     rec[key]=None
                     metric_errors[metric]=str(e)[:350]
-            # Do not alias views to impressions. If impressions are not directly measured, keep them UNKNOWN.
             rec['impressions']=None
             rec['insights_status']='OK' if not metric_errors else ('PARTIAL' if any(rec.get(k) is not None for k in ('views','reach','saves','shares','total_interactions')) else 'UNAVAILABLE')
             if metric_errors:rec['metric_errors']=metric_errors
