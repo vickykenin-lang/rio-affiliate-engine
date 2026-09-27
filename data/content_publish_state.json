@@ -1,14 +1,17 @@
 {
-  "last_submitted": "UNDER_SINK_001",
-  "platform": "instagram",
+  "last_task": "Monitor publishing queue; post will publish via Founder-authorized Instagram workflow.",
+  "last_result": "PILLAR:6 — Submitting UNDER_SINK_001 Instagram post to publishing queue to enable click tracking and conversion readiness. Changes: data/content_publish_state.json updated with QUEUED_FOR_PUBLISHING status. NEXT_TASK: Monitor publishing queue; post will publish via Founder-authorized Instagram workflow. Telemetry: Instagram collector LIVE; clicks remain UNKNOWN until post publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
+  "next_task": "Monitor publishing queue; post will publish via Founder-authorized Instagram workflow. Telemetry: Instagram collector LIVE; clicks remain UNKNOWN until post publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
+  "changed_files": [
+    "data/content_publish_state.json"
+  ],
   "status": "QUEUED_FOR_PUBLISHING",
-  "queued_at": "2026-09-27T20:50:08+05:30",
+  "queued_at": "2026-09-27T21:59:55+05:30",
   "offer_id": "UNDER_SINK_001",
   "media_id": "17877752013535173",
   "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
   "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-  "content_file": "site/content/instagram/UNDER_SINK_001_post.md",
-  "next_action": "Monitor publishing queue; post will publish via Founder-authorized Instagram workflow.",
-  "telemetry_status": "CLICKS_UNKNOWN_UNTIL_PUBLISHED",
+  "posting_workflow": "founder_authorized",
+  "telemetry_status": "AWAITING_PUBLISH_AND_CLICK_WINDOW",
   "affiliate_attribution_status": "AWAITING_SOURCE_REPORT"
 }
