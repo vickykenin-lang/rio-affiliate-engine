@@ -17,11 +17,13 @@ def esc(value):
 
 
 def page_shell(title, description, body, canonical):
+    prefix = "../" if "/products/" in canonical else ""
     return f'''<!doctype html>
 <html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(description)}">
-<link rel="canonical" href="{esc(canonical)}"><link rel="stylesheet" href="{('../' if '/products/' in canonical else '')}styles.css">
-</head><body><header class="site-header"><div class="wrap nav"><a class="brand" href="{('../' if '/products/' in canonical else './')}">RIO</a><nav><a href="{('../' if '/products/' in canonical else '')}compare.html">Compare</a><a href="{('../' if '/products/' in canonical else '')}guides/">Guides</a><a href="{('../' if '/products/' in canonical else '')}legal/affiliate-disclosure.html">Disclosure</a></nav></div></header>
+<link rel="canonical" href="{esc(canonical)}"><link rel="stylesheet" href="{prefix}styles.css">
+<script src="{prefix}telemetry.js" defer></script>
+</head><body><header class="site-header"><div class="wrap nav"><a class="brand" href="{('../' if '/products/' in canonical else './')}">RIO</a><nav><a href="{prefix}compare.html">Compare</a><a href="{prefix}guides/">Guides</a><a href="{prefix}legal/affiliate-disclosure.html">Disclosure</a></nav></div></header>
 {body}
 <footer class="site-footer"><div class="wrap"><p class="foot-disclosure"><strong>Affiliate disclosure:</strong> RIO may earn from qualifying purchases made through eligible links, at no extra cost to you. Merchant pages remain the source for current price and availability.</p></div></footer></body></html>'''
 

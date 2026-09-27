@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/collect_instagram_metrics.py'
+      - 'scripts/collect_website_metrics.py'
       - 'scripts/generate_control_room.py'
+      - 'site/telemetry.js'
       - 'data/telemetry_state.json'
       - 'data/affiliate_attribution_state.json'
       - 'data/ig_published.json'
@@ -32,7 +34,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Collect Instagram media and insights
+      - name: Collect website affiliate clicks
+        run: python scripts/collect_website_metrics.py
+      - id: instagram
+        name: Collect Instagram media and insights
+        continue-on-error: true
         env:
           IG_ACCESS_TOKEN_RIO: ${{ secrets.IG_ACCESS_TOKEN_RIO }}
           IG_GRAPH_VERSION: v23.0
