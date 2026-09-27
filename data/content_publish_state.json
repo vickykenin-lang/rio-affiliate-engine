@@ -1,14 +1,7 @@
 {
-  "last_task": "Execute PILLAR:1 — Run Amazon Associates attribution collection for UNDER_SINK_001 to verify traceable clicks/commissions.",
-  "last_result": "WORKING",
-  "next_task": "Validate report import and update revenue telemetry state.",
-  "changed_files": [
-    "data/content_publish_state.json",
-    "data/autonomy_audit.jsonl"
-  ],
-  "pillar": 1,
+  "last_published_at_utc": "2026-09-27T17:00:44+05:30",
+  "last_published_url": "site/content/comparisons/under-sink-organizers-india-2026.md",
   "offer_id": "UNDER_SINK_001",
-  "telemetry_status": "AWAITING_TELEMETRY",
-  "instagram_blocked": true,
-  "amazon_only_verified_source": true
+  "status": "READY_FOR_INDEXING",
+  "next_task": "Validate offer integrity, add internal links, and submit for indexing"
 }

@@ -1,24 +1,29 @@
 {
-  "schema_version": 1,
-  "checked_at_utc": "2026-09-27T11:30:26.192914+00:00",
-  "overall_provider_health": "DEGRADED",
+  "schema_version": 2,
+  "checked_at_utc": "2026-09-27T11:37:13.749970+00:00",
+  "primary_provider": "bedrock-qwen",
+  "overall_provider_health": "HEALTHY",
   "providers": [
     {
-      "provider": "deepseek",
+      "provider": "bedrock-qwen",
+      "required": true,
       "credential_present": true,
-      "live_request_pass": false,
-      "real_output_verified": false,
-      "status": "BLOCKED",
-      "error": "HTTP_401"
+      "live_request_pass": true,
+      "real_output_verified": true,
+      "status": "HEALTHY",
+      "error": null,
+      "response_marker_match": true
     },
     {
-      "provider": "bedrock-qwen",
+      "provider": "deepseek",
+      "required": false,
+      "enabled": false,
       "credential_present": true,
       "live_request_pass": null,
       "real_output_verified": null,
-      "status": "UNVERIFIED_LIVE",
+      "status": "OPTIONAL_DISABLED",
       "error": null
     }
   ],
-  "rule": "Credential presence is not proof of live provider health or real output."
+  "rule": "Only required providers determine overall provider health. Credential presence alone is not proof; live request and real output are required."
 }
