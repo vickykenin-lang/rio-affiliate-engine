@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "accepted_at_utc": "2026-09-27T13:37:51+00:00",
+  "technical_acceptance": "PASS",
+  "business_outcome": "WAITING_EXTERNAL",
+  "checks": {
+    "production_http_verified": true,
+    "provider_healthy": true,
+    "executor_audit_pass": true,
+    "e2e_technical_pass": true,
+    "dashboard_truth_present": true,
+    "commercial_funnel_active": true
+  },
+  "external_blockers": [
+    "AFFILIATE_SOURCE_NOT_AVAILABLE"
+  ],
+  "attribution_status": "WAITING_EXTERNAL",
+  "note": "Technical production acceptance is independent of merchant-side commission evidence."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-09-27T13:37:51+00:00",
+  "state": "ACTIVE",
+  "goal": "FIRST_VERIFIED_COMMISSION",
+  "ready_offers": 17,
+  "instagram_posted": 13,
+  "website_telemetry": {
+    "status": "LIVE",
+    "measured_clicks": 0,
+    "sessions": null
+  },
+  "attribution_status": "WAITING_EXTERNAL",
+  "external_blocker": "AFFILIATE_SOURCE_NOT_AVAILABLE",
+  "first_verified_commission": false,
+  "commission_inr": null,
+  "settled_revenue_inr": 0,
+  "next_executable_action": "Improve qualified traffic and conversion paths using measured website/Instagram telemetry while awaiting merchant attribution evidence.",
+  "truth_rule": "UNKNOWN_IS_NOT_ZERO; commission is verified only from imported merchant evidence."
+}

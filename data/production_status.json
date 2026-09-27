@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T10:35:45+05:30",
+  "checked_at": "2026-09-27T19:07:50+05:30",
   "base_url": "https://vickykenin-lang.github.io/rio-affiliate-engine",
   "verified": true,
   "checks": {
@@ -7,6 +7,11 @@
     "disclosure_present": true,
     "affiliate_offer_page_200": true,
     "affiliate_tag_present": true,
+    "control_room_200": true,
+    "control_room_title_present": true,
+    "control_room_canonical_present": true,
+    "control_room_instagram_embed_present": true,
+    "control_room_instagram_open_link_present": true,
     "sitemap_200": true,
     "sitemap_absolute_urls": true,
     "social_card_200": true
@@ -20,6 +25,11 @@
     "affiliate_offer_page": {
       "status": 200,
       "url": "https://vickykenin-lang.github.io/rio-affiliate-engine/articles/best-bathroom-storage-organizers-india.html",
+      "error": null
+    },
+    "control_room": {
+      "status": 200,
+      "url": "https://vickykenin-lang.github.io/rio-affiliate-engine/control-room/",
       "error": null
     },
     "sitemap": {

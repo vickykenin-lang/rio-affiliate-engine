@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-27T13:37:51+00:00",
+  "status": "PASS",
+  "checks": {
+    "default_engine_bedrock_qwen": true,
+    "path_traversal_rejected": true,
+    "workflow_paths_protected": true,
+    "core_executor_protected": true,
+    "safe_data_path_allowed": true,
+    "operation_limit_is_8": true
+  },
+  "controls": [
+    "SOUL hard gate",
+    "high-risk block",
+    "8-operation limit",
+    "protected paths",
+    "rollback",
+    "validators"
+  ]
+}

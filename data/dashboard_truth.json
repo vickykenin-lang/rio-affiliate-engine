@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-27T13:37:51+00:00",
+  "technical_health": {
+    "validators": "HEALTHY",
+    "runtime": "UNKNOWN"
+  },
+  "provider_health": {
+    "status": "HEALTHY",
+    "primary": "bedrock-qwen",
+    "fallbacks": [
+      "bedrock-glm"
+    ]
+  },
+  "publishing_health": {
+    "status": "HEALTHY",
+    "instagram_posted": 13,
+    "pending": 0
+  },
+  "telemetry_health": {
+    "status": "TELEMETRY_LIVE",
+    "website": "LIVE",
+    "instagram": "LIVE_OR_PARTIAL",
+    "measured_clicks": 0,
+    "sessions": null
+  },
+  "attribution_health": {
+    "status": "WAITING_EXTERNAL",
+    "source": null,
+    "clicks": null,
+    "orders": null,
+    "commission_inr": null,
+    "settled_revenue_inr": 0
+  },
+  "revenue_evidence": {
+    "verified": false,
+    "settled_revenue_inr": 0,
+    "unknown_is_not_zero": true
+  },
+  "blockers": [
+    "AFFILIATE_SOURCE_NOT_AVAILABLE"
+  ],
+  "counts": {
+    "product_candidates": 56,
+    "offers": 17,
+    "ready_offers": 17,
+    "blocked_offers": 0,
+    "rejected_products": 2,
+    "content_items": 27,
+    "revenue_inr": 0,
+    "cost_inr": 0,
+    "net_profit_inr": 0,
+    "x_to_x_failures": 0,
+    "production_verified": true,
+    "discovered_products": 19,
+    "verified_products": 17,
+    "ready_products": 17,
+    "instagram_approved": 0,
+    "instagram_post_pending": 0,
+    "instagram_posted": 13,
+    "instagram_failed": 0,
+    "instagram_last_status": "INSTAGRAM_POSTED"
+  }
+}

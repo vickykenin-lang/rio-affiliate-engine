@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-27T13:37:51+00:00",
+  "technical_result": "PASS",
+  "commercial_result": "WAITING_EXTERNAL",
+  "checks": {
+    "production_active": true,
+    "validators_pass": true,
+    "heartbeat_15m": true,
+    "primary_bedrock_qwen": true,
+    "deepseek_not_active_fallback": true,
+    "provider_healthy": true,
+    "website_telemetry_live": true,
+    "instagram_telemetry_live": true,
+    "instagram_not_blocked": true,
+    "instagram_posted_13_plus": true,
+    "ready_offers_17_plus": true,
+    "attribution_truthful": true,
+    "missing_source_has_blocker": true
+  },
+  "external_blockers": [
+    "AFFILIATE_SOURCE_NOT_AVAILABLE"
+  ],
+  "work_state": "COMPLETED"
+}
