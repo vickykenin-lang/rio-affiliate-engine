@@ -1,23 +1,20 @@
 {
-  "assets": [
-    {
-      "id": "UNDER_SINK_001",
-      "type": "comparison_and_buying_guide",
-      "status": "PUBLISHED",
-      "url": "/content/blogs/under-sink-organizer-buying-guide",
-      "sitemap_submitted": true,
-      "sitemap_submitted_at": "2026-09-27T22:09:03+05:30",
-      "instagram_boost_link_added": true,
-      "instagram_boost_link_added_at": "2026-09-27T22:15:00+05:30",
-      "internal_linking_boost": {
-        "from_instagram_post": "UNDER_SINK_001",
-        "from_instagram_post_url": "https://www.instagram.com/p/DcYSOe3mwhG/",
-        "link_text": "Full comparison & buying guide",
-        "link_target": "/content/blogs/under-sink-organizer-buying-guide",
-        "added_at": "2026-09-27T22:15:00+05:30"
-      }
-    }
-  ],
-  "next_check_instagram_clicks_utc": "2026-09-30T22:15:00+05:30",
-  "next_check_website_clicks_utc": "2026-09-30T22:15:00+05:30"
+  "UNDER_SINK_001": {
+    "offer_id": "UNDER_SINK_001",
+    "status": "PUBLISHED",
+    "content_type": "comparison_and_buying_guide",
+    "site_url": "https://rio-affiliate-engine.github.io/site/content/blogs/under-sink-organizer-buying-guide.html",
+    "instagram_post_url": "https://www.instagram.com/p/DcYSOe3mwhG/",
+    "boost_link_added": true,
+    "boost_link_timestamp": "2026-09-27T22:16:12+05:30",
+    "sitemap_submitted": true,
+    "sitemap_submitted_at": "2026-09-27T22:09:03+05:30",
+    "indexing_requested": true,
+    "indexing_requested_at": "2026-09-27T22:09:03+05:30",
+    "last_internal_link_update": "2026-09-27T22:16:12+05:30",
+    "next_monitoring_check_utc": "2026-09-30T22:16:12+05:30",
+    "monitoring_window_hours": 72,
+    "telemetry_source": "website",
+    "clicks_unknown_reason": "metrics_window_not_elapsed"
+  }
 }
