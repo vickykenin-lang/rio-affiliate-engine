@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "AWAITING_AFFILIATE_SOURCE",
+  "status": "WAITING_EXTERNAL",
   "policy": "NO_PURCHASE_OR_REVENUE_WITHOUT_SOURCE_EVIDENCE",
   "clicks": null,
   "orders": null,
@@ -8,6 +8,13 @@
   "settled_revenue_inr": 0,
   "source": null,
   "last_import_at_utc": null,
-  "accepted_sources": ["amazon_associates_report", "earnkaro_report", "cuelinks_report", "other_verified_affiliate_report"],
+  "blocker": "AFFILIATE_SOURCE_NOT_AVAILABLE",
+  "blocker_reason": "No affiliate report present in data/affiliate_reports/latest.json",
+  "accepted_sources": [
+    "amazon_associates_report",
+    "cuelinks_report",
+    "earnkaro_report",
+    "other_verified_affiliate_report"
+  ],
   "decision_guard": "Missing report means UNKNOWN, never zero conversions. Revenue success requires traceable report evidence."
 }
