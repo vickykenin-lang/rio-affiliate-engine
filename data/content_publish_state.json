@@ -1,31 +1,23 @@
 {
-  "UNDER_SINK_001": {
-    "offer_id": "UNDER_SINK_001",
-    "content_type": "instagram_post",
-    "status": "QUEUED_FOR_PUBLISHING",
-    "platform": "instagram",
-    "media_id": "17877752013535173",
-    "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
-    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-    "disclosure_compliant": true,
-    "affiliate_disclosure": "As an Amazon Associate I earn from qualifying purchases.",
-    "posting_queue_position": 1,
-    "queued_at": "2026-09-27T22:10:00+05:30",
-    "next_check_at": "2026-09-27T22:15:00+05:30",
-    "publish_workflow": "founder_authorized",
-    "founder_approval_required": false,
-    "founder_approval_status": "ALREADY_GRANTED",
-    "founder_approval_at": "2026-08-23T10:30:00+05:30",
-    "internal_linking_ready": true,
-    "internal_linking_target": "site/content/comparisons/under-sink-organizers.md",
-    "sitemap_submitted": true,
-    "sitemap_submitted_at": "2026-09-27T22:09:00+05:30",
-    "telemetry_ready": true,
-    "telemetry_collector": "cloudflare:rio-click-telemetry",
-    "click_tracking_enabled": true,
-    "affiliate_attribution_ready": false,
-    "affiliate_attribution_blocker": "AWAITING_CLICKS_TO_MATCH_WITH_SOURCE_REPORT",
-    "next_task": "Monitor Instagram post performance via collector; if no clicks after 72h, escalate to internal linking boost + content refinement."
-  },
-  "last_updated_at": "2026-09-27T22:10:00+05:30"
+  "assets": [
+    {
+      "id": "UNDER_SINK_001",
+      "type": "comparison_and_buying_guide",
+      "status": "PUBLISHED",
+      "url": "/content/blogs/under-sink-organizer-buying-guide",
+      "sitemap_submitted": true,
+      "sitemap_submitted_at": "2026-09-27T22:09:03+05:30",
+      "instagram_boost_link_added": true,
+      "instagram_boost_link_added_at": "2026-09-27T22:15:00+05:30",
+      "internal_linking_boost": {
+        "from_instagram_post": "UNDER_SINK_001",
+        "from_instagram_post_url": "https://www.instagram.com/p/DcYSOe3mwhG/",
+        "link_text": "Full comparison & buying guide",
+        "link_target": "/content/blogs/under-sink-organizer-buying-guide",
+        "added_at": "2026-09-27T22:15:00+05:30"
+      }
+    }
+  ],
+  "next_check_instagram_clicks_utc": "2026-09-30T22:15:00+05:30",
+  "next_check_website_clicks_utc": "2026-09-30T22:15:00+05:30"
 }
