@@ -1,0 +1,62 @@
+name: RIO Final Production Acceptance
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/rio_autonomous_executor.py'
+      - 'scripts/audit_autonomous_executor.py'
+      - 'scripts/generate_dashboard_truth.py'
+      - 'scripts/e2e_regression.py'
+      - 'scripts/update_commercial_funnel_state.py'
+      - 'scripts/production_acceptance.py'
+      - '.github/workflows/production-acceptance.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rio-final-production-acceptance
+  cancel-in-progress: false
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Fresh public production check
+        run: python scripts/check_production.py
+      - name: Fresh Bedrock provider proof
+        env:
+          AWS_BEDROCK_API_KEY: ${{ secrets.AWS_BEDROCK_API_KEY }}
+        run: python scripts/provider_health.py
+      - name: Executor audit
+        run: python scripts/audit_autonomous_executor.py
+      - name: Generate canonical dashboard truth
+        run: python scripts/generate_dashboard_truth.py
+      - name: End-to-end regression
+        run: python scripts/e2e_regression.py
+      - name: Refresh commercial funnel state
+        run: python scripts/update_commercial_funnel_state.py
+      - name: Final production acceptance
+        run: python scripts/production_acceptance.py
+      - name: Persist acceptance evidence
+        run: |
+          set -e
+          git config user.name "RIO Acceptance"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/production_status.json data/provider_health.json data/autonomous_executor_audit.json data/dashboard_truth.json site/dashboard/truth.json data/e2e_regression_report.json data/commercial_funnel_state.json data/production_acceptance.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "acceptance: persist final RIO production evidence"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort || true; sleep $((attempt*2)); continue; }
+            git push origin HEAD:main && exit 0
+            sleep $((attempt*2))
+          done
+          exit 1
