@@ -18,7 +18,6 @@
   "memory_path": "data/rio_work_status.json",
   "lead_ai": "bedrock-qwen",
   "fallbacks": [
-    "deepseek",
     "bedrock-glm"
   ],
   "validators_currently_healthy": true,
