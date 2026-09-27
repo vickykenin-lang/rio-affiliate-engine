@@ -47,6 +47,7 @@ def run_script(name):
 control=jload('data/control.json',{'kill_switch':False,'kill_reason':None})
 inbox=jload('data/inbox.json',{'messages':[]})
 now=datetime.now(IST).isoformat(timespec='minutes')
+now_utc=datetime.now(timezone.utc).isoformat(timespec='seconds')
 try:issues=gh(f'repos/{REPO}/issues?state=open&per_page=50')
 except Exception as e:print('[heartbeat] issue read failed:',e);issues=[]
 for i in issues:
@@ -61,7 +62,7 @@ for i in issues:
  except Exception as e:print('[heartbeat] issue handling failed:',e)
 jsave('data/control.json',control);jsave('data/inbox.json',inbox)
 if control.get('kill_switch'):
- status=jload('data/status.json',{});status.update({'updated':now,'kill_switch':True,'note_en':f"Paused by kill switch. {control.get('kill_reason','')}"});jsave('data/status.json',status);sys.exit(0)
+ status=jload('data/status.json',{});status.update({'updated':now,'last_heartbeat_utc':now_utc,'kill_switch':True,'note_en':f"Paused by kill switch. {control.get('kill_reason','')}"});jsave('data/status.json',status);sys.exit(0)
 
 storefront_ok,storefront_out=run_script('generate_product_storefront.py')
 public_ok,public_out=run_script('validate_public_content.py') if storefront_ok else (False,storefront_out)
@@ -83,7 +84,25 @@ for key,script in validator_scripts.items():
 validators_pass=all(v['pass'] for v in validators.values()) and dash_ok
 snap=jload('data/dashboard_snapshot.json',{})
 counts={k:snap.get(k,0) for k in ['product_candidates','ready_offers','blocked_offers','rejected_products','content_items','revenue_inr','cost_inr','net_profit_inr']};counts['production_verified']=bool(production_ok)
-status=jload('data/status.json',{});status.update({'updated':now,'kill_switch':False,'dashboard_regenerated':dash_ok,'validators':validators,'all_validators_pass':validators_pass,'counts':counts,'heartbeat_interval_minutes':5,'runtime_primary_ai':'bedrock-qwen','runtime_fallbacks':['deepseek','bedrock-glm']})
+ig_state=jload('data/ig_published.json',{'posted':{}})
+instagram_posted=len(ig_state.get('posted') or {})
+status=jload('data/status.json',{});status.update({
+ 'updated':now,
+ 'last_heartbeat_utc':now_utc,
+ 'kill_switch':False,
+ 'dashboard_regenerated':dash_ok,
+ 'validators':validators,
+ 'all_validators_pass':validators_pass,
+ 'counts':counts,
+ 'heartbeat_interval_minutes':15,
+ 'runtime_primary_ai':'bedrock-qwen',
+ 'runtime_fallbacks':['bedrock-glm'],
+ 'ready_offers':counts.get('ready_offers',0),
+ 'content_items':counts.get('content_items',0),
+ 'revenue_inr':counts.get('revenue_inr',0),
+ 'net_profit_inr':counts.get('net_profit_inr',0),
+ 'instagram_posted':instagram_posted,
+})
 jsave('data/status.json',status)
 
 # Mandatory fail-closed SOUL preflight. soul_runtime reads the freshly persisted
@@ -113,5 +132,5 @@ if was is not None and was!=all_pass:
 elif was_soul is True and not soul_valid:
  notify('🔴 RIO SOUL HARD GATE FAILED\nAutonomous execution is blocked until SOUL integrity recovers.')
 jsave(ALERT_STATE,{'healthy':all_pass,'updated':now,'soul_valid':soul_valid})
-print('heartbeat done',json.dumps({'ok':all_pass,'soul_valid':soul_valid,'counts':counts}))
+print('heartbeat done',json.dumps({'ok':all_pass,'soul_valid':soul_valid,'counts':counts,'instagram_posted':instagram_posted,'heartbeat_interval_minutes':15}))
 if not all_pass:sys.exit(1)
