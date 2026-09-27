@@ -1,24 +1,25 @@
 {
-  "UNDER_SINK_001_COMPARISON": {
-    "offer_id": "UNDER_SINK_001",
-    "type": "comparison",
-    "title": "Under Sink Organizers Comparison",
-    "path": "site/content/comparisons/under-sink-organizers.md",
-    "status": "QUEUED_FOR_PUBLISHING",
-    "queued_at": "2026-09-27T22:03:12+05:30",
-    "priority": "HIGH",
-    "reason": "Direct conversion readiness for highest-priority offer; internal linking ready.",
-    "next_action": "Publish to site; monitor clicks via website telemetry; if no clicks after 72h, escalate to sitemap ping + internal linking boost."
-  },
-  "UNDER_SINK_001_BUYING_GUIDE": {
-    "offer_id": "UNDER_SINK_001",
-    "type": "blog",
-    "title": "Under Sink Organizer Buying Guide",
-    "path": "site/content/blogs/under-sink-organizer-buying-guide.md",
-    "status": "QUEUED_FOR_PUBLISHING",
-    "queued_at": "2026-09-27T22:05:41+05:30",
-    "priority": "HIGH",
-    "reason": "Product-led organic traffic and conversion readiness; supports comparison page.",
-    "next_action": "Publish to site; monitor clicks via website telemetry; if no clicks after 72h, escalate to sitemap ping + internal linking boost."
-  }
+  "assets": [
+    {
+      "key": "under-sink-organizers",
+      "type": "comparison",
+      "status": "QUEUED_FOR_PUBLISHING",
+      "path": "site/content/comparisons/under-sink-organizers.md",
+      "queued_at": "2026-09-27T22:07:13+05:30",
+      "sitemap_submitted": true,
+      "sitemap_submitted_at": "2026-09-27T22:09:00+05:30"
+    },
+    {
+      "key": "under-sink-organizer-buying-guide",
+      "type": "blog",
+      "status": "QUEUED_FOR_PUBLISHING",
+      "path": "site/content/blogs/under-sink-organizer-buying-guide.md",
+      "queued_at": "2026-09-27T22:07:13+05:30",
+      "sitemap_submitted": true,
+      "sitemap_submitted_at": "2026-09-27T22:09:00+05:30"
+    }
+  ],
+  "sitemap_update_requested": true,
+  "sitemap_update_requested_at": "2026-09-27T22:09:00+05:30",
+  "next_indexing_check_at": "2026-09-28T22:09:00+05:30"
 }
