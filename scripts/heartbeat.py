@@ -52,13 +52,20 @@ try:issues=gh(f'repos/{REPO}/issues?state=open&per_page=50')
 except Exception as e:print('[heartbeat] issue read failed:',e);issues=[]
 for i in issues:
  labels=[l['name'] for l in i.get('labels',[])];title=(i.get('title') or '').upper();body=i.get('body') or ''
+ actor=(i.get('user') or {}).get('login') or ''
+ association=(i.get('author_association') or '').upper()
+ trusted_actor=(actor==OWNER and association in {'OWNER','MEMBER','COLLABORATOR'})
+ is_command=('kill-switch' in labels or 'KILL SWITCH' in title or title.startswith('RESUME') or 'owner-message' in labels or 'MESSAGE TO RIO' in title)
+ if is_command and not trusted_actor:
+  print(f"[heartbeat] ignored untrusted issue command #{i.get('number')} from {actor or 'unknown'}")
+  continue
  try:
   if 'kill-switch' in labels or 'KILL SWITCH' in title:
-   control['kill_switch']=True;control['kill_reason']=f"Issue #{i['number']} by {i['user']['login']} at {now}";gh(f"repos/{REPO}/issues/{i['number']}",{'state':'closed'},'PATCH')
-  elif title.startswith('RESUME') and i['user']['login']==OWNER:
+   control['kill_switch']=True;control['kill_reason']=f"Issue #{i['number']} by {actor} at {now}";gh(f"repos/{REPO}/issues/{i['number']}",{'state':'closed'},'PATCH')
+  elif title.startswith('RESUME'):
    control['kill_switch']=False;control['kill_reason']=None;gh(f"repos/{REPO}/issues/{i['number']}",{'state':'closed'},'PATCH')
   elif 'owner-message' in labels or 'MESSAGE TO RIO' in title:
-   inbox['messages'].append({'at':now,'from':i['user']['login'],'issue':i['number'],'text':body[:2000]});gh(f"repos/{REPO}/issues/{i['number']}",{'state':'closed'},'PATCH')
+   inbox['messages'].append({'at':now,'from':actor,'issue':i['number'],'text':body[:2000]});gh(f"repos/{REPO}/issues/{i['number']}",{'state':'closed'},'PATCH')
  except Exception as e:print('[heartbeat] issue handling failed:',e)
 jsave('data/control.json',control);jsave('data/inbox.json',inbox)
 if control.get('kill_switch'):
@@ -105,8 +112,6 @@ status=jload('data/status.json',{});status.update({
 })
 jsave('data/status.json',status)
 
-# Mandatory fail-closed SOUL preflight. soul_runtime reads the freshly persisted
-# validator/AI binding above; autonomous execution is permitted only when it passes.
 soul_ok,soul_out=run_script('soul_runtime.py')
 soul_state=jload('data/soul_runtime_status.json',{})
 soul_valid=bool(soul_ok and soul_state.get('valid') is True and soul_state.get('hard_fail_closed') is True)
