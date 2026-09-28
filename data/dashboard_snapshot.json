@@ -1,5 +1,5 @@
 {
-  "product_candidates": 56,
+  "product_candidates": 59,
   "offers": 17,
   "ready_offers": 17,
   "blocked_offers": 0,
@@ -15,17 +15,7 @@
   "ready_products": 17,
   "instagram_approved": 0,
   "instagram_post_pending": 0,
-  "instagram_posted": 13,
-  "instagram_failed": 1,
-  "instagram_last_status": "FAILED_RETRY",
-  "revenue_evidence_state": "UNKNOWN_EXTERNAL",
-  "affiliate_source_status": "WAITING_EXTERNAL",
-  "orders_verified": null,
-  "commission_inr_verified": null,
-  "settled_revenue_inr_verified": null,
-  "website_clicks": 0,
-  "telemetry_status": "TELEMETRY_LIVE",
-  "runtime_health": "HEALTHY_EXTERNAL_BLOCKER",
-  "commercial_milestone": "M0B_CLICK_COLLECTION_PATH_VERIFIED",
-  "revenue_claim_allowed": false
+  "instagram_posted": 14,
+  "instagram_failed": 0,
+  "instagram_last_status": "INSTAGRAM_POSTED"
 }
