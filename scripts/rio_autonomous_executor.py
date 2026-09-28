@@ -5,7 +5,11 @@ from datetime import datetime, timezone, timedelta
 
 ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),'..'));IST=timezone(timedelta(hours=5,minutes=30))
 AUDIT=os.path.join(ROOT,'data','autonomy_audit.jsonl');CONTROL=os.path.join(ROOT,'data','control.json')
-PROTECTED={'.gitignore','data/RIO_3.0_DEFINITION.md','data/COMMERCIAL_VALIDATION_POLICY.json','data/AUTONOMY_POLICY.md','data/TELEGRAM_CHAT_LOCKED.md','data/SOUL.md','data/soul_runtime_status.json','scripts/soul_runtime.py','scripts/heartbeat.py','scripts/rio_autonomous_executor.py','scripts/telegram_chat.py'}
+PROTECTED={
+ '.gitignore','data/RIO_3.0_DEFINITION.md','data/COMMERCIAL_VALIDATION_POLICY.json','data/AUTONOMY_POLICY.md','data/TELEGRAM_CHAT_LOCKED.md','data/SOUL.md','data/soul_runtime_status.json',
+ 'data/affiliate_attribution_state.json','data/provider_health.json','data/runtime_health.json','data/status.json','data/commercial_milestone_state.json','data/revenue_m0_live_probe.json',
+ 'scripts/soul_runtime.py','scripts/heartbeat.py','scripts/rio_autonomous_executor.py','scripts/telegram_chat.py','scripts/import_affiliate_report.py','scripts/provider_health.py','scripts/runtime_health.py','scripts/commercial_milestone_gate.py'
+}
 ALLOWED_PREFIXES=('data/','site/','scripts/');ALLOWED_OPS={'write_text','write_json','append_text','maintenance_pause'}
 VALIDATORS=['scripts/validate_offer_integrity.py','scripts/validate_product_candidates.py','scripts/validate_dashboard.py','scripts/validate_production_offer_gate.py','scripts/validate_commercial_plan.py']
 
