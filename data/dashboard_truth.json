@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-09-27T13:37:51+00:00",
+  "generated_at_utc": "2026-09-28T19:37:36+00:00",
   "technical_health": {
     "validators": "HEALTHY",
     "runtime": "UNKNOWN"
@@ -13,9 +13,9 @@
     ]
   },
   "publishing_health": {
-    "status": "HEALTHY",
+    "status": "FAILED_RETRY",
     "instagram_posted": 13,
-    "pending": 0
+    "pending": 1
   },
   "telemetry_health": {
     "status": "TELEMETRY_LIVE",
@@ -58,7 +58,7 @@
     "instagram_approved": 0,
     "instagram_post_pending": 0,
     "instagram_posted": 13,
-    "instagram_failed": 0,
-    "instagram_last_status": "INSTAGRAM_POSTED"
+    "instagram_failed": 1,
+    "instagram_last_status": "FAILED_RETRY"
   }
 }
