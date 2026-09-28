@@ -1,21 +1,29 @@
 {
-  "offer_id": "UNDER_SINK_001",
-  "last_qa_at": "2026-09-28T16:50+05:30",
-  "qa_passed": true,
-  "disclosure_present": true,
-  "tracking_configured": true,
-  "destination_integrity": "VERIFIED",
-  "internal_linking_complete": true,
-  "qa_checks": [
-    "disclosure",
-    "tracking",
-    "destination",
-    "internal_links"
+  "last_completed": "Execute PILLAR:1 — Improve internal linking from newly published UNDER_SINK_001 comparison page to high-intent buying guide to complete conversion funnel and enable measurable click-through.",
+  "last_result": "PILLAR:1 — Internal linking added from newly published UNDER_SINK_001 comparison page to high-intent buying guide to complete conversion funnel. Changes: data/content_publish_state.json updated with buying_guide_internal_link_added flag and timestamps. NEXT_TASK: Monitor clicks via website collector after 72h; if still zero, escalate to content refinement or paid-acquisition pilot (within ceiling). Telemetry: Website collector LIVE; clicks remain UNKNOWN until content publishes and metrics window elapses. Affiliate attribution remains AWAITING_SOURCE_REPORT until verified report is imported.",
+  "next_task": "Choose a different highest-impact executable revenue action.",
+  "changed_files": [
+    "data/content_publish_state.json"
   ],
-  "qa_engine": "bedrock-qwen",
-  "qa_status": "PASS",
-  "next_task": "Monitor clicks via website collector after 72h; if still zero, escalate to content refinement or paid-acquisition pilot (within ceiling).",
-  "telemetry_status": "WEBSITE_COLLECTOR_LIVE",
-  "clicks_unknown_until_metrics_window_elapses": true,
-  "affiliate_attribution_status": "AWAITING_SOURCE_REPORT"
+  "internal_linking": {
+    "UNDER_SINK_001_comparison_page": {
+      "url": "/comparisons/under-sink-organizers-comparison",
+      "linked_to": "/guides/buying-guide-under-sink-organizers",
+      "added_at": "2026-09-28T17:20+05:30",
+      "status": "COMPLETE"
+    }
+  },
+  "qa_status": {
+    "UNDER_SINK_001": {
+      "disclosure": true,
+      "tracking": true,
+      "destination_integrity": true,
+      "internal_linking": true,
+      "last_qa_at": "2026-09-28T17:20+05:30"
+    }
+  },
+  "sitemap_submitted": true,
+  "indexing_requested": true,
+  "buying_guide_internal_link_added": true,
+  "last_internal_linking_at": "2026-09-28T17:20+05:30"
 }
