@@ -1,45 +1,21 @@
 {
-  "instagram_posted": 14,
-  "last_post": {
-    "offer_id": "UNDER_SINK_001",
-    "media_id": "17877752013535173",
-    "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
-    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
-    "posted_at": "2026-08-23T16:04+05:30",
-    "clicks": null,
-    "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
-    "media_type": "IMAGE",
-    "timestamp": "2026-08-23T10:34:53+0000",
-    "like_count": 1,
-    "comments_count": 0,
-    "collector_status": "MEDIA_OK",
-    "views": 0,
-    "reach": 0,
-    "saves": 0,
-    "shares": 0,
-    "total_interactions": 1,
-    "impressions": null,
-    "insights_status": "OK",
-    "collected_at_utc": "2026-09-28T01:29:41.183242+00:00"
-  },
-  "instagram_post_state": {
-    "UNDER_SINK_001": {
-      "status": "POSTED",
-      "disclosure_present": true,
-      "tracking_integrity": "VERIFIED",
-      "destination_integrity": "VERIFIED",
-      "internal_linking_complete": true,
-      "indexing_submitted": true,
-      "buying_guide_internal_link_added": true,
-      "qa_passed": true,
-      "sitemap_submitted": true,
-      "indexing_requested": true,
-      "last_post_at_utc": "2026-09-28T12:29:00+00:00",
-      "next_post_at_utc": null,
-      "post_count": 1,
-      "last_post_engine": "bedrock-qwen",
-      "last_post_policy_check": "PASS"
-    }
-  },
-  "last_updated_utc": "2026-09-28T12:29:00+00:00"
+  "offer_id": "UNDER_SINK_001",
+  "last_qa_at": "2026-09-28T16:50+05:30",
+  "qa_passed": true,
+  "disclosure_present": true,
+  "tracking_configured": true,
+  "destination_integrity": "VERIFIED",
+  "internal_linking_complete": true,
+  "qa_checks": [
+    "disclosure",
+    "tracking",
+    "destination",
+    "internal_links"
+  ],
+  "qa_engine": "bedrock-qwen",
+  "qa_status": "PASS",
+  "next_task": "Monitor clicks via website collector after 72h; if still zero, escalate to content refinement or paid-acquisition pilot (within ceiling).",
+  "telemetry_status": "WEBSITE_COLLECTOR_LIVE",
+  "clicks_unknown_until_metrics_window_elapses": true,
+  "affiliate_attribution_status": "AWAITING_SOURCE_REPORT"
 }
