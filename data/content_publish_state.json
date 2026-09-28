@@ -1,16 +1,45 @@
 {
-  "UNDER_SINK_001": {
+  "instagram_posted": 14,
+  "last_post": {
     "offer_id": "UNDER_SINK_001",
-    "status": "PUBLISHED",
-    "comparison_page_published_at": "2026-09-28T00:43:35+05:30",
-    "sitemap_submitted": true,
-    "indexing_requested": true,
-    "indexing_requested_at": "2026-09-28T03:49:42+05:30",
-    "buying_guide_internal_link_added": true,
-    "buying_guide_internal_link_at": "2026-09-28T06:35:00+05:30",
-    "internal_link_source": "site/content/comparisons/under-sink-organizers-comparison.md",
-    "internal_link_target": "site/content/buying-guides/under-sink-organizer-buying-guide.md",
-    "internal_link_anchor": "See our detailed buying guide for selection criteria, measurements, and real-world fit checks."
+    "media_id": "17877752013535173",
+    "permalink": "https://www.instagram.com/p/DcYSOe3mwhG/",
+    "product_name": "wolpin Under Sink Rectangle Organizer Storage Rack 2-Tier",
+    "posted_at": "2026-08-23T16:04+05:30",
+    "clicks": null,
+    "click_source": "UNAVAILABLE_FROM_INSTAGRAM_MEDIA_INSIGHTS",
+    "media_type": "IMAGE",
+    "timestamp": "2026-08-23T10:34:53+0000",
+    "like_count": 1,
+    "comments_count": 0,
+    "collector_status": "MEDIA_OK",
+    "views": 0,
+    "reach": 0,
+    "saves": 0,
+    "shares": 0,
+    "total_interactions": 1,
+    "impressions": null,
+    "insights_status": "OK",
+    "collected_at_utc": "2026-09-28T01:29:41.183242+00:00"
   },
-  "last_updated_at": "2026-09-28T06:35:00+05:30"
+  "instagram_post_state": {
+    "UNDER_SINK_001": {
+      "status": "POSTED",
+      "disclosure_present": true,
+      "tracking_integrity": "VERIFIED",
+      "destination_integrity": "VERIFIED",
+      "internal_linking_complete": true,
+      "indexing_submitted": true,
+      "buying_guide_internal_link_added": true,
+      "qa_passed": true,
+      "sitemap_submitted": true,
+      "indexing_requested": true,
+      "last_post_at_utc": "2026-09-28T12:29:00+00:00",
+      "next_post_at_utc": null,
+      "post_count": 1,
+      "last_post_engine": "bedrock-qwen",
+      "last_post_policy_check": "PASS"
+    }
+  },
+  "last_updated_utc": "2026-09-28T12:29:00+00:00"
 }
