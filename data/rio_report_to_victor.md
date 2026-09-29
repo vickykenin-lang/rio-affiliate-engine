@@ -208,3 +208,5 @@ Fetched `https://raw.githubusercontent.com/vickykenin-lang/rio-affiliate-engine/
 - 2026-09-27T18:47+05:30 IST — posted **KidDough Furniture Safety Locks for Drawers, Cabinets, Fridge (10 Locks, Brown)** (offer `BABY_CABINETLOCK_001`) to Instagram @riosallerior. Media ID `17903227218657358`. Permalink: https://www.instagram.com/p/DdysmSWERHa/
 
 - 2026-09-29T01:42+05:30 IST — posted **PROTOWARE 12-Piece Electric Socket Plug Guards with Removal Pin (White)** (offer `BABY_SOCKETCOVER_001`) to Instagram @riosallerior. Media ID `18143448964584802`. Permalink: https://www.instagram.com/p/Dd2A7EPIEHd/
+
+- 2026-09-30T00:18+05:30 IST — posted **XMART INDIA Drawer & Closet Organizers for Wardrobes (Set of 4, Multicolor)** (offer `WARDROBE_DRAWERORG_001`) to Instagram @riosallerior. Media ID `18099130925640295`. Permalink: https://www.instagram.com/p/Dd4cI3ZnW_8/
