@@ -5,7 +5,7 @@
   "instagram": {
     "collector": "scripts/collect_instagram_metrics.py",
     "status": "LIVE_OR_PARTIAL",
-    "last_success_at_utc": "2026-09-29T02:15:23.365518+00:00",
+    "last_success_at_utc": "2026-09-29T08:56:46.653740+00:00",
     "posts": {
       "UNDER_SINK_001": {
         "offer_id": "UNDER_SINK_001",
@@ -27,7 +27,7 @@
         "total_interactions": 1,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "TROLLEY_001": {
         "offer_id": "TROLLEY_001",
@@ -49,7 +49,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "SPICE_RACK_001": {
         "offer_id": "SPICE_RACK_001",
@@ -71,7 +71,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "CONTAINER_001": {
         "offer_id": "CONTAINER_001",
@@ -93,7 +93,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "DRAWER_001": {
         "offer_id": "DRAWER_001",
@@ -115,7 +115,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "NODRILL_001": {
         "offer_id": "NODRILL_001",
@@ -137,7 +137,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BATHROOM_SHELF_001": {
         "offer_id": "BATHROOM_SHELF_001",
@@ -159,7 +159,7 @@
         "total_interactions": 1,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BATHROOM_NODRILL_001": {
         "offer_id": "BATHROOM_NODRILL_001",
@@ -181,7 +181,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "HOMEOFFICE_CABLE_001": {
         "offer_id": "HOMEOFFICE_CABLE_001",
@@ -203,7 +203,7 @@
         "total_interactions": 1,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BALCONY_BROOM_001": {
         "offer_id": "BALCONY_BROOM_001",
@@ -225,7 +225,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BABY_CORNERGUARD_001": {
         "offer_id": "BABY_CORNERGUARD_001",
@@ -247,7 +247,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BABY_SAFETYGATE_001": {
         "offer_id": "BABY_SAFETYGATE_001",
@@ -269,7 +269,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BABY_CABINETLOCK_001": {
         "offer_id": "BABY_CABINETLOCK_001",
@@ -291,7 +291,7 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       },
       "BABY_SOCKETCOVER_001": {
         "offer_id": "BABY_SOCKETCOVER_001",
@@ -313,10 +313,10 @@
         "total_interactions": 0,
         "impressions": null,
         "insights_status": "OK",
-        "collected_at_utc": "2026-09-29T02:15:23.365518+00:00"
+        "collected_at_utc": "2026-09-29T08:56:46.653740+00:00"
       }
     },
-    "last_attempt_at_utc": "2026-09-29T02:15:23.365518+00:00",
+    "last_attempt_at_utc": "2026-09-29T08:56:46.653740+00:00",
     "graph_version": "v23.0",
     "graph_host": "graph.instagram.com"
   },
@@ -349,8 +349,8 @@
     },
     "list_complete": true,
     "retention_days": 30,
-    "last_success_at_utc": "2026-09-29T02:15:22.927928+00:00",
-    "last_attempt_at_utc": "2026-09-29T02:15:22.927928+00:00",
+    "last_success_at_utc": "2026-09-29T08:56:46.334437+00:00",
+    "last_attempt_at_utc": "2026-09-29T08:56:46.334437+00:00",
     "truth_rule": "Measured collector events are clicks only; they do not prove merchant orders or commission. Sessions remain UNKNOWN."
   },
   "decision_guard": {
