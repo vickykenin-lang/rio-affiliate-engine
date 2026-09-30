@@ -1,1 +1,0 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["id","network","status"],"properties":{"id":{"type":"string"},"network":{"type":"string"},"category":{"type":"string"},"affiliate_url":{"type":["string","null"]},"tracking_id":{"type":["string","null"]},"status":{"type":"string"}}}

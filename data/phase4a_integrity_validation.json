@@ -1,8 +1,0 @@
-{
-  "phase": "4A",
-  "control": "X\u2192X offer integrity",
-  "registry_offers": 6,
-  "initial_state": "all offers BLOCKED until real product identity is verified",
-  "gate_result": "X\u2192X GATE: PASS",
-  "production_rule": "no auto-substitution"
-}

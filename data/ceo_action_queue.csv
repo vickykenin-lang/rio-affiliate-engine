@@ -1,3 +1,0 @@
-severity,owner,action,reason
-LIVE,RIO,17 offer(s) public and earning-eligible,"UNDER_SINK_001, SPICE_RACK_001, TROLLEY_001, CONTAINER_001, DRAWER_001, NODRILL_001, BATHROOM_SHELF_001, BATHROOM_NODRILL_001, HOMEOFFICE_CABLE_001, BALCONY_BROOM_001, BABY_CORNERGUARD_001, BABY_SAFETYGATE_001, BABY_CABINETLOCK_001, BABY_SOCKETCOVER_001, WARDROBE_DRAWERORG_001, UNDERBED_STORAGEBAG_001, FOLDABLE_LAPDESK_001 -- Amazon Associates tag is configured; earning eligibility requires the production health gate to pass."
-NEXT,RIO,Design the EarnKaro link-import workflow,"The Founder already created the EarnKaro account, but it exposes no self-serve API; use an evidence-backed manual import gate until API access exists."

@@ -1,7 +1,0 @@
-{
-  "tested_at": "2026-08-23T18:24:54+05:30",
-  "model": "",
-  "ok": false,
-  "http_status": 401,
-  "error": "authentication_error: invalid x-api-key"
-}

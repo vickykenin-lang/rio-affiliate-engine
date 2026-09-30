@@ -1,5 +1,0 @@
-candidate_id,verification_date,check,result,evidence,release_effect
-CAND_SR_001,2026-08-15,Exact identity cross-source,PASS,ASIN B07P5Z9SQN; model SOKT66; 16-piece Light Brown/Choco; dimensions 16.5D x 16.5W x 31.7H cm,Advance to IDENTITY_REVIEW
-CAND_SR_001,2026-08-15,Direct live Amazon product page,NOT_VERIFIED,"Amazon-linked price source exposes Buy @ amazon.in, but direct Amazon page was not independently retrievable in this pass",BLOCK READY
-CAND_US_001,2026-08-15,Exact identity source match,PASS,ASIN B0C1KNTF2Y; model SO471; dimensions 21D x 40W x 39H cm,Advance to IDENTITY_REVIEW
-CAND_US_001,2026-08-15,Direct live Amazon product page,NOT_VERIFIED,"Amazon-linked source reports Amazon store, but direct Amazon page was not independently retrievable in this pass",BLOCK READY

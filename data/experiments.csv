@@ -1,2 +1,0 @@
-id,hypothesis,variable,control,test,expected_result,actual_result,learning,decision,status
-EXP-001,Problem-first guide structure will improve qualified outbound CTR,guide_structure,generic_product_list,problem_first_framework,Higher affiliate click intent from commercial visitors,,,,READY

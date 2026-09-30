@@ -1,5 +1,0 @@
-rank,candidate_id,commercial_score,decision,blocking_gate,next_verification
-1,CAND_SR_001,86,PRIORITY_VERIFY,LIVE_LISTING,Open exact Amazon ASIN; confirm title/variant/availability/current destination; then map affiliate offer.
-2,CAND_US_001,79,PRIORITY_VERIFY,LIVE_LISTING,Open exact Amazon ASIN; confirm model/dimensions/availability/current destination.
-3,CAND_US_002,68,HOLD_REFRESH,FRESHNESS,Refresh live listing and current availability before further scoring.
-4,CAND_SR_002,54,HOLD,INTENT_FIT,Keep as separate combo product; do not substitute into standalone spice-rack creative.

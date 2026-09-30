@@ -1,8 +1,0 @@
-{
-  "phase": "4B",
-  "candidate_slots": 6,
-  "real_products_inserted": 0,
-  "qa_returncode": 0,
-  "qa_output": "== validate_offer_integrity.py ==\nX\u2192X GATE: PASS\n== validate_product_candidates.py ==\nPRODUCT INTELLIGENCE GATE: PASS",
-  "principle": "discovery data must be sourced; no invented product records"
-}
