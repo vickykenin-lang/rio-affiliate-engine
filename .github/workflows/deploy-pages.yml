@@ -68,7 +68,7 @@ jobs:
       - name: Upload RIO website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./site
+          path: ./
 
       - name: Deploy to GitHub Pages
         id: deployment
