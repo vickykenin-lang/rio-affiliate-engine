@@ -1,0 +1,5 @@
+{
+  "template": "offer_id, title, price, commission, link",
+  "example": "AFF001, Product Name, \u20b9Price, X%, https://amzn.to/...",
+  "notes": "Add Amazon affiliate links to generate commission"
+}
