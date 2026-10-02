@@ -88,6 +88,25 @@ def test_monthly_provider_limit_blocks_before_download(monkeypatch=None):
             os.environ.update(old_env)
 
 
+def test_preflight_verifies_transport_without_provider_call():
+    result, _ = run_in_tmp({
+        "RIO_FLYER_TASK_ID": "preflight-1",
+        "RIO_PRODUCT_REFERENCE": "PRE-FLIGHT-FIXTURE",
+        "RIO_FLYER_PAYLOAD": json.dumps({"product_image_url": "https://example.invalid/reference.jpg"}),
+        "RIO_FLYER_PREFLIGHT_ONLY": "true",
+        "CLOUDFLARE_ACCOUNT_ID": "acct",
+        "CLOUDFLARE_API_TOKEN": "token",
+    })
+    assert result["status"] == "PREFLIGHT_READY"
+    assert result["execution_status"] == "COMPLETED"
+    assert result["credential_available"] is True
+    assert result["endpoint_config_present"] is True
+    assert result["provider_call_counted"] is False
+    assert result["provider_call_attempted"] is False
+    assert result["live_request_verified"] is False
+    assert result["real_output_verified"] is False
+
+
 def test_prompt_forbids_model_generated_marketing_text():
     prompt = mod.build_prompt({"title": "Socket Cover", "category": "Child Safety"})
     assert "exact factual product reference" in prompt
