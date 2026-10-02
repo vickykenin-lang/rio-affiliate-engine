@@ -1,1 +1,84 @@
-{"offers": []}
+{
+  "offers": [
+    {
+      "id": "AFF001",
+      "asin": "B08N52N5N4",
+      "title": "boAt Rockerz 450 Bluetooth Headset",
+      "price": "\u20b91,299",
+      "commission": "15%",
+      "link": "https://amzn.to/rockers450"
+    },
+    {
+      "id": "AFF002",
+      "asin": "B09VQ87X3Y",
+      "title": "Fastrack Moderna Smartwatch",
+      "price": "\u20b92,999",
+      "commission": "12%",
+      "link": "https://amzn.to/fastrack"
+    },
+    {
+      "id": "AFF003",
+      "asin": "B09TQ66W8Z",
+      "title": " Noise ColorFit Pulse Grand Smartwatch",
+      "price": "\u20b92,499",
+      "commission": "13%",
+      "link": "https://amzn.to/noise"
+    },
+    {
+      "id": "AFF004",
+      "asin": "B08H746XZT",
+      "title": "BoAt Airdopes 141 Bluetooth Earbuds",
+      "price": "\u20b9999",
+      "commission": "16%",
+      "link": "https://amzn.to/airdopes"
+    },
+    {
+      "id": "AFF005",
+      "asin": "B09XGC9FZM",
+      "title": "Fire TV Stick 4K streaming device",
+      "price": "\u20b91,499",
+      "commission": "14%",
+      "link": "https://amzn.to/firestick"
+    },
+    {
+      "id": "AFF006",
+      "asin": "B09Y5X6T3N",
+      "title": "Mi Band 6 Fitness Tracker",
+      "price": "\u20b91,799",
+      "commission": "11%",
+      "link": "https://amzn.to/miband"
+    },
+    {
+      "id": "AFF007",
+      "asin": "B08L5T9XZT",
+      "title": "JBL Tune 125BT Wireless Earbuds",
+      "price": "\u20b92,999",
+      "commission": "13%",
+      "link": "https://amzn.to/jbl"
+    },
+    {
+      "id": "AFF008",
+      "asin": "B09N5X6T3N",
+      "title": "Noise ColorFit Pulse 2 Smartwatch",
+      "price": "\u20b91,999",
+      "commission": "12%",
+      "link": "https://amzn.to/noise2"
+    },
+    {
+      "id": "AFF009",
+      "asin": "B08H5T9XZT",
+      "title": " boAt Bassheads 100 Wired Earphones",
+      "price": "\u20b9499",
+      "commission": "18%",
+      "link": "https://amzn.to/bassheads"
+    },
+    {
+      "id": "AFF010",
+      "asin": "B09TQ66W8Z",
+      "title": "realme Buds T100 True Wireless Earbuds",
+      "price": "\u20b91,499",
+      "commission": "14%",
+      "link": "https://amzn.to/realme"
+    }
+  ]
+}
