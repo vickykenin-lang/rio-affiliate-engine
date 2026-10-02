@@ -78,6 +78,10 @@ def max_attempts():
         return MAX_ATTEMPTS_PER_PRODUCT_DEFAULT
 
 
+def preflight_only():
+    return clean(os.getenv("RIO_FLYER_PREFLIGHT_ONLY"), 16).lower() in {"1", "true", "yes", "on"}
+
+
 def build_result(task_id, product_reference, status, execution_status, error_code=None, **extra):
     result = {
         "task_id": task_id,
@@ -226,11 +230,34 @@ def run():
 
     state, current = usage_state()
     limit = provider_limit()
-    if int(current.get("provider_calls", 0)) >= limit:
+    current_calls = int(current.get("provider_calls", 0))
+    if current_calls >= limit:
         result = build_result(
             task_id, product_reference, "SAFE_STOP", "BLOCKED", "MONTHLY_IMAGE_PROVIDER_CALL_LIMIT_REACHED",
             monthly_provider_call_limit=limit,
-            provider_calls_this_month=int(current.get("provider_calls", 0)),
+            provider_calls_this_month=current_calls,
+        )
+        save_json(result_path, result)
+        return result
+
+    if preflight_only():
+        result = build_result(
+            task_id,
+            product_reference,
+            "PREFLIGHT_READY",
+            "COMPLETED",
+            None,
+            credential_available=True,
+            endpoint_config_present=True,
+            source_implemented=True,
+            preflight_only=True,
+            product_image_url_format_verified=True,
+            provider_call_counted=False,
+            provider_call_attempted=False,
+            provider_calls_this_month=current_calls,
+            monthly_provider_call_limit=limit,
+            max_attempts_per_product=max_attempts(),
+            note="Transport, secret presence, policy and quota gate verified without reference-image download or provider inference.",
         )
         save_json(result_path, result)
         return result
@@ -246,7 +273,7 @@ def run():
         return result
 
     # Count before provider invocation so failed/billable calls remain bounded and auditable.
-    current["provider_calls"] = int(current.get("provider_calls", 0)) + 1
+    current["provider_calls"] = current_calls + 1
     current["last_updated_at"] = now_iso()
     save_json(USAGE_PATH, state)
 
