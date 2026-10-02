@@ -1,0 +1,31 @@
+name: RIO Flyer Transport CI
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/rio_flyer_transport.py'
+      - 'tests/test_rio_flyer_transport.py'
+      - '.github/workflows/hermes-rio-flyer-transport.yml'
+      - '.github/workflows/rio-flyer-transport-ci.yml'
+  push:
+    branches:
+      - feature/rio-exact-flyer-transport-v1
+    paths:
+      - 'scripts/rio_flyer_transport.py'
+      - 'tests/test_rio_flyer_transport.py'
+      - '.github/workflows/hermes-rio-flyer-transport.yml'
+      - '.github/workflows/rio-flyer-transport-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check pytest requests pillow
+      - run: pytest -q tests/test_rio_flyer_transport.py
