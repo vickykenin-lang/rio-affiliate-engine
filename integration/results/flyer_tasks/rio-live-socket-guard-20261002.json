@@ -1,0 +1,22 @@
+{
+  "business_outcome_verified": false,
+  "created_at": "2026-10-02T14:23:49.664565Z",
+  "credential_available": false,
+  "credential_transfer_performed": false,
+  "error_code": "CLOUDFLARE_CREDENTIALS_NOT_CONFIGURED",
+  "execution_status": "BLOCKED",
+  "live_request_verified": false,
+  "message_type": "TASK_RESULT",
+  "model": "@cf/black-forest-labs/flux-2-klein-9b",
+  "objective_changed": false,
+  "product_reference": "DDB11510-SOCKET-GUARD",
+  "provider": "cloudflare-workers-ai",
+  "public_action_performed": false,
+  "qa_approved": false,
+  "real_output_verified": false,
+  "recipient": "hermes",
+  "sender": "rio",
+  "status": "SAFE_STOP",
+  "task_id": "rio-live-socket-guard-20261002",
+  "task_type": "PRODUCT_FLYER_GENERATE"
+}
