@@ -64,7 +64,15 @@ jobs:
           set -euo pipefail
           git config user.name "rio-flyer-transport"
           git config user.email "actions@users.noreply.github.com"
-          git add integration/results/flyer_tasks data/image_generation_usage.json creatives/generated || true
+
+          # Stage each evidence family independently. A missing optional path must
+          # never prevent an existing SAFE_STOP/preflight receipt from being saved.
+          for path in integration/results/flyer_tasks data/image_generation_usage.json creatives/generated; do
+            if [ -e "$path" ]; then
+              git add "$path"
+            fi
+          done
+
           if git diff --cached --quiet; then
             echo "No transport evidence changes to persist."
             exit 0
