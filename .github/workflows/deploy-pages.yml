@@ -1,11 +1,10 @@
 name: R12 RIO Safety Validation (NO PUBLISH)
 
-# Stage 0 only. This workflow cannot deploy or modify the public website.
-# Separate founder authorization and a protected release design are required.
+# Stage 0: execute tests only on the isolated development branch.
+# Cannot deploy, publish, modify account settings or invoke paid providers.
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches: [fix/r12-stage0-safety-20261014]
 
 permissions:
   contents: read
@@ -25,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run genuine negative and safety tests
+      - name: Run negative and safety tests
         run: python -m unittest -v tests.test_r12_stage0_safety
 
       - name: Assemble allowlisted website OFFLINE
@@ -34,5 +33,5 @@ jobs:
       - name: Validate offline website package
         run: python scripts/r12_site_guard.py --verify-only --output _public
 
-      - name: Release blocked by default
+      - name: No deployment or publication
         run: echo "STAGE_0_VALIDATION_ONLY; NO_DEPLOYMENT; NO_PUBLISHING"
