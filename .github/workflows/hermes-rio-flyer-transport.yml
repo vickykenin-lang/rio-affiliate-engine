@@ -22,7 +22,7 @@ on:
         type: string
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: rio-flyer-generation-v1
@@ -30,6 +30,9 @@ concurrency:
 
 jobs:
   generate:
+    # Stage 0 safeguard: manual dispatch cannot invoke providers or publish.
+    # A separate approved release must re-enable this job.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -58,25 +61,13 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python scripts/rio_flyer_transport.py
 
-      - name: Persist receipt, usage ledger and generated asset
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "rio-flyer-transport"
-          git config user.email "actions@users.noreply.github.com"
-
-          # Stage each evidence family independently. A missing optional path must
-          # never prevent an existing SAFE_STOP/preflight receipt from being saved.
-          for path in integration/results/flyer_tasks data/image_generation_usage.json creatives/generated; do
-            if [ -e "$path" ]; then
-              git add "$path"
-            fi
-          done
-
-          if git diff --cached --quiet; then
-            echo "No transport evidence changes to persist."
-            exit 0
-          fi
-          git commit -m "rio flyer transport receipt: ${{ inputs.task_id }}"
-          git pull --rebase origin main
-          git push origin HEAD:main
+      - name: Archive receipt for review only (never push to main)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rio-flyer-review-evidence
+          if-no-files-found: ignore
+          path: |
+            integration/results/flyer_tasks/
+            data/image_generation_usage.json
+            creatives/generated/
