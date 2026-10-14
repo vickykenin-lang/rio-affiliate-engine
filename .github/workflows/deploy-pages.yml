@@ -1,5 +1,7 @@
-name: Deploy RIO to GitHub Pages
+name: R12 RIO Safety Validation (NO PUBLISH)
 
+# Stage 0 only. This workflow cannot deploy or modify the public website.
+# Separate founder authorization and a protected release design are required.
 on:
   push:
     branches: [main]
@@ -7,69 +9,30 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   validate:
     runs-on: ubuntu-latest
-    outputs:
-      production_active: ${{ steps.production_state.outputs.active }}
-
+    timeout-minutes: 10
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - name: Checkout repository (read-only)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.12'
 
-      - id: production_state
-        name: Read canonical production state
-        run: |
-          python - <<'PY'
-          import json, os
-          import sys
-          try:
-              state=json.load(open('data/production_control.json',encoding='utf-8')).get('production_state','PARKED')
-          except:
-              state='ACTIVE'
-          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as f:
-              f.write('active=' + ('true' if state == 'ACTIVE' else 'false') + '\n')
-          print('RIO production state:', state)
-          PY
+      - name: Run genuine negative and safety tests
+        run: python -m unittest -v tests.test_r12_stage0_safety
 
-      - name: Validate production ready
-        run: |
-          echo "Production validation passed"
-          exit 0
+      - name: Assemble allowlisted website OFFLINE
+        run: python scripts/r12_site_guard.py --source site --output _public
 
-  deploy:
-    needs: validate
-    if: needs.validate.outputs.production_active == 'true'
-    runs-on: ubuntu-latest
+      - name: Validate offline website package
+        run: python scripts/r12_site_guard.py --verify-only --output _public
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload RIO website
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Release blocked by default
+        run: echo "STAGE_0_VALIDATION_ONLY; NO_DEPLOYMENT; NO_PUBLISHING"
