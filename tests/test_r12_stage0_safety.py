@@ -109,7 +109,7 @@ class TestR12Safety(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/hermes-rio-flyer-transport.yml").read_text(encoding="utf-8")
         self.assertNotIn("git push origin HEAD:main", workflow)
         self.assertNotIn("contents: write", workflow)
-        self.assertIn("if: \${{ false }}", workflow)
+        self.assertIn("if: ${{ false }}", workflow)
 
     def test_development_control_is_stopped(self):
         self.assertEqual(production_state(ROOT / "data/production_control.json"), "STOPPED")
